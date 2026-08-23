@@ -6,7 +6,9 @@
 
 A GTA V graphics-mod launcher and weapon-skin studio.
 
-[Русский](README.md) · Windows · .NET 8 · WPF + WebView2 + React
+[Русский](README.md) · [Technical documentation](https://hntenjoyer.github.io/miami-graphics/) (Russian)
+
+Windows · .NET 8 · WPF + WebView2 + React
 
 </div>
 

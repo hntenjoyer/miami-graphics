@@ -1,0 +1,203 @@
+site_name: Miami Graphics - техническая документация
+site_url: https://hntenjoyer.github.io/miami-graphics/
+repo_url: https://github.com/hntenjoyer/miami-graphics
+repo_name: hntenjoyer/miami-graphics
+edit_uri: edit/main/docs/
+site_description: Как устроен Miami Graphics изнутри - формат update.rpf, движок инжекта, рендер 3D, история всех попыток что не сработали.
+site_author: Miami Graphics
+
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  language: ru
+  palette:
+    - media: "(prefers-color-scheme)"
+      scheme: slate
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/lightbulb-outline
+        name: Светлая
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/lightbulb
+        name: Тёмная
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - navigation.top
+    - navigation.tracking
+    - navigation.path
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - content.tooltips
+    - toc.follow
+    - announce.dismiss
+  font:
+    text: Inter
+    code: JetBrains Mono
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil
+    view: material/eye
+
+plugins:
+  - search:
+      lang: ru
+  - mermaid2
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:mermaid2.fence_mermaid_custom
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+nav:
+  - Главная: index.md
+  - Старт:
+      - Что это вообще: 00-overview.md
+      - Почему это не «скачать и заменить»: 00-why-not-trivial.md
+  - Формат RPF:
+      - Обзор RPF8: rpf/index.md
+      - Структура архива: rpf/archive-structure.md
+      - Шифрование AES+NG: rpf/encryption.md
+      - RageLib.GTA5: rpf/ragelib.md
+      - ArchiveFix.exe: rpf/archivefix.md
+  - Парсер донора:
+      - Что мы вытаскиваем: parser/what-we-extract.md
+      - Манифест patch.zip: parser/manifest-schema.md
+      - Определение компонентов: parser/component-detection.md
+  - Diff и patch.zip:
+      - Алгоритм diff: diff/algorithm.md
+      - Типы Action: diff/actions.md
+      - Структура patch.zip: diff/patch-zip-structure.md
+  - Инжект:
+      - Pipeline: inject/pipeline.md
+      - Preflight (DIRTY/CLEAN/LAST): inject/preflight.md
+      - Smart Rebuild: inject/smart-rebuild.md
+      - Откат и .bak: inject/rollback.md
+      - UpdateRpfMutex: inject/mutex.md
+  - Стриминг и вылеты:
+      - Ворота перед записью в архив: streaming/entry-gate.md
+      - Разбор client_*.log Majestic: streaming/crash-triage.md
+  - Улучшения:
+      - Наборы и слоты DLC: improvements/index.md
+  - Оружие:
+      - Ганпаки - разбор донора и установка: guns/gunpacks.md
+  - Backup:
+      - Pipeline backup: backup/pipeline.md
+      - Manifest: backup/manifest.md
+      - Snapshot vs Clean: backup/snapshot-vs-clean.md
+      - Atomic writes: backup/atomic-writes.md
+  - 3D и рендер:
+      - GLB-viewer в UI: 3d/glb-viewer.md
+      - Headless рендер: 3d/headless-render.md
+      - История шейдеров: 3d/shaders-history.md
+  - Студия скинов:
+      - Как устроена: gunsmith/index.md
+      - Инструменты редактора: gunsmith/editor.md
+      - Стекло, навесное и анимация: gunsmith/glass-and-attachments.md
+  - Пути и детекция:
+      - GTA detection: paths/gta-detection.md
+      - Версия GTA: paths/version-detection.md
+      - AppData layout: paths/appdata-layout.md
+  - Кастомизация:
+      - Multi-version модель: customize/data-model.md
+      - История с минимапой: customize/minimap-history.md
+      - Donor cache: customize/donor-cache.md
+  - Режим Rockstar (hot-swap):
+      - Зачем и как устроен: hotswap/index.md
+      - Пять способов подмены: hotswap/methods.md
+      - Агент и журнал фаз: hotswap/agent-and-journal.md
+  - Диагностика ПК:
+      - Снимок железа: pcdiag/index.md
+      - Находки и твики: pcdiag/rules-and-tweaks.md
+  - Сеть:
+      - FragmentingHttpHandler: network/fragmenting-http-handler.md
+      - WebView2 bypass: network/webview2-bypass.md
+      - DoH: network/doh.md
+      - AssetCache: network/asset-cache.md
+      - Zapret: network/zapret.md
+  - Обновления:
+      - Inno + Supabase: update/inno-supabase.md
+      - installed_version.txt: update/installed-version-marker.md
+      - Update loop incident: update/loop-incident.md
+  - История попыток:
+      - CodeWalker провал: history/codewalker.md
+      - RageLib v1 провал: history/ragelib-v1.md
+      - RageLib v2 финал и оптимизация: history/ragelib-v2.md
+      - Tracers сага: history/tracers.md
+      - Конфликты ганов: history/guns-conflicts.md
+      - История 3D рендера: history/3d-render.md
+  - Защита и проверки:
+      - Гарды перед инжектом: protection/guards.md
+      - Что будет если не пройти: protection/failure-modes.md
+      - Легит-чек установленного мода: protection/legit-check.md
+  - HNT-коды:
+      - Что это: hnt/index.md
+      - Формат и payload: hnt/format.md
+      - Импорт и применение: hnt/import-apply.md
+  - Сборка и релиз:
+      - dotnet publish single-file: build/publish.md
+      - Inno installer: build/inno.md
+      - Релиз pipeline: build/release-pipeline.md
+  - Скриншоты: gallery.md
+  - Changelog: changelog.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/hntenjoyer/miami-graphics
+  generator: false
+
+copyright: >
+  © Miami Graphics. Документация - open source.
+
+extra_css:
+  - assets/extra.css

@@ -6,7 +6,9 @@
 
 Лаунчер графических модификаций GTA V и студия оружейных скинов.
 
-[English](README.en.md) · Windows · .NET 8 · WPF + WebView2 + React
+[English](README.en.md) · [Техническая документация](https://hntenjoyer.github.io/miami-graphics/)
+
+Windows · .NET 8 · WPF + WebView2 + React
 
 </div>
 
