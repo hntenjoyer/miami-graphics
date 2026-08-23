@@ -1,0 +1,165 @@
+Miami Graphics - Source-Available, View-Only License
+=====================================================
+
+Copyright (c) 2026 Hunter (hntenjoyer). All rights reserved.
+
+КРАТКОЕ РЕЗЮМЕ (НЕ ИМЕЕТ ЮРИДИЧЕСКОЙ СИЛЫ - ПОЛНЫЕ УСЛОВИЯ НИЖЕ)
+=================================================================
+
+  МОЖНО:
+  - Читать код, изучать архитектуру, использовать как учебный материал.
+  - Цитировать небольшие куски в статьях/постах/видео с указанием
+    автора и ссылкой на этот репозиторий.
+  - Присылать issues и pull-request'ы в официальный репозиторий
+    https://github.com/hntenjoyer/miami-graphics
+  - Запускать локально у себя для **личного** изучения (без публичного
+    deployment'а, без перепродажи, без использования в чужих сервисах).
+
+  НЕЛЬЗЯ:
+  - Форкать и публиковать форк (включая GitHub forks/mirrors/копии
+    на других платформах).
+  - Использовать любую часть кода в другом проекте (открытом или
+    коммерческом), сервисе, продукте.
+  - Модифицировать и распространять модифицированную версию
+    кому-либо третьему.
+  - Продавать, сдавать в аренду, монетизировать в любой форме.
+  - Удалять или менять файлы LICENSE/копирайт-уведомления.
+
+  Любое нарушение - повод для DMCA-takedown и/или судебного иска.
+  Если хочется что-то из «нельзя» - пишите автору, договоримся.
+
+
+FULL LEGAL TERMS
+================
+
+By accessing, downloading, cloning, viewing, or otherwise interacting
+with this repository or any of its contents (the "Software"), you
+agree to be bound by the following terms.
+
+1. Grant of limited rights
+--------------------------
+Subject to the restrictions in Section 2, you are granted a personal,
+non-transferable, non-exclusive, revocable, royalty-free license to:
+
+  a. Access and read the Software for the sole purpose of personal
+     study, education, and security research.
+  b. Quote short excerpts of the source code in articles, blog posts,
+     videos, presentations, or technical discussions, provided that
+     (i) the author is credited as "Hunter (hntenjoyer)", and
+     (ii) a link to the official repository is included.
+  c. Submit issues, bug reports, and pull requests to the official
+     repository. By submitting a pull request, you irrevocably assign
+     to the copyright holder all rights, title, and interest in your
+     contribution, and grant a perpetual, worldwide, royalty-free
+     license to use, modify, sublicense, and distribute your
+     contribution under any terms the copyright holder chooses.
+  d. Compile and run the Software locally on your own computer for
+     personal evaluation only. You may NOT host, deploy, distribute,
+     or expose the running Software to any third party.
+
+2. Prohibitions
+---------------
+Without prior, explicit, written permission from the copyright holder,
+you may NOT:
+
+  a. Distribute, redistribute, mirror, publish, or share the Software
+     or any substantial portion thereof, in source or compiled form,
+     through any channel (including but not limited to GitHub forks,
+     other code-hosting platforms, package registries, file-sharing
+     services, or direct file transfer).
+  b. Create, maintain, or publish derivative works, modifications,
+     adaptations, translations, or forks of the Software, except for
+     contributions submitted back to the official repository under
+     Section 1(c).
+  c. Use the Software, in whole or in part, as a component,
+     dependency, reference implementation, or training data for any
+     other software, product, service, library, dataset, machine
+     learning model, or commercial offering, whether open source,
+     proprietary, free, or paid.
+  d. Sell, sublicense, rent, lease, lend, or otherwise transfer the
+     Software or any rights granted herein to any third party.
+  e. Use the Software for any commercial purpose, including but not
+     limited to commercial hosting, SaaS deployment, internal tooling
+     at a for-profit organization, or any activity intended to
+     generate revenue, directly or indirectly.
+  f. Remove, alter, obscure, or fail to reproduce the copyright
+     notice, this LICENSE file, or attribution to the original author
+     in any permitted use.
+  g. Reverse-engineer, decompile, or disassemble any compiled binary
+     derived from the Software for the purpose of circumventing the
+     restrictions in this license.
+
+3. Third-party components
+-------------------------
+This repository incorporates third-party libraries and assets that are
+governed by their own licenses and are NOT subject to this proprietary
+license:
+
+  - CodeWalker.Core/         - see upstream repository for terms
+  - RageLib/, RageLib.GTA5/  - see upstream repository for terms
+  - additionals/jre/...      - Oracle Binary Code License Agreement
+  - additionals/tools/...    - individual tool licenses apply
+
+Use of those components is governed exclusively by their original
+licenses. The terms of this LICENSE apply ONLY to original code,
+documentation, and assets authored by the copyright holder for
+Miami Graphics.
+
+4. Cryptographic key tables disclaimer
+--------------------------------------
+Interoperating with Take-Two Interactive's RPF8 archive format used by
+Grand Theft Auto V historically requires binary lookup tables reproduced
+from public reverse-engineering research published by the RAGE modding
+community since 2014.
+
+Those tables are NOT distributed in this repository. The application
+downloads them at runtime; the paths it expects (`MiamiGraphics.Shell/Keys/`
+and `additionals/keys/`) are empty here and are excluded from version
+control.
+
+The copyright holder of Miami Graphics makes no claim of ownership
+over these tables and disclaims any liability arising from their use
+or redistribution. If Take-Two Interactive, Rockstar Games, or any
+authorized rights holder requests removal of these files, they will
+be removed promptly upon receipt of such request directed to the
+GitHub profile listed in this repository.
+
+5. Termination
+--------------
+This license terminates automatically and without notice if you breach
+any of its terms. Upon termination, you must immediately:
+
+  - Cease all use of the Software.
+  - Destroy all copies of the Software in your possession.
+  - Remove any published forks, mirrors, or derivative works from
+    public availability.
+
+The copyright holder reserves the right to pursue legal remedies for
+any breach, including but not limited to DMCA takedown requests,
+injunctive relief, and monetary damages.
+
+6. No warranty
+--------------
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NONINFRINGEMENT,
+AND ABSENCE OF DEFECTS. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE
+LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN
+CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+7. Governing law
+----------------
+This license is governed by the laws of the jurisdiction in which the
+copyright holder resides at the time of the dispute. Any disputes
+arising out of or in connection with this license shall be resolved
+in the courts of that jurisdiction.
+
+8. Commercial and special-use licensing
+---------------------------------------
+For uses outside the scope of this license - including but not limited
+to forking for redistribution, integration into other products,
+commercial deployment, white-labeling, or sublicensing - contact the
+copyright holder through GitHub at https://github.com/hntenjoyer
+
+Custom commercial terms are available upon request.
