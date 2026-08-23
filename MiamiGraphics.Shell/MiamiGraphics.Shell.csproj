@@ -1,0 +1,130 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<MiamiKeysDir Condition="'$(MiamiKeysDir)' == ''">$(MSBuildThisFileDirectory)Keys\</MiamiKeysDir>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net8.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UseWPF>true</UseWPF>
+		<ApplicationIcon>Assets\icon.ico</ApplicationIcon>
+		<ApplicationManifest>app.manifest</ApplicationManifest>
+		<AssemblyName>Miami Graphics</AssemblyName>
+		<Version>1.5.5</Version>
+		<AssemblyVersion>1.5.5.0</AssemblyVersion>
+		<FileVersion>1.5.5.0</FileVersion>
+		<InformationalVersion>1.5.5</InformationalVersion>
+		<Company>Miami Graphics</Company>
+		<Product>Miami Graphics</Product>
+		<Authors>Miami Graphics</Authors>
+		<AssemblyTitle>Miami Graphics</AssemblyTitle>
+		<Description>Miami Graphics - лаунчер графических модов для GTA 5 (Majestic, GTA5RP).</Description>
+		<Copyright>© 2026 Miami Graphics</Copyright>
+		<NeutralLanguage>ru-RU</NeutralLanguage>
+		<AdminBuild Condition="'$(AdminBuild)' == ''">true</AdminBuild>
+		<DefineConstants Condition="'$(AdminBuild)' == 'true'">$(DefineConstants);ADMIN</DefineConstants>
+	</PropertyGroup>
+
+	<ItemGroup Condition="'$(AdminBuild)' != 'true'">
+		<Compile Remove="Admin\AdminQueueService.cs" />
+		<Compile Remove="Admin\AdminGunpackQueueService.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Web.WebView2" Version="1.0.3912.50" />
+		<PackageReference Include="AWSSDK.S3" Version="4.0.22.1" />
+		<PackageReference Include="YoutubeExplode" Version="6.5.4" />
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(AdminBuild)' == 'true'">
+		<PackageReference Include="SharpCompress" Version="0.40.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Resource Include="Assets\icon.ico" />
+		<Resource Include="Assets\splash-logo.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="$(MiamiKeysDir)*.dat" Condition="Exists('$(MiamiKeysDir)')">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<Link>Keys%(Filename)%(Extension)</Link>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="..\Libraries\DirectXTex\Release\vcruntime140.dll">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<Link>vcruntime140.dll</Link>
+		</None>
+		<None Include="..\Libraries\DirectXTex\Release\vcruntime140_1.dll">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<Link>vcruntime140_1.dll</Link>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\MiamiGraphics.Core\MiamiGraphics.Core.csproj" />
+		<ProjectReference Include="..\MiamiGraphics.Bridge\MiamiGraphics.Bridge.csproj" />
+		<ProjectReference Include="..\RageLib\RageLib.csproj" />
+		<ProjectReference Include="..\RageLib.GTA5\RageLib.GTA5.csproj" />
+	</ItemGroup>
+
+	<ItemGroup Condition="Exists('ui\dist')">
+		<Content Include="ui\dist\**\*">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<Link>ui\%(RecursiveDir)%(Filename)%(Extension)</Link>
+		</Content>
+	</ItemGroup>
+
+	<Target Name="MirrorUiDistToPublish" AfterTargets="Publish" Condition="Exists('ui\dist')">
+		<ItemGroup>
+			<_UiDistAll Include="ui\dist\**\*" />
+		</ItemGroup>
+		<Copy SourceFiles="@(_UiDistAll)"
+		      DestinationFiles="@(_UiDistAll->'$(PublishDir)ui\%(RecursiveDir)%(Filename)%(Extension)')"
+		      SkipUnchangedFiles="false"
+		      OverwriteReadOnlyFiles="true" />
+		<Message Importance="high" Text="[MirrorUiDistToPublish] ui/dist -> $(PublishDir)ui ( @(_UiDistAll->Count()) files )" />
+	</Target>
+
+	<ItemGroup Condition="Exists('gunsmith\web')">
+		<Content Include="gunsmith\web\**\*">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+			<ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+			<Link>gunsmith\%(RecursiveDir)%(Filename)%(Extension)</Link>
+		</Content>
+	</ItemGroup>
+
+	<Target Name="MirrorGunsmithToPublish" AfterTargets="Publish" Condition="Exists('gunsmith\web')">
+		<ItemGroup>
+			<_GunsmithAll Include="gunsmith\web\**\*" />
+		</ItemGroup>
+		<Copy SourceFiles="@(_GunsmithAll)"
+		      DestinationFiles="@(_GunsmithAll->'$(PublishDir)gunsmith\%(RecursiveDir)%(Filename)%(Extension)')"
+		      SkipUnchangedFiles="false"
+		      OverwriteReadOnlyFiles="true" />
+		<Message Importance="high" Text="[MirrorGunsmithToPublish] gunsmith/web -> $(PublishDir)gunsmith ( @(_GunsmithAll->Count()) files )" />
+	</Target>
+
+	<ItemGroup Condition="Exists('..\redist\MicrosoftEdgeWebView2Setup.exe')">
+		<Content Include="..\redist\MicrosoftEdgeWebView2Setup.exe">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<Link>redist\MicrosoftEdgeWebView2Setup.exe</Link>
+		</Content>
+	</ItemGroup>
+
+	<ItemGroup Condition="Exists('..\additionals')">
+		<Content Include="..\additionals\**\*" Exclude="..\additionals\jre\**\*">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+			<ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+			<Link>additionals\%(RecursiveDir)%(Filename)%(Extension)</Link>
+		</Content>
+	</ItemGroup>
+
+</Project>

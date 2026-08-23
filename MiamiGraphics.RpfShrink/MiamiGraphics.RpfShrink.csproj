@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>rpfshrink</AssemblyName>
+    <RootNamespace>MiamiGraphics.RpfShrink</RootNamespace>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <SelfContained>true</SelfContained>
+    <PublishSingleFile>true</PublishSingleFile>
+    <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RageLib\RageLib.csproj" />
+    <ProjectReference Include="..\RageLib.GTA5\RageLib.GTA5.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <MiamiKitDir Condition="'$(MiamiKitDir)' == ''">$(MSBuildThisFileDirectory)..\additionals\keys\</MiamiKitDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MiamiKitDir)ArchiveFix.exe"               LogicalName="kit.ArchiveFix.exe" Condition="Exists('$(MiamiKitDir)')" />
+    <EmbeddedResource Include="$(MiamiKitDir)gtav_aes_key.dat"             LogicalName="kit.gtav_aes_key.dat" Condition="Exists('$(MiamiKitDir)')" />
+    <EmbeddedResource Include="$(MiamiKitDir)gtav_hash_lut.dat"            LogicalName="kit.gtav_hash_lut.dat" Condition="Exists('$(MiamiKitDir)')" />
+    <EmbeddedResource Include="$(MiamiKitDir)gtav_ng_key.dat"              LogicalName="kit.gtav_ng_key.dat" Condition="Exists('$(MiamiKitDir)')" />
+    <EmbeddedResource Include="$(MiamiKitDir)gtav_ng_decrypt_tables.dat"   LogicalName="kit.gtav_ng_decrypt_tables.dat" Condition="Exists('$(MiamiKitDir)')" />
+    <EmbeddedResource Include="$(MiamiKitDir)gtav_ng_encrypt_tables.dat"   LogicalName="kit.gtav_ng_encrypt_tables.dat" Condition="Exists('$(MiamiKitDir)')" />
+    <EmbeddedResource Include="$(MiamiKitDir)gtav_ng_encrypt_luts.dat"     LogicalName="kit.gtav_ng_encrypt_luts.dat" Condition="Exists('$(MiamiKitDir)')" />
+  </ItemGroup>
+</Project>

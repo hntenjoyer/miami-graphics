@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Miami Graphics Armor Renderer</title>
+<style>
+  html, body { margin: 0; padding: 0; background: transparent; }
+  canvas { display: block; }
+</style>
+<script type="importmap">
+{
+  "imports": {
+    "three": "./node_modules/three/build/three.module.js",
+    "three/addons/": "./node_modules/three/examples/jsm/"
+  }
+}
+</script>
+</head>
+<body>
+<script type="module">
+import * as THREE from 'three';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+
+window.renderGlb = async function(glbBase64, width, height) {
+    const binStr = atob(glbBase64);
+    const buf = new ArrayBuffer(binStr.length);
+    const view = new Uint8Array(buf);
+    for (let i = 0; i < binStr.length; i++) view[i] = binStr.charCodeAt(i);
+
+    const canvas = document.createElement('canvas');
+    canvas.width = width;
+    canvas.height = height;
+    document.body.appendChild(canvas);
+
+    const renderer = new THREE.WebGLRenderer({
+        canvas, antialias: true, alpha: true, preserveDrawingBuffer: true });
+    renderer.setSize(width, height, false);
+    renderer.setPixelRatio(1);
+    renderer.setClearColor(0x000000, 0);
+    renderer.outputColorSpace = THREE.SRGBColorSpace;
+    renderer.toneMapping = THREE.ACESFilmicToneMapping;
+    renderer.toneMappingExposure = 1.0;
+
+    const scene = new THREE.Scene();
+    const pmrem = new THREE.PMREMGenerator(renderer);
+    scene.environment = pmrem.fromScene(new RoomEnvironment(), 0.04).texture;
+
+    const loader = new GLTFLoader();
+    const gltf = await new Promise((resolve, reject) => {
+        loader.parse(buf, '', resolve, reject);
+    });
+
+    const model = gltf.scene;
+    scene.add(model);
+
+    let box = new THREE.Box3().setFromObject(model);
+    let size = new THREE.Vector3(); box.getSize(size);
+    console.log(`[armor] raw size: x=${size.x.toFixed(3)} y=${size.y.toFixed(3)} z=${size.z.toFixed(3)}`);
+
+    let longestAxis = 'y';
+    if (size.x > size.y && size.x > size.z) longestAxis = 'x';
+    else if (size.z > size.y && size.z > size.x) longestAxis = 'z';
+    console.log(`[armor] longest axis: ${longestAxis}`);
+
+    if (longestAxis === 'x') {
+        model.rotation.z = Math.PI / 2;
+        model.updateMatrixWorld(true);
+    } else if (longestAxis === 'z') {
+        model.rotation.x = -Math.PI / 2;
+        model.updateMatrixWorld(true);
+    }
+
+    box = new THREE.Box3().setFromObject(model);
+    size = new THREE.Vector3(); box.getSize(size);
+    const center = new THREE.Vector3(); box.getCenter(center);
+    console.log(`[armor] after-rotate size: x=${size.x.toFixed(3)} y=${size.y.toFixed(3)} z=${size.z.toFixed(3)}`);
+
+    const depthIsZ = size.z <= size.x;
+    const distance = Math.max(size.x, size.y, size.z) * 3.0;
+    const cameraPos = depthIsZ
+        ? new THREE.Vector3(center.x, center.y, center.z + distance)
+        : new THREE.Vector3(center.x + distance, center.y, center.z);
+    const visibleW = depthIsZ ? size.x : size.z;
+    const visibleH = size.y;
+    console.log(`[armor] depth axis: ${depthIsZ ? 'Z' : 'X'} (sx=${size.x.toFixed(3)} sz=${size.z.toFixed(3)})`);
+
+    const aspect = width / height;
+    const orthoW = Math.max(visibleW, visibleH * aspect) * 1.1;
+    const orthoH = orthoW / aspect;
+
+    const camera = new THREE.OrthographicCamera(
+        -orthoW / 2, orthoW / 2,  orthoH / 2, -orthoH / 2,
+        0.001, distance * 10);
+    camera.position.copy(cameraPos);
+    camera.up.set(0, 1, 0);
+    camera.lookAt(center);
+
+    scene.add(new THREE.AmbientLight(0xffffff, 0.3));
+    const keyDist = Math.max(size.x, size.y, size.z);
+    const key = new THREE.DirectionalLight(0xffffff, 1.5);
+    key.position.set(center.x + keyDist, center.y + keyDist, center.z + keyDist);
+    scene.add(key);
+    const fill = new THREE.DirectionalLight(0xffffff, 0.5);
+    fill.position.set(center.x - keyDist, center.y, center.z + keyDist * 0.5);
+    scene.add(fill);
+    const rim = new THREE.DirectionalLight(0xffffff, 0.7);
+    rim.position.set(center.x, center.y + keyDist * 0.5, center.z - keyDist * 1.5);
+    scene.add(rim);
+
+    renderer.render(scene, camera);
+    return canvas.toDataURL('image/png');
+};
+
+window.__rendererReady = true;
+console.log('[armor] renderer ready');
+</script>
+</body>
+</html>

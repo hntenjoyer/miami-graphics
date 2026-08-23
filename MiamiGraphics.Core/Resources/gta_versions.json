@@ -1,0 +1,11 @@
+{
+  "supportedVersions": [
+    {
+      "exeVersion": "1.0.3788.0",
+      "updateRpf": {
+        "size": 2010816512,
+        "sha256": "089f0824689bf9fea508eedccafa67d07fd6b48644514d3b3e9359ae8d06a40f"
+      }
+    }
+  ]
+}

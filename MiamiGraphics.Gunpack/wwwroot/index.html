@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>ГАНПАК — редактор</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css?v=7">
+<script type="importmap">
+{
+  "imports": {
+    "three": "./vendor/three.module.js",
+    "three/addons/": "./vendor/addons/"
+  }
+}
+</script>
+</head>
+<body>
+<div id="app">
+
+  <aside id="sidebar">
+    <div class="brand"><img src="miami-logo.png" class="brand-logo" alt=""><span class="brand-txt">MIAMI<span class="brand-sub">graphics · ганпак</span></span></div>
+    <input id="search" placeholder="поиск пака…" autocomplete="off">
+    <div id="packs" class="packs"></div>
+  </aside>
+
+  <nav id="rail">
+    <button class="rtool active" data-mode="orbit" title="Осмотр — вращать камеру"><span>🔄</span>Осмотр</button>
+    <div class="rail-sep"></div>
+    <button class="rtool" data-mode="brush"  title="Кисть"><span>🖌️</span>Кисть</button>
+    <button class="rtool" data-mode="eraser" title="Ластик — вернуть оригинал"><span>🧽</span>Ластик</button>
+    <button class="rtool" data-mode="fill"   title="Заливка области"><span>🪣</span>Залив</button>
+    <button class="rtool" data-mode="picker" title="Пипетка — взять цвет"><span>💉</span>Пипетка</button>
+    <button class="rtool" data-mode="alpha"  title="Прозрачность — протереть до дыры"><span>💧</span>Прозр.</button>
+    <button class="rtool" data-mode="glass"  title="Стекло — прозрачный тонированный эффект"><span>🔷</span>Стекло</button>
+    <div class="rail-sep"></div>
+    <button class="rtool" data-mode="sticker" title="Наклейка — картинка/PNG на ган"><span>🖼️</span>Накл.</button>
+    <button class="rtool" data-mode="text"   title="Текст на ган"><span>🅰️</span>Текст</button>
+    <div class="rail-sep"></div>
+    <button class="rtool" data-mode="attach" title="Прицепить пластинку 3D (эксперимент)"><span>📌</span>3D</button>
+    <button class="rtool" data-mode="anim"   title="Анимированная деталь — бегущая текстура / качание / вращение"><span>✨</span>Аним</button>
+  </nav>
+
+  <main id="viewport">
+    <div id="canvas3d-wrap">
+      <canvas id="canvas3d"></canvas>
+      <div id="brushRing" hidden></div>
+      <div id="dropHint">← выберите ган</div>
+      <div id="spinner" hidden></div>
+
+      <div id="hud" hidden>
+        <div class="hud-title"><span id="hudName">Наклейка</span>
+          <button id="hudDel" title="Удалить (Del)">🗑</button></div>
+        <label>Размер<input type="range" id="hudScale" min="10" max="600" value="100"></label>
+        <label>Поворот<input type="range" id="hudRot" min="-180" max="180" value="0"></label>
+        <label>Прозр.<input type="range" id="hudOpacity" min="5" max="100" value="100"></label>
+        <div class="hud-hint">тащи по гану — двигать · колесо над ганом — размер</div>
+      </div>
+    </div>
+    <div id="statusbar">
+      <span id="status">готов</span>
+      <span id="gunLabel"></span>
+    </div>
+  </main>
+
+  <aside id="rightbar">
+
+    <section id="opts" class="card">
+      <div class="card-h" id="optsTitle">Инструмент</div>
+      <div id="optsBody"></div>
+    </section>
+
+    <section class="card">
+      <div class="card-h">Слои <span class="muted">верхний = сверху</span></div>
+      <div id="layerList" class="layer-list"></div>
+    </section>
+
+    <section class="card">
+      <div class="card-h">Текстуры <span id="texCount" class="muted"></span></div>
+      <div id="texList" class="tex-list"></div>
+    </section>
+
+    <section class="card">
+      <div class="card-h">Развёртка <label class="mini"><input type="checkbox" id="uvOverlay"> UV</label></div>
+      <div id="tex2d-wrap"><canvas id="tex2d" width="256" height="256"></canvas></div>
+    </section>
+
+    <div class="actions">
+      <button id="btnUndo" disabled>↶ Отмена</button>
+      <button id="btnSave" disabled class="primary">💾 Сохранить</button>
+      <button id="btnResetTex">↺ Сброс текстуры</button>
+      <button id="btnReset" disabled>♻️ Сброс гана</button>
+    </div>
+    <div id="log"></div>
+  </aside>
+</div>
+<script type="module" src="app.js?v=7"></script>
+</body>
+</html>

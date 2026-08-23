@@ -1,0 +1,316 @@
+<Window x:Class="MiamiGraphics.Installer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Miami Graphics"
+        Height="380" Width="540"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        AllowsTransparency="True"
+        Background="Transparent"
+        FontFamily="Segoe UI"
+        TextOptions.TextFormattingMode="Display"
+        TextOptions.TextRenderingMode="ClearType"
+        TextOptions.TextHintingMode="Fixed"
+        FocusVisualStyle="{x:Null}"
+        UseLayoutRounding="True">
+
+    <Border CornerRadius="14"
+            BorderBrush="{StaticResource GlassBorder}"
+            BorderThickness="1"
+            MouseLeftButtonDown="OnDragMove">
+        <Border.Effect>
+            <DropShadowEffect Color="Black" BlurRadius="50" ShadowDepth="0" Opacity="0.7"/>
+        </Border.Effect>
+
+        <Border.Background>
+            <RadialGradientBrush Center="0.15,0.2" GradientOrigin="0.15,0.2" RadiusX="1.1" RadiusY="1.1">
+                <GradientStop Offset="0.0"  Color="#1F1838"/>
+                <GradientStop Offset="0.45" Color="#0C0D1A"/>
+                <GradientStop Offset="1.0"  Color="#07070D"/>
+            </RadialGradientBrush>
+        </Border.Background>
+
+        <Grid ClipToBounds="True">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="0">
+                <Canvas IsHitTestVisible="False">
+                    <Path Canvas.Left="10" Canvas.Top="70"
+                          Stroke="{StaticResource WireframeStroke}" StrokeThickness="0.8"
+                          Opacity="0.4"
+                          Data="M 0,0 L 80,-20 L 145,10 L 65,30 L 0,0 L 65,30 L 65,105 L 0,72 L 0,0 M 80,-20 L 80,54 L 65,105 M 145,10 L 145,85 L 65,105"/>
+                    <Path Canvas.Left="45" Canvas.Top="250"
+                          Stroke="{StaticResource WireframeStroke}" StrokeThickness="0.7"
+                          Opacity="0.3"
+                          Data="M 45,0 L 0,68 L 90,68 L 45,0 L 45,42 L 0,68 M 45,42 L 90,68"/>
+                    <Ellipse Canvas.Left="150" Canvas.Top="46" Width="1.4" Height="1.4"
+                             Fill="{StaticResource WireframeStroke}" Opacity="0.7"/>
+                    <Ellipse Canvas.Left="35"  Canvas.Top="215" Width="1.2" Height="1.2"
+                             Fill="{StaticResource WireframeStroke}" Opacity="0.55"/>
+                    <Ellipse Canvas.Left="170" Canvas.Top="298" Width="1.4" Height="1.4"
+                             Fill="{StaticResource WireframeStroke}" Opacity="0.6"/>
+                </Canvas>
+
+                <Grid HorizontalAlignment="Center" VerticalAlignment="Center"
+                      Width="108" Height="108">
+                    <Image Source="/Assets/logo.png"
+                           Stretch="Uniform"
+                           SnapsToDevicePixels="True">
+                        <Image.Effect>
+                            <DropShadowEffect Color="{StaticResource AccentColor}"
+                                              BlurRadius="26" ShadowDepth="0" Opacity="0.55"/>
+                        </Image.Effect>
+                    </Image>
+
+                    <Grid x:Name="DoneBadge"
+                          Visibility="Collapsed"
+                          Width="32" Height="32"
+                          HorizontalAlignment="Right" VerticalAlignment="Bottom"
+                          Margin="0,0,-6,-6">
+                        <Ellipse Fill="{StaticResource Ok}">
+                            <Ellipse.Effect>
+                                <DropShadowEffect Color="#76D5A0"
+                                                  BlurRadius="20" ShadowDepth="0" Opacity="0.55"/>
+                            </Ellipse.Effect>
+                        </Ellipse>
+                        <Ellipse Stroke="#0C0D1A" StrokeThickness="4"/>
+                        <Path Data="M 3,7 L 6,10 L 11,4"
+                              Stroke="#0A2418" StrokeThickness="2.4"
+                              StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeLineJoin="Round"
+                              HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>
+                </Grid>
+
+                <Border HorizontalAlignment="Right" Width="1"
+                        Background="{StaticResource GlassBorder}"/>
+            </Grid>
+
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Button Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Top"
+                        Width="40" Height="40"
+                        Style="{StaticResource IconButton}"
+                        Click="OnClose">
+                    <Path Data="M 0,0 L 9,9 M 0,9 L 9,0"
+                          Stroke="{StaticResource TextMuted}" StrokeThickness="1.2"/>
+                </Button>
+
+                <Grid Grid.Row="1" Margin="30,0,30,24">
+
+                    <DockPanel x:Name="MainPanel" LastChildFill="False">
+                        <StackPanel DockPanel.Dock="Top" Margin="0,26,0,0">
+                            <TextBlock Text="УСТАНОВКА"
+                                       FontSize="9.5" FontWeight="Bold"
+                                       Foreground="{StaticResource TextMuted}"
+                                       Margin="0,0,0,10"/>
+                            <TextBlock Text="Miami Graphics"
+                                       FontSize="26" FontWeight="ExtraBold"
+                                       Foreground="{StaticResource TextPrimary}"
+                                       Margin="0,0,0,10"/>
+                            <TextBlock Text="Вас приветствует установщик лаунчера Miami Graphics! Выберите путь установки и нажмите «Установить» для продолжения."
+                                       TextWrapping="Wrap"
+                                       FontSize="12"
+                                       LineHeight="17"
+                                       Foreground="{StaticResource TextSecondary}"
+                                       MaxWidth="260"
+                                       HorizontalAlignment="Left"/>
+                        </StackPanel>
+                        <StackPanel DockPanel.Dock="Top" Margin="0,16,0,0">
+                            <TextBlock Text="ОТКУДА КАЧАТЬ"
+                                       FontSize="9.5" FontWeight="Bold"
+                                       Foreground="{StaticResource TextMuted}"
+                                       Margin="0,0,0,8"/>
+                            <StackPanel Orientation="Horizontal">
+                                <RadioButton x:Name="SrcEu" GroupName="src" Content="EU (напрямую)"
+                                             Foreground="{StaticResource TextSecondary}"
+                                             Margin="0,0,18,0" Checked="OnSourceChanged"/>
+                                <RadioButton x:Name="SrcRu" GroupName="src" Content="RU (наш сервер)"
+                                             Foreground="{StaticResource TextSecondary}"
+                                             Checked="OnSourceChanged"/>
+                            </StackPanel>
+                        </StackPanel>
+                        <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" HorizontalAlignment="Left">
+                            <Button x:Name="InstallBtn"
+                                    Style="{StaticResource PrimaryCta}"
+                                    Content="Установить"
+                                    Click="OnInstallClick"
+                                    Margin="0,0,10,0"/>
+                            <Button Style="{StaticResource TertiaryCta}"
+                                    Click="OnSettingsClick">
+                                <StackPanel Orientation="Horizontal">
+                                    <Grid Width="13" Height="13" Margin="0,0,7,0" VerticalAlignment="Center">
+                                        <Ellipse Width="4.8" Height="4.8"
+                                                 Stroke="{StaticResource Accent}" StrokeThickness="1.4"
+                                                 HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        <Path Stroke="{StaticResource Accent}" StrokeThickness="1.4"
+                                              StrokeStartLineCap="Round" StrokeEndLineCap="Round"
+                                              Data="M 6.5,0.5 L 6.5,2.6 M 6.5,10.4 L 6.5,12.5 M 0.5,6.5 L 2.6,6.5 M 10.4,6.5 L 12.5,6.5 M 2.3,2.3 L 3.7,3.7 M 9.3,9.3 L 10.7,10.7 M 2.3,10.7 L 3.7,9.3 M 9.3,3.7 L 10.7,2.3"/>
+                                    </Grid>
+                                    <TextBlock Text="Настройки" VerticalAlignment="Center"/>
+                                </StackPanel>
+                            </Button>
+                        </StackPanel>
+                    </DockPanel>
+
+                    <StackPanel x:Name="ProgressPanel" Visibility="Collapsed" VerticalAlignment="Center">
+                        <TextBlock x:Name="ProgressTitle"
+                                   Text="Подготовка"
+                                   FontSize="9.5" FontWeight="Bold"
+                                   Foreground="{StaticResource TextMuted}"
+                                   Margin="0,0,0,10"/>
+                        <TextBlock FontSize="38" FontWeight="ExtraBold"
+                                   Foreground="{StaticResource TextPrimary}"
+                                   Margin="0,0,0,12">
+                            <Run x:Name="ProgressPercent" Text="0"/>
+                            <Run Text="%" FontSize="16" Foreground="{StaticResource TextMuted}"/>
+                        </TextBlock>
+                        <Grid Margin="0,0,0,10">
+                            <Border Height="3" CornerRadius="2" Background="#1F2238" VerticalAlignment="Center"/>
+                            <Border x:Name="ProgressBar" Width="0" Height="3"
+                                    HorizontalAlignment="Left" VerticalAlignment="Center"
+                                    CornerRadius="2"
+                                    Background="{StaticResource Accent}">
+                                <Border.Effect>
+                                    <DropShadowEffect Color="{StaticResource AccentColor}"
+                                                       BlurRadius="10" ShadowDepth="0" Opacity="0.9"/>
+                                </Border.Effect>
+                            </Border>
+                        </Grid>
+                        <TextBlock x:Name="ProgressDetail"
+                                   Text=""
+                                   FontSize="10.5"
+                                   Foreground="{StaticResource TextMuted}"/>
+                    </StackPanel>
+
+                    <DockPanel x:Name="DonePanel" Visibility="Collapsed" LastChildFill="False">
+                        <StackPanel DockPanel.Dock="Top" Margin="0,26,0,0">
+                            <TextBlock Text="УСТАНОВЛЕНО"
+                                       FontSize="9.5" FontWeight="Bold"
+                                       Foreground="{StaticResource Ok}"
+                                       Margin="0,0,0,10"/>
+                            <TextBlock Text="Готово"
+                                       FontSize="34" FontWeight="ExtraBold"
+                                       Foreground="{StaticResource TextPrimary}"
+                                       Margin="0,0,0,8"/>
+                            <TextBlock Text="Лаунчер успешно установлен на ваше устройство. Приятного пользования нашим продуктом!"
+                                       TextWrapping="Wrap"
+                                       FontSize="12"
+                                       LineHeight="17"
+                                       Foreground="{StaticResource TextSecondary}"
+                                       MaxWidth="260"
+                                       HorizontalAlignment="Left"/>
+                        </StackPanel>
+                        <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" HorizontalAlignment="Left">
+                            <Button Style="{StaticResource PrimaryCta}"
+                                    Content="Запустить"
+                                    Click="OnLaunchClick"
+                                    Margin="0,0,10,0"/>
+                            <Button Style="{StaticResource SecondaryCta}"
+                                    Content="Открыть папку"
+                                    Click="OnOpenFolderClick"/>
+                        </StackPanel>
+                    </DockPanel>
+
+                    <DockPanel x:Name="UninstallPanel" Visibility="Collapsed" LastChildFill="False">
+                        <StackPanel DockPanel.Dock="Top" Margin="0,26,0,0">
+                            <TextBlock Text="УДАЛЕНИЕ"
+                                       FontSize="9.5" FontWeight="Bold"
+                                       Foreground="{StaticResource Err}"
+                                       Margin="0,0,0,10"/>
+                            <TextBlock Text="Удалить Miami Graphics?"
+                                       TextWrapping="Wrap"
+                                       FontSize="24" FontWeight="ExtraBold"
+                                       Foreground="{StaticResource TextPrimary}"
+                                       Margin="0,0,0,8"
+                                       MaxWidth="240"
+                                       HorizontalAlignment="Left"/>
+                            <TextBlock Text="Ярлыки и папка приложения будут удалены. Настройки и статистика останутся - если не отметишь ниже."
+                                       TextWrapping="Wrap"
+                                       FontSize="12"
+                                       LineHeight="17"
+                                       Foreground="{StaticResource TextSecondary}"
+                                       MaxWidth="260"
+                                       Margin="0,0,0,14"
+                                       HorizontalAlignment="Left"/>
+                            <CheckBox x:Name="WipeUserDataCheckbox"
+                                      Foreground="{StaticResource TextSecondary}"
+                                      Content="Удалить и пользовательские данные"
+                                      FontSize="11"/>
+                        </StackPanel>
+                        <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" HorizontalAlignment="Left">
+                            <Button Style="{StaticResource DangerCta}"
+                                    Content="Удалить"
+                                    Click="OnUninstallConfirm"
+                                    Margin="0,0,10,0"/>
+                            <Button Style="{StaticResource SecondaryCta}"
+                                    Content="Отмена"
+                                    Click="OnClose"/>
+                        </StackPanel>
+                    </DockPanel>
+
+                    <DockPanel x:Name="UninstallDonePanel" Visibility="Collapsed" LastChildFill="False">
+                        <StackPanel DockPanel.Dock="Top" Margin="0,26,0,0">
+                            <TextBlock Text="ГОТОВО"
+                                       FontSize="9.5" FontWeight="Bold"
+                                       Foreground="{StaticResource TextMuted}"
+                                       Margin="0,0,0,10"/>
+                            <TextBlock Text="Удалено"
+                                       FontSize="34" FontWeight="ExtraBold"
+                                       Foreground="{StaticResource TextPrimary}"
+                                       Margin="0,0,0,8"/>
+                            <TextBlock Text="Miami Graphics удалён с вашего устройства."
+                                       TextWrapping="Wrap"
+                                       FontSize="12"
+                                       LineHeight="17"
+                                       Foreground="{StaticResource TextSecondary}"
+                                       MaxWidth="260"
+                                       HorizontalAlignment="Left"/>
+                        </StackPanel>
+                        <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" HorizontalAlignment="Left">
+                            <Button Style="{StaticResource SecondaryCta}"
+                                    Content="Закрыть"
+                                    Click="OnClose"/>
+                        </StackPanel>
+                    </DockPanel>
+
+                    <DockPanel x:Name="ErrorPanel" Visibility="Collapsed" LastChildFill="False">
+                        <StackPanel DockPanel.Dock="Top" Margin="0,26,0,0">
+                            <TextBlock Text="ОШИБКА"
+                                       FontSize="9.5" FontWeight="Bold"
+                                       Foreground="{StaticResource Err}"
+                                       Margin="0,0,0,10"/>
+                            <TextBlock Text="Не удалось установить"
+                                       FontSize="22" FontWeight="ExtraBold"
+                                       Foreground="{StaticResource TextPrimary}"
+                                       Margin="0,0,0,10"
+                                       TextWrapping="Wrap"
+                                       MaxWidth="260"
+                                       HorizontalAlignment="Left"/>
+                            <TextBlock x:Name="ErrorMessage"
+                                       Text="Проверь подключение к интернету и попробуй ещё раз."
+                                       TextWrapping="Wrap"
+                                       FontSize="12"
+                                       LineHeight="17"
+                                       Foreground="{StaticResource TextSecondary}"
+                                       MaxWidth="260"
+                                       HorizontalAlignment="Left"/>
+                        </StackPanel>
+                        <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" HorizontalAlignment="Left">
+                            <Button Style="{StaticResource PrimaryCta}"
+                                    Content="Повторить"
+                                    Click="OnRetryClick"/>
+                        </StackPanel>
+                    </DockPanel>
+                </Grid>
+            </Grid>
+        </Grid>
+    </Border>
+</Window>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Miami Graphics Renderer</title>
+<style>
+  html, body { margin: 0; padding: 0; background: transparent; }
+  canvas { display: block; }
+</style>
+<script type="importmap">
+{
+  "imports": {
+    "three": "./node_modules/three/build/three.module.js",
+    "three/addons/": "./node_modules/three/examples/jsm/"
+  }
+}
+</script>
+</head>
+<body>
+<script type="module">
+import * as THREE from 'three';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+
+window.__cameraForView = function(view, center, size, distance) {
+    const V = (x, y, z) => new THREE.Vector3(x, y, z);
+    const d = distance;
+    switch (view) {
+        case 'front': return { pos: V(center.x, center.y, center.z + d), w: size.x, h: size.y };
+        case 'back':  return { pos: V(center.x, center.y, center.z - d), w: size.x, h: size.y };
+        case 'right': return { pos: V(center.x + d, center.y, center.z), w: size.z, h: size.y };
+        case 'left':  return { pos: V(center.x - d, center.y, center.z), w: size.z, h: size.y };
+        case 'fl':    return { pos: V(center.x - d * 0.72, center.y, center.z + d * 0.72), w: Math.max(size.x, size.z), h: size.y };
+        case 'fr':    return { pos: V(center.x + d * 0.72, center.y, center.z + d * 0.72), w: Math.max(size.x, size.z), h: size.y };
+        default:      return null;
+    }
+};
+
+window.renderGlb = async function(glbBase64, width, height, viewName) {
+    const binStr = atob(glbBase64);
+    const buf = new ArrayBuffer(binStr.length);
+    const view = new Uint8Array(buf);
+    for (let i = 0; i < binStr.length; i++) view[i] = binStr.charCodeAt(i);
+
+    const canvas = document.createElement('canvas');
+    canvas.width = width;
+    canvas.height = height;
+    document.body.appendChild(canvas);
+
+    const renderer = new THREE.WebGLRenderer({
+        canvas,
+        antialias: true,
+        alpha: true,
+        preserveDrawingBuffer: true
+    });
+    renderer.setSize(width, height, false);
+    renderer.setPixelRatio(1);
+    renderer.setClearColor(0x000000, 0);
+    renderer.outputColorSpace = THREE.SRGBColorSpace;
+    renderer.toneMapping = THREE.ACESFilmicToneMapping;
+    renderer.toneMappingExposure = 1.0;
+
+    const scene = new THREE.Scene();
+
+    const pmrem = new THREE.PMREMGenerator(renderer);
+    scene.environment = pmrem.fromScene(new RoomEnvironment(), 0.04).texture;
+
+    const loader = new GLTFLoader();
+    const gltf = await new Promise((resolve, reject) => {
+        loader.parse(buf, '', resolve, reject);
+    });
+    scene.add(gltf.scene);
+
+    const box = new THREE.Box3().setFromObject(gltf.scene);
+    const size = new THREE.Vector3(); box.getSize(size);
+    const center = new THREE.Vector3(); box.getCenter(center);
+    console.log(`[html] size:   x=${size.x.toFixed(3)} y=${size.y.toFixed(3)} z=${size.z.toFixed(3)}`);
+    console.log(`[html] center: x=${center.x.toFixed(3)} y=${center.y.toFixed(3)} z=${center.z.toFixed(3)}`);
+
+    const distance = Math.max(size.x, size.y, size.z) * 3.0;
+
+    let visibleW, visibleH;
+    let cameraPos;
+
+    const explicit = window.__cameraForView(viewName, center, size, distance);
+    if (explicit) {
+        console.log(`[html] view: ${viewName}`);
+        cameraPos = explicit.pos;
+        visibleW = explicit.w;
+        visibleH = explicit.h;
+    } else {
+        const longAxis = (size.x >= size.z) ? 'X' : 'Z';
+        console.log(`[html] long axis: ${longAxis}`);
+        if (longAxis === 'X') {
+            cameraPos = new THREE.Vector3(center.x, center.y, center.z + distance);
+            visibleW = size.x;
+            visibleH = size.y;
+        } else {
+            cameraPos = new THREE.Vector3(center.x + distance, center.y, center.z);
+            visibleW = size.z;
+            visibleH = size.y;
+        }
+    }
+
+    const aspect = width / height;
+    const orthoW = Math.max(visibleW, visibleH * aspect) * 1.1;
+    const orthoH = orthoW / aspect;
+
+    const camera = new THREE.OrthographicCamera(
+        -orthoW / 2, orthoW / 2,
+         orthoH / 2, -orthoH / 2,
+        0.001, distance * 10
+    );
+    camera.position.copy(cameraPos);
+    camera.up.set(0, 1, 0);
+    camera.lookAt(center);
+
+    console.log(`[html] camera: x=${camera.position.x.toFixed(3)} y=${camera.position.y.toFixed(3)} z=${camera.position.z.toFixed(3)}`);
+    console.log(`[html] ortho:  ${orthoW.toFixed(3)} x ${orthoH.toFixed(3)}`);
+
+    scene.add(new THREE.AmbientLight(0xffffff, 0.3));
+
+    const keyDist = Math.max(size.x, size.y, size.z);
+    const key = new THREE.DirectionalLight(0xffffff, 1.5);
+    key.position.set(center.x + keyDist, center.y + keyDist, center.z + keyDist);
+    scene.add(key);
+
+    const fill = new THREE.DirectionalLight(0xffffff, 0.5);
+    fill.position.set(center.x - keyDist, center.y, center.z + keyDist * 0.5);
+    scene.add(fill);
+
+    const rim = new THREE.DirectionalLight(0xffffff, 0.7);
+    rim.position.set(center.x, center.y + keyDist * 0.5, center.z - keyDist * 1.5);
+    scene.add(rim);
+
+    renderer.render(scene, camera);
+
+    const dataUrl = canvas.toDataURL('image/webp', 0.85);
+    return dataUrl;
+};
+
+window.__rendererReady = true;
+console.log('[html] renderer ready');
+</script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>ГАНПАК - редактор</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css?v=16">
+<script type="importmap">
+{
+  "imports": {
+    "three": "./vendor/three.module.js",
+    "three/addons/": "./vendor/addons/"
+  }
+}
+</script>
+</head>
+<body>
+<div id="app">
+
+  <aside id="sidebar">
+    <input id="search" placeholder="Поиск оружия" data-i18n-ph="search.placeholder" autocomplete="off">
+    <div id="packs" class="packs"></div>
+  </aside>
+
+  <nav id="rail">
+    <button class="rtool active" data-mode="orbit" title="Осмотр - вращать камеру" data-i18n-title="tool.orbit.title" data-i18n-tail="tool.orbit">
+      <svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="9" ry="4"/><path d="M12 3v18"/></svg>Осмотр</button>
+    <div class="rail-sep"></div>
+    <button class="rtool" data-mode="brush"  title="Кисть" data-i18n-title="tool.brush.title" data-i18n-tail="tool.brush">
+      <svg class="ic" viewBox="0 0 24 24"><path d="M9.5 14.5 3 21l6.5-1.5"/><path d="m14 10-4 4"/><path d="M20.4 3.6a2 2 0 0 0-2.8 0l-7.2 7.2 3.2 3.2 7.2-7.2a2 2 0 0 0 0-2.8z"/></svg>Кисть</button>
+    <button class="rtool" data-mode="eraser" title="Ластик - вернуть оригинал" data-i18n-title="tool.eraser.title" data-i18n-tail="tool.eraser">
+      <svg class="ic" viewBox="0 0 24 24"><path d="m7 21-4-4a2 2 0 0 1 0-2.8l9.2-9.2a2 2 0 0 1 2.8 0l4.8 4.8a2 2 0 0 1 0 2.8L13 21z"/><path d="M21 21H7"/><path d="m9 11 5 5"/></svg>Ластик</button>
+    <button class="rtool" data-mode="fill"   title="Заливка области" data-i18n-title="tool.fill.title" data-i18n-tail="tool.fill.short">
+      <svg class="ic" viewBox="0 0 24 24"><path d="M9 3 3.5 8.5a2 2 0 0 0 0 2.8l6.2 6.2a2 2 0 0 0 2.8 0L18 12z"/><path d="M4 15h14"/><path d="M20 15c0 2-1.3 3-1.3 3s-1.3-1-1.3-3a1.3 1.3 0 0 1 2.6 0z"/></svg>Залив</button>
+    <button class="rtool" data-mode="picker" title="Пипетка - взять цвет" data-i18n-title="tool.picker.title" data-i18n-tail="tool.picker">
+      <svg class="ic" viewBox="0 0 24 24"><path d="m12 9 3 3"/><path d="M18.5 2.5a2.1 2.1 0 0 1 3 3L14 13l-3-3z"/><path d="M11 10 4 17a2 2 0 0 0 0 3 2 2 0 0 0 3 0l7-7"/></svg>Пипетка</button>
+    <button class="rtool" data-mode="alpha"  title="Прозрачность - протереть до дыры" data-i18n-title="tool.alpha.title" data-i18n-tail="tool.alpha.short">
+      <svg class="ic" viewBox="0 0 24 24"><path d="M12 2.7 6.5 9.4a7 7 0 1 0 11 0z"/></svg>Прозр.</button>
+    <button class="rtool" data-mode="glass"  title="Стекло - прозрачный тонированный эффект" data-i18n-title="tool.glass.title" data-i18n-tail="tool.glass">
+      <svg class="ic" viewBox="0 0 24 24"><path d="m12 2 8 6-8 14L4 8z"/><path d="M4 8h16"/><path d="m12 2-3 6 3 14 3-14z"/></svg>Стекло</button>
+    <div class="rail-sep"></div>
+    <button class="rtool" data-mode="sticker" title="Наклейка - картинка/PNG на ган" data-i18n-title="tool.sticker.title" data-i18n-tail="tool.sticker.short">
+      <svg class="ic" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>Накл.</button>
+    <button class="rtool" data-mode="text"   title="Текст на ган" data-i18n-title="tool.text.title" data-i18n-tail="tool.text">
+      <svg class="ic" viewBox="0 0 24 24"><path d="M4 20 12 4l8 16"/><path d="M7.5 14h9"/></svg>Текст</button>
+    <button class="rtool" data-mode="shape"  title="Фигуры - линия, прямоугольник, круг, треугольник" data-i18n-title="tool.shape.title" data-i18n-tail="tool.shape">
+      <svg class="ic" viewBox="0 0 24 24"><rect x="3" y="3" width="10" height="10" rx="1"/><circle cx="16.5" cy="16.5" r="4.5"/><path d="M3 21 9 15"/></svg>Фигуры</button>
+    <div class="rail-sep"></div>
+    <button class="rtool" data-mode="attach" title="Прицепить пластинку 3D (эксперимент)" data-i18n-title="tool.attach.title">
+      <svg class="ic" viewBox="0 0 24 24"><path d="m21 12-9 5-9-5"/><path d="m21 17-9 5-9-5"/><path d="m12 2 9 5-9 5-9-5z"/></svg>3D</button>
+    <button class="rtool" data-mode="anim"   title="Анимированная деталь - бегущая текстура / качание / вращение" data-i18n-title="tool.anim.title" data-i18n-tail="tool.anim.short">
+      <svg class="ic" viewBox="0 0 24 24"><path d="m12 3 1.9 4.6L18.5 9.5l-4.6 1.9L12 16l-1.9-4.6L5.5 9.5l4.6-1.9z"/><path d="M18.5 15.5 19.4 18l2.5.9-2.5.9-.9 2.5-.9-2.5-2.5-.9 2.5-.9z"/></svg>Аним</button>
+  </nav>
+
+  <main id="viewport">
+    <div id="canvas3d-wrap">
+      <canvas id="canvas3d"></canvas>
+      <div id="brushRing" hidden></div>
+      <div id="dropHint" data-i18n="viewport.dropHint">← выберите ган</div>
+
+      <div id="histbar">
+        <button id="btnUndoBig" class="hist-btn" title="Отменить (Ctrl+Z)" data-i18n-title="hist.undo.title" aria-label="Отменить" data-i18n-aria="hist.undo" disabled>
+          <svg class="ic" viewBox="0 0 24 24"><path d="M9 14 4 9l5-5"/><path d="M4 9h11a5 5 0 0 1 0 10h-4"/></svg></button>
+        <button id="btnRedoBig" class="hist-btn" title="Вернуть (Ctrl+Y)" data-i18n-title="hist.redo.title" aria-label="Вернуть" data-i18n-aria="hist.redo" disabled>
+          <svg class="ic" viewBox="0 0 24 24"><path d="m15 14 5-5-5-5"/><path d="M20 9H9a5 5 0 0 0 0 10h4"/></svg></button>
+      </div>
+      <div id="spinner" hidden></div>
+
+      <div id="hud" hidden>
+        <div class="hud-title"><span id="hudName" data-i18n="tool.sticker">Наклейка</span>
+          <button id="hudDel" title="Удалить (Del)" data-i18n-title="hud.del.title" aria-label="Удалить" data-i18n-aria="hud.del">
+            <svg class="ic" viewBox="0 0 24 24"><path d="M3 6h18"/><path d="M8 6V4h8v2"/><path d="M6 6v14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V6"/><path d="M10 11v6M14 11v6"/></svg></button></div>
+        <label data-i18n-head="field.size">Размер<input type="range" id="hudScale" min="10" max="600" value="100"><input type="number" class="num" id="hudScaleN" min="10" max="600" value="100"></label>
+        <label data-i18n-head="field.rot">Поворот<input type="range" id="hudRot" min="-180" max="180" value="0"><input type="number" class="num" id="hudRotN" min="-180" max="180" value="0"></label>
+        <label data-i18n-head="field.opacity.short">Прозр.<input type="range" id="hudOpacity" min="5" max="100" value="100"><input type="number" class="num" id="hudOpacityN" min="5" max="100" value="100"></label>
+        <div class="hud-row"><span class="hud-hint" data-i18n="hud.hint">тащи по гану, размер - ползунком</span><button id="hudDone" class="btn primary" data-i18n="hud.done">Готово</button></div>
+      </div>
+
+      <div id="hud3d" hidden>
+        <div class="hud-title"><span id="hud3dName" data-i18n="tool.attach">3D-модель</span>
+          <button id="hud3dDel" title="Убрать превью" data-i18n-title="hud3d.del" aria-label="Убрать превью" data-i18n-aria="hud3d.del">
+            <svg class="ic" viewBox="0 0 24 24"><path d="M3 6h18"/><path d="M8 6V4h8v2"/><path d="M6 6v14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V6"/><path d="M10 11v6M14 11v6"/></svg></button></div>
+        <div id="hud3dRows"></div>
+        <div class="hud-row"><span class="hud-hint" data-i18n="hud3d.hint">тащи модель по гану</span><button id="hud3dApply" class="btn primary" data-i18n="hud3d.apply">Применить (вшить)</button></div>
+      </div>
+    </div>
+    <div id="statusbar">
+      <span id="status" data-i18n="status.ready">готов</span>
+      <span id="gunLabel"></span>
+    </div>
+  </main>
+
+  <aside id="rightbar">
+
+    <section id="opts" class="card">
+      <div class="card-h" id="optsTitle" data-i18n="opts.title">Инструмент</div>
+      <div id="optsBody"></div>
+    </section>
+
+    <section class="card">
+      <div class="card-h" data-i18n-head="card.layers">Слои <span class="muted" data-i18n="card.layers.hint">верхний = сверху</span></div>
+      <div id="layerList" class="layer-list"></div>
+    </section>
+
+    <section class="card">
+      <div class="card-h" data-i18n-head="card.textures">Текстуры <span id="texCount" class="muted"></span></div>
+      <div id="texList" class="tex-list"></div>
+    </section>
+
+    <section class="card">
+      <div class="card-h" data-i18n-head="card.uv">Развёртка <label class="mini"><input type="checkbox" id="uvOverlay"> UV</label></div>
+      <div id="tex2d-wrap"><canvas id="tex2d" width="256" height="256"></canvas></div>
+    </section>
+
+    <div class="actions">
+      <button id="btnResetTex" data-i18n-tail="btn.resetTex">
+        <svg class="ic" viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg>Сброс текстуры</button>
+      <button id="btnReset" data-i18n-tail="btn.resetGun" disabled>
+        <svg class="ic" viewBox="0 0 24 24"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg>Сброс гана</button>
+      <button id="btnSlots" data-i18n-tail="btn.myGuns">
+        <svg class="ic" viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>Мои ганы</button>
+      <button id="btnApply" data-i18n-tail="btn.applyGame" disabled>
+        <svg class="ic" viewBox="0 0 24 24"><path d="M6 11h4M8 9v4M15 12h.01M18 10h.01"/><rect x="2" y="6" width="20" height="12" rx="4"/></svg>Применить в игру</button>
+      <button id="btnSave" data-i18n-tail="btn.save" disabled class="primary">
+        <svg class="ic" viewBox="0 0 24 24"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><path d="M17 21v-8H7v8M7 3v5h8"/></svg>Сохранить</button>
+      <button id="btnFlowDone" class="primary" data-i18n-tail="btn.saveToPack" style="display:none">
+        <svg class="ic" viewBox="0 0 24 24"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><path d="M17 21v-8H7v8M7 3v5h8"/></svg>Сохранить в ганпак</button>
+    </div>
+    <div id="log"></div>
+  </aside>
+</div>
+<script src="i18n.js?v=1"></script>
+<script type="module" src="app.js?v=23"></script>
+</body>
+</html>

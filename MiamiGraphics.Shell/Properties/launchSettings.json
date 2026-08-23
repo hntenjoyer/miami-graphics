@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "HunterGraphics.Shell": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "HG_DEV": "1"
+      }
+    }
+  }
+}

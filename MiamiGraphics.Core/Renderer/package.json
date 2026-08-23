@@ -1,0 +1,14 @@
+{
+  "name": "hntgraph-renderer",
+  "version": "1.0.0",
+  "description": "GLB → PNG renderer for HunterGraphics.Core (Three.js + Puppeteer headless Chromium).",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "render": "node render.js"
+  },
+  "dependencies": {
+    "puppeteer": "^23.10.4",
+    "three": "^0.169.0"
+  }
+}

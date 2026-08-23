@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net8.0-windows</TargetFramework>
+		<UseWPF>true</UseWPF>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<RootNamespace>MiamiGraphics.Installer</RootNamespace>
+		<AssemblyName>Miami Setup</AssemblyName>
+		<ApplicationIcon>Assets\icon.ico</ApplicationIcon>
+		<ApplicationManifest>app.manifest</ApplicationManifest>
+
+		<Version>1.5.5</Version>
+		<AssemblyVersion>1.5.5.0</AssemblyVersion>
+		<FileVersion>1.5.5.0</FileVersion>
+		<InformationalVersion>1.5.5</InformationalVersion>
+		<Company>Miami Graphics</Company>
+		<Product>Miami Graphics</Product>
+		<Authors>Miami Graphics</Authors>
+		<AssemblyTitle>Miami Setup</AssemblyTitle>
+		<Description>Miami Graphics Setup - лаунчер графических модов для GTA 5.</Description>
+		<Copyright>© 2026 Miami Graphics</Copyright>
+		<NeutralLanguage>ru-RU</NeutralLanguage>
+
+		<PublishSingleFile>true</PublishSingleFile>
+		<SelfContained>true</SelfContained>
+		<RuntimeIdentifier>win-x64</RuntimeIdentifier>
+		<IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+		<EnableCompressionInSingleFile>false</EnableCompressionInSingleFile>
+		<DebugType>embedded</DebugType>
+
+		<ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Update="Assets\icon.ico">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<Resource Include="Assets\logo.png" />
+	</ItemGroup>
+
+</Project>

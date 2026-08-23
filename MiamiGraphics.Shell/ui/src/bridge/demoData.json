@@ -1,0 +1,3999 @@
+{
+  "reduxes": [
+    {
+      "id": "kukanka_redux",
+      "name": "Kukanka Redux",
+      "author": "Blxgo",
+      "authorLink": "",
+      "description": "Редукса клана куканки у нексти узкие глаза\nпропускает он в туза\nон про мам читает строчки\nпуки каки в его дочке \n/\\\nу нексти жопа как арбуз\nему вчера порвали туз\nон коллит так что слезы льются\nтридцатка мейна в пять убьются",
+      "videoUrl": "",
+      "previewUrl": "https://i.ytimg.com/vi/RheoFvSLJkQ/maxresdefault.jpg",
+      "galleryUrls": [],
+      "r2Urls": null,
+      "patchSizeBytes": 230506753,
+      "targetGtaVersion": "1.0.3258.0",
+      "supportedServers": [
+        "majestic",
+        "gta5rp"
+      ],
+      "isVerified": true,
+      "components": {
+        "arena": {
+          "flags": [
+            "transferable",
+            "marker:sp1_10_brand_01_wip_dontdelq.ydr",
+            "marker:sp1_10_details5.ydr",
+            "marker:sp1_10_ground_2.ydr",
+            "marker:v_62_bannersx.ydr",
+            "marker:v_62_blinds.ydr"
+          ],
+          "is_found": true,
+          "source_rpf": "x64/knk/arena.rpf",
+          "internal_paths": [
+            "x64/knk/arena.rpf"
+          ]
+        },
+        "bloodfx": {
+          "flags": [
+            "importable",
+            "replaceable"
+          ],
+          "is_found": true,
+          "source_rpf": "update.rpf / filesToEnable",
+          "internal_paths": [
+            "common/data/effects/bloodfx.dat"
+          ]
+        },
+        "minimap": {
+          "flags": [
+            "importable",
+            "replaceable"
+          ],
+          "is_found": true,
+          "source_rpf": "x64/patch/data/cdimages/scaleform_minimap.rpf",
+          "internal_paths": [
+            "x64/patch/data/cdimages/scaleform_minimap.rpf/minimap.gfx"
+          ]
+        },
+        "tracers": {
+          "flags": [
+            "importable",
+            "replaceable"
+          ],
+          "is_found": true,
+          "source_rpf": "x64/patch/data/effects/ptfx.rpf",
+          "internal_paths": [
+            "x64/patch/data/effects/ptfx.rpf/core.ypt"
+          ]
+        },
+        "crosshair": {
+          "flags": [
+            "importable",
+            "replaceable"
+          ],
+          "is_found": true,
+          "source_rpf": "x64/data/cdimages/scaleform_generic.rpf",
+          "internal_paths": [
+            "x64/data/cdimages/scaleform_generic.rpf/hud_reticle.gfx",
+            "x64/data/cdimages/scaleform_generic.rpf/hud_reticle.ytd"
+          ]
+        },
+        "timecycle": {
+          "flags": [
+            "importable",
+            "replaceable"
+          ],
+          "is_found": true,
+          "source_rpf": "common.rpf / direct",
+          "internal_paths": [
+            "common/data/cloudkeyframes.xml",
+            "common/data/clouds.xml",
+            "common/data/levels/gta5/weather/firefly_render_drop.xml",
+            "common/data/timecycle/timecycle_mods_1.xml",
+            "common/data/timecycle/timecycle_mods_3.xml",
+            "common/data/timecycle/timecycle_mods_4.xml",
+            "common/data/timecycle/w_blizzard.xml",
+            "common/data/timecycle/w_clear.xml",
+            "common/data/timecycle/w_clearing.xml",
+            "common/data/timecycle/w_clouds.xml",
+            "common/data/timecycle/w_extrasunny.xml",
+            "common/data/timecycle/w_foggy.xml",
+            "common/data/timecycle/w_halloween.xml",
+            "common/data/timecycle/w_neutral.xml",
+            "common/data/timecycle/w_overcast.xml",
+            "common/data/timecycle/w_rain.xml",
+            "common/data/timecycle/w_smog.xml",
+            "common/data/timecycle/w_snow.xml",
+            "common/data/timecycle/w_snowlight.xml",
+            "common/data/timecycle/w_thunder.xml",
+            "common/data/timecycle/w_xmas.xml",
+            "common/data/visualsettings.dat",
+            "common/data/timecycle/underwater_deep.xml"
+          ]
+        }
+      },
+      "uploadedAt": "2025-01-01T00:00:00Z",
+      "uploadedBy": "demo",
+      "status": "published",
+      "viewerPriority": 11,
+      "downloadCount": 11,
+      "tagNew": true,
+      "tagBest": true,
+      "armorStandaloneInstallHidden": false,
+      "componentScreenshots": {}
+    },
+    {
+      "id": "allegri_v3",
+      "name": "Allegri V3",
+      "author": "Allegri Famq",
+      "authorLink": "",
+      "description": "",
+      "videoUrl": "",
+      "previewUrl": "https://i.ytimg.com/vi/ZpKjP-jxJfk/maxresdefault.jpg",
+      "galleryUrls": [],
+      "r2Urls": null,
+      "patchSizeBytes": 295154763,
+      "targetGtaVersion": "1.0.3258.0",
+      "supportedServers": [
+        "majestic"
+      ],
+      "isVerified": false,
+      "components": {
+        "arena": {
+          "flags": [
+            "transferable",
+            "marker:sp1_10_brand_01_wip_dontdelq.ydr",
+            "marker:sp1_10_details5.ydr",
+            "marker:sp1_10_ground_2.ydr",
+            "marker:v_62_bannersx.ydr",
+            "marker:v_62_blinds.ydr"
+          ],
+          "is_found": true,
+          "source_rpf": "allegri/arena.rpf",
+          "internal_paths": [
+            "allegri/arena.rpf"
+          ]
+        },
+        "armor": {
+          "flags": [
+            "transferable",
+            "clearable",
+            "marker:task_011_u.ydd"
+          ],
+          "is_found": true,
+          "source_rpf": "allegri/armor.rpf",
+          "internal_paths": [
+            "allegri/armor.rpf"
+          ]
+        },
+        "bloodfx": {
+          "flags": [
+            "importable",
+            "replaceable"
+          ],
+          "is_found": true,
+          "source_rpf": "update.rpf / filesToEnable",
+          "internal_paths": [
+            "common/data/effects/bloodfx.dat"
+          ]
+        },
+        "minimap": {
+          "flags": [
+            "importable",
+            "replaceable"
+          ],
+          "is_found": true,
+          "source_rpf": "x64/patch/data/cdimages/scaleform_minimap.rpf",
+          "internal_paths": [
+            "x64/patch/data/cdimages/scaleform_minimap.rpf/minimap.gfx"
+          ]
+        },
+        "tracers": {
+          "flags": [
+            "importable",
+            "replaceable"
+          ],
+          "is_found": true,
+          "source_rpf": "x64/patch/data/effects/ptfx.rpf",
+          "internal_paths": [
+            "x64/patch/data/effects/ptfx.rpf/core.ypt"
+          ]
+        },
+        "crosshair": {
+          "flags": [
+            "importable",
+            "replaceable"
+          ],
+          "is_found": true,
+          "source_rpf": "x64/data/cdimages/scaleform_generic.rpf",
+          "internal_paths": [
+            "x64/data/cdimages/scaleform_generic.rpf/hud_reticle.gfx",
+            "x64/data/cdimages/scaleform_generic.rpf/hud_reticle.ytd"
+          ]
+        },
+        "timecycle": {
+          "flags": [
+            "importable",
+            "replaceable"
+          ],
+          "is_found": true,
+          "source_rpf": "common.rpf / direct",
+          "internal_paths": [
+            "common/data/cloudkeyframes.xml",
+            "common/data/clouds.xml",
+            "common/data/levels/gta5/weather/firefly_render_drop.xml",
+            "common/data/timecycle/timecycle_mods_1.xml",
+            "common/data/timecycle/timecycle_mods_3.xml",
+            "common/data/timecycle/timecycle_mods_4.xml",
+            "common/data/timecycle/w_blizzard.xml",
+            "common/data/timecycle/w_clear.xml",
+            "common/data/timecycle/w_clearing.xml",
+            "common/data/timecycle/w_clouds.xml",
+            "common/data/timecycle/w_extrasunny.xml",
+            "common/data/timecycle/w_foggy.xml",
+            "common/data/timecycle/w_halloween.xml",
+            "common/data/timecycle/w_neutral.xml",
+            "common/data/timecycle/w_overcast.xml",
+            "common/data/timecycle/w_rain.xml",
+            "common/data/timecycle/w_rainhalloween.xml",
+            "common/data/timecycle/w_smog.xml",
+            "common/data/timecycle/w_snow.xml",
+            "common/data/timecycle/w_snowlight.xml",
+            "common/data/timecycle/w_thunder.xml",
+            "common/data/timecycle/w_xmas.xml",
+            "common/data/visualsettings.dat"
+          ]
+        }
+      },
+      "uploadedAt": "2025-01-01T00:00:00Z",
+      "uploadedBy": "demo",
+      "status": "published",
+      "viewerPriority": 4,
+      "downloadCount": 4,
+      "tagNew": false,
+      "tagBest": false,
+      "armorStandaloneInstallHidden": false,
+      "componentScreenshots": {}
+    },
+    {
+      "id": "zombie",
+      "name": "Zombie",
+      "author": "sky",
+      "authorLink": "",
+      "description": "",
+      "videoUrl": "",
+      "previewUrl": "https://i.ytimg.com/vi/0QcexWokTKk/maxresdefault.jpg",
+      "galleryUrls": [],
+      "r2Urls": null,
+      "patchSizeBytes": 131679300,
+      "targetGtaVersion": "1.0.3258.0",
+      "supportedServers": [
+        "majestic"
+      ],
+      "isVerified": true,
+      "components": {
+        "arena": {
+          "flags": [
+            "transferable",
+            "marker:sp1_10_brand_01_wip_dontdelq.ydr",
+            "marker:sp1_10_details5.ydr",
+            "marker:sp1_10_ground_2.ydr",
+            "marker:v_62_blinds.ydr"
+          ],
+          "is_found": true,
+          "source_rpf": "zombie/zombie_arena.rpf",
+          "internal_paths": [
+            "zombie/zombie_arena.rpf"
+          ]
+        },
+        "bloodfx": {
+          "flags": [
+            "importable",
+            "replaceable"
+          ],
+          "is_found": true,
+          "source_rpf": "update.rpf / filesToEnable",
+          "internal_paths": [
+            "common/data/effects/bloodfx.dat"
+          ]
+        },
+        "minimap": {
+          "flags": [
+            "importable",
+            "replaceable"
+          ],
+          "is_found": true,
+          "source_rpf": "zombie/zombie_core.rpf",
+          "internal_paths": [
+            "zombie/zombie_core.rpf/minimap.gfx"
+          ]
+        },
+        "tracers": {
+          "flags": [
+            "importable",
+            "replaceable"
+          ],
+          "is_found": true,
+          "source_rpf": "zombie/zombie_core.rpf",
+          "internal_paths": [
+            "zombie/zombie_core.rpf/core.ypt"
+          ]
+        },
+        "crosshair": {
+          "flags": [
+            "importable",
+            "replaceable"
+          ],
+          "is_found": true,
+          "source_rpf": "zombie/zombie_core.rpf",
+          "internal_paths": [
+            "zombie/zombie_core.rpf/hud_reticle.gfx"
+          ]
+        },
+        "timecycle": {
+          "flags": [
+            "importable",
+            "replaceable"
+          ],
+          "is_found": true,
+          "source_rpf": "common.rpf / direct",
+          "internal_paths": [
+            "common/data/cloudkeyframes.xml",
+            "common/data/clouds.xml",
+            "common/data/levels/gta5/weather/firefly_render_drop.xml",
+            "common/data/timecycle/timecycle_mods_1.xml",
+            "common/data/timecycle/timecycle_mods_3.xml",
+            "common/data/timecycle/timecycle_mods_4.xml",
+            "common/data/timecycle/w_blizzard.xml",
+            "common/data/timecycle/w_clear.xml",
+            "common/data/timecycle/w_clearing.xml",
+            "common/data/timecycle/w_clouds.xml",
+            "common/data/timecycle/w_extrasunny.xml",
+            "common/data/timecycle/w_foggy.xml",
+            "common/data/timecycle/w_halloween.xml",
+            "common/data/timecycle/w_neutral.xml",
+            "common/data/timecycle/w_overcast.xml",
+            "common/data/timecycle/w_rain.xml",
+            "common/data/timecycle/w_rainhalloween.xml",
+            "common/data/timecycle/w_smog.xml",
+            "common/data/timecycle/w_snow.xml",
+            "common/data/timecycle/w_snowlight.xml",
+            "common/data/timecycle/w_thunder.xml",
+            "common/data/timecycle/w_xmas.xml",
+            "common/data/visualsettings.dat"
+          ]
+        }
+      },
+      "uploadedAt": "2025-01-01T00:00:00Z",
+      "uploadedBy": "demo",
+      "status": "published",
+      "viewerPriority": 4,
+      "downloadCount": 4,
+      "tagNew": false,
+      "tagBest": false,
+      "armorStandaloneInstallHidden": false,
+      "componentScreenshots": {}
+    },
+    {
+      "id": "gucci_v2",
+      "name": "Gucci V2",
+      "author": "Gucci Famq",
+      "authorLink": "",
+      "description": "",
+      "videoUrl": "",
+      "previewUrl": "https://example.supabase.co/storage/v1/object/public/mods/uploads/1770398715417_vwszu.png",
+      "galleryUrls": [],
+      "r2Urls": null,
+      "patchSizeBytes": 193071225,
+      "targetGtaVersion": "1.0.3258.0",
+      "supportedServers": [
+        "majestic",
+        "gta5rp"
+      ],
+      "isVerified": false,
+      "components": {
+        "arena": {
+          "flags": [
+            "transferable",
+            "marker:sp1_10_brand_01_wip_dontdelq.ydr",
+            "marker:sp1_10_ground_2.ydr",
+            "marker:v_62_bannersx.ydr",
+            "marker:v_62_blinds.ydr"
+          ],
+          "is_found": true,
+          "source_rpf": "gucci_component/gucciredux_v2.rpf",
+          "internal_paths": [
+            "gucci_component/gucciredux_v2.rpf"
+          ]
+        },
+        "armor": {
+          "flags": [
+            "transferable",
+            "clearable",
+            "marker:task_011_u.ydd"
+          ],
+          "is_found": true,
+          "source_rpf": "gucci_component/gucci_armour.rpf",
+          "internal_paths": [
+            "gucci_component/gucci_armour.rpf"
+          ]
+        },
+        "bloodfx": {
+          "flags": [
+            "importable",
+            "replaceable"
+          ],
+          "is_found": true,
+          "source_rpf": "update.rpf / filesToEnable",
+          "internal_paths": [
+            "common/data/effects/bloodfx.dat"
+          ]
+        },
+        "minimap": {
+          "flags": [
+            "importable",
+            "replaceable"
+          ],
+          "is_found": true,
+          "source_rpf": "x64/patch/data/cdimages/scaleform_minimap.rpf",
+          "internal_paths": [
+            "x64/patch/data/cdimages/scaleform_minimap.rpf/minimap.gfx"
+          ]
+        },
+        "tracers": {
+          "flags": [
+            "importable",
+            "replaceable"
+          ],
+          "is_found": true,
+          "source_rpf": "x64/patch/data/effects/ptfx.rpf",
+          "internal_paths": [
+            "x64/patch/data/effects/ptfx.rpf/core.ypt"
+          ]
+        },
+        "crosshair": {
+          "flags": [
+            "importable",
+            "replaceable"
+          ],
+          "is_found": true,
+          "source_rpf": "gucci_component/gucci_hud_reticle.rpf",
+          "internal_paths": [
+            "gucci_component/gucci_hud_reticle.rpf/hud_reticle.gfx"
+          ]
+        },
+        "timecycle": {
+          "flags": [
+            "importable",
+            "replaceable"
+          ],
+          "is_found": true,
+          "source_rpf": "common.rpf / direct",
+          "internal_paths": [
+            "common/data/cloudkeyframes.xml",
+            "common/data/clouds.xml",
+            "common/data/levels/gta5/weather/firefly_render_drop.xml",
+            "common/data/timecycle/timecycle_mods_1.xml",
+            "common/data/timecycle/timecycle_mods_2.xml",
+            "common/data/timecycle/timecycle_mods_3.xml",
+            "common/data/timecycle/timecycle_mods_4.xml",
+            "common/data/timecycle/w_blizzard.xml",
+            "common/data/timecycle/w_clear.xml",
+            "common/data/timecycle/w_clearing.xml",
+            "common/data/timecycle/w_clouds.xml",
+            "common/data/timecycle/w_extrasunny.xml",
+            "common/data/timecycle/w_foggy.xml",
+            "common/data/timecycle/w_halloween.xml",
+            "common/data/timecycle/w_neutral.xml",
+            "common/data/timecycle/w_overcast.xml",
+            "common/data/timecycle/w_rain.xml",
+            "common/data/timecycle/w_rainhalloween.xml",
+            "common/data/timecycle/w_smog.xml",
+            "common/data/timecycle/w_snow.xml",
+            "common/data/timecycle/w_snowhalloween.xml",
+            "common/data/timecycle/w_snowlight.xml",
+            "common/data/timecycle/w_thunder.xml",
+            "common/data/timecycle/w_xmas.xml",
+            "common/data/visualsettings.dat"
+          ]
+        }
+      },
+      "uploadedAt": "2025-01-01T00:00:00Z",
+      "uploadedBy": "demo",
+      "status": "published",
+      "viewerPriority": 3,
+      "downloadCount": 3,
+      "tagNew": false,
+      "tagBest": false,
+      "armorStandaloneInstallHidden": false,
+      "componentScreenshots": {}
+    },
+    {
+      "id": "neverexisted",
+      "name": "NEVEREXISTED",
+      "author": "maiki",
+      "authorLink": "",
+      "description": "",
+      "videoUrl": "",
+      "previewUrl": "https://i.ytimg.com/vi/xAjRkpt4BrU/maxresdefault.jpg",
+      "galleryUrls": [],
+      "r2Urls": null,
+      "patchSizeBytes": 349795321,
+      "targetGtaVersion": "1.0.3258.0",
+      "supportedServers": [
+        "majestic"
+      ],
+      "isVerified": false,
+      "components": {
+        "arena": {
+          "flags": [
+            "transferable",
+            "marker:sp1_10_brand_01_wip_dontdelq.ydr",
+            "marker:sp1_10_details5.ydr",
+            "marker:v_62_bannersx.ydr"
+          ],
+          "is_found": true,
+          "source_rpf": "x64/podnebesie/arena.rpf",
+          "internal_paths": [
+            "x64/podnebesie/arena.rpf"
+          ]
+        },
+        "armor": {
+          "flags": [
+            "transferable",
+            "clearable",
+            "marker:task_011_u.ydd"
+          ],
+          "is_found": true,
+          "source_rpf": "x64/podnebesie/armour.rpf",
+          "internal_paths": [
+            "x64/podnebesie/armour.rpf"
+          ]
+        },
+        "bloodfx": {
+          "flags": [
+            "importable",
+            "replaceable"
+          ],
+          "is_found": true,
+          "source_rpf": "update.rpf / filesToEnable",
+          "internal_paths": [
+            "common/data/effects/bloodfx.dat"
+          ]
+        },
+        "minimap": {
+          "flags": [
+            "importable",
+            "replaceable"
+          ],
+          "is_found": true,
+          "source_rpf": "x64/patch/data/cdimages/scaleform_minimap.rpf",
+          "internal_paths": [
+            "x64/patch/data/cdimages/scaleform_minimap.rpf/minimap.gfx"
+          ]
+        },
+        "tracers": {
+          "flags": [
+            "importable",
+            "replaceable"
+          ],
+          "is_found": true,
+          "source_rpf": "x64/podnebesie/podnebesie.rpf",
+          "internal_paths": [
+            "x64/podnebesie/podnebesie.rpf/core.ypt"
+          ]
+        },
+        "crosshair": {
+          "flags": [
+            "importable",
+            "replaceable"
+          ],
+          "is_found": true,
+          "source_rpf": "x64/data/cdimages/scaleform_generic.rpf",
+          "internal_paths": [
+            "x64/data/cdimages/scaleform_generic.rpf/hud_reticle.gfx",
+            "x64/data/cdimages/scaleform_generic.rpf/hud_reticle.ytd"
+          ]
+        },
+        "timecycle": {
+          "flags": [
+            "importable",
+            "replaceable"
+          ],
+          "is_found": true,
+          "source_rpf": "common.rpf / direct",
+          "internal_paths": [
+            "common/data/cloudkeyframes.xml",
+            "common/data/clouds.xml",
+            "common/data/levels/gta5/weather/firefly_render_drop.xml",
+            "common/data/timecycle/timecycle_mods_1.xml",
+            "common/data/timecycle/timecycle_mods_2.xml",
+            "common/data/timecycle/timecycle_mods_3.xml",
+            "common/data/timecycle/timecycle_mods_4.xml",
+            "common/data/timecycle/w_blizzard.xml",
+            "common/data/timecycle/w_clear.xml",
+            "common/data/timecycle/w_clearing.xml",
+            "common/data/timecycle/w_clouds.xml",
+            "common/data/timecycle/w_extrasunny.xml",
+            "common/data/timecycle/w_foggy.xml",
+            "common/data/timecycle/w_halloween.xml",
+            "common/data/timecycle/w_neutral.xml",
+            "common/data/timecycle/w_overcast.xml",
+            "common/data/timecycle/w_rain.xml",
+            "common/data/timecycle/w_smog.xml",
+            "common/data/timecycle/w_snow.xml",
+            "common/data/timecycle/w_snowlight.xml",
+            "common/data/timecycle/w_thunder.xml",
+            "common/data/timecycle/w_xmas.xml",
+            "common/data/visualsettings.dat"
+          ]
+        }
+      },
+      "uploadedAt": "2025-01-01T00:00:00Z",
+      "uploadedBy": "demo",
+      "status": "published",
+      "viewerPriority": 3,
+      "downloadCount": 3,
+      "tagNew": false,
+      "tagBest": false,
+      "armorStandaloneInstallHidden": false,
+      "componentScreenshots": {}
+    },
+    {
+      "id": "gucci_v3_maj",
+      "name": "Gucci V3 MAJ",
+      "author": "Gucci Famq",
+      "authorLink": "",
+      "description": "",
+      "videoUrl": "",
+      "previewUrl": "https://i.ytimg.com/vi/ZJwjCsNIWOk/maxresdefault.jpg",
+      "galleryUrls": [],
+      "r2Urls": null,
+      "patchSizeBytes": 257730255,
+      "targetGtaVersion": "1.0.3258.0",
+      "supportedServers": [
+        "majestic"
+      ],
+      "isVerified": true,
+      "components": {
+        "arena": {
+          "flags": [
+            "transferable",
+            "marker:sp1_10_brand_01_wip_dontdelq.ydr",
+            "marker:sp1_10_details5.ydr"
+          ],
+          "is_found": true,
+          "source_rpf": "x64/levels/gta5/3.rpf",
+          "internal_paths": [
+            "x64/levels/gta5/3.rpf"
+          ]
+        },
+        "bloodfx": {
+          "flags": [
+            "importable",
+            "replaceable"
+          ],
+          "is_found": true,
+          "source_rpf": "update.rpf / filesToEnable",
+          "internal_paths": [
+            "common/data/effects/bloodfx.dat"
+          ]
+        },
+        "minimap": {
+          "flags": [
+            "importable",
+            "replaceable"
+          ],
+          "is_found": true,
+          "source_rpf": "x64/patch/data/cdimages/scaleform_minimap.rpf",
+          "internal_paths": [
+            "x64/patch/data/cdimages/scaleform_minimap.rpf/minimap.gfx"
+          ]
+        },
+        "tracers": {
+          "flags": [
+            "importable",
+            "replaceable"
+          ],
+          "is_found": true,
+          "source_rpf": "x64/levels/gta5/4.rpf",
+          "internal_paths": [
+            "x64/levels/gta5/4.rpf/core.ypt"
+          ]
+        },
+        "crosshair": {
+          "flags": [
+            "importable",
+            "replaceable"
+          ],
+          "is_found": true,
+          "source_rpf": "x64/data/cdimages/scaleform_generic.rpf",
+          "internal_paths": [
+            "x64/data/cdimages/scaleform_generic.rpf/hud_reticle.gfx",
+            "x64/data/cdimages/scaleform_generic.rpf/hud_reticle.ytd"
+          ]
+        },
+        "timecycle": {
+          "flags": [
+            "importable",
+            "replaceable"
+          ],
+          "is_found": true,
+          "source_rpf": "common.rpf / direct",
+          "internal_paths": [
+            "common/data/cloudkeyframes.xml",
+            "common/data/clouds.xml",
+            "common/data/levels/gta5/weather/blizzard_emitter_drop.xml",
+            "common/data/levels/gta5/weather/blizzard_emitter_ground.xml",
+            "common/data/levels/gta5/weather/blizzard_emitter_mist.xml",
+            "common/data/levels/gta5/weather/blizzard_render_drop.xml",
+            "common/data/levels/gta5/weather/blizzard_render_ground.xml",
+            "common/data/levels/gta5/weather/blizzard_render_mist.xml",
+            "common/data/levels/gta5/weather/countryside_emitter_ground.xml",
+            "common/data/levels/gta5/weather/countryside_render_ground.xml",
+            "common/data/levels/gta5/weather/desert_emitter_ground_heavy.xml",
+            "common/data/levels/gta5/weather/desert_emitter_ground.xml",
+            "common/data/levels/gta5/weather/desert_render_ground_heavy.xml",
+            "common/data/levels/gta5/weather/desert_render_ground.xml",
+            "common/data/levels/gta5/weather/firefly_emitter_drop.xml",
+            "common/data/levels/gta5/weather/firefly_render_drop.xml",
+            "common/data/levels/gta5/weather/fly_emitter_drop.xml",
+            "common/data/levels/gta5/weather/fly_render_drop.xml",
+            "common/data/levels/gta5/weather/fog_emitter_ground.xml",
+            "common/data/levels/gta5/weather/fog_render_ground.xml",
+            "common/data/levels/gta5/weather/lake_fog_emitter_drop.xml",
+            "common/data/levels/gta5/weather/lake_fog_emitter_ground.xml",
+            "common/data/levels/gta5/weather/lake_fog_render_drop.xml",
+            "common/data/levels/gta5/weather/lake_fog_render_ground.xml",
+            "common/data/levels/gta5/weather/pollen_emitter_drop.xml",
+            "common/data/levels/gta5/weather/pollen_render_drop.xml",
+            "common/data/levels/gta5/weather/rainstorm_emitter_drop.xml",
+            "common/data/levels/gta5/weather/rainstorm_emitter_ground.xml",
+            "common/data/levels/gta5/weather/rainstorm_emitter_mist.xml",
+            "common/data/levels/gta5/weather/rainstorm_render_drop.xml",
+            "common/data/levels/gta5/weather/rainstorm_render_ground.xml",
+            "common/data/levels/gta5/weather/rainstorm_render_mist.xml",
+            "common/data/levels/gta5/weather/snowheavy_emitter_drop.xml",
+            "common/data/levels/gta5/weather/snowheavy_emitter_ground.xml",
+            "common/data/levels/gta5/weather/snowheavy_emitter_mist.xml",
+            "common/data/levels/gta5/weather/snowheavy_render_drop.xml",
+            "common/data/levels/gta5/weather/snowheavy_render_ground.xml",
+            "common/data/levels/gta5/weather/snowheavy_render_mist.xml",
+            "common/data/levels/gta5/weather/snowlight_emitter_drop.xml",
+            "common/data/levels/gta5/weather/snowlight_render_drop.xml",
+            "common/data/levels/gta5/weather/thunder_emitter_drop.xml",
+            "common/data/levels/gta5/weather/thunder_emitter_ground.xml",
+            "common/data/levels/gta5/weather/thunder_emitter_mist.xml",
+            "common/data/levels/gta5/weather/thunder_render_drop.xml",
+            "common/data/levels/gta5/weather/thunder_render_ground.xml",
+            "common/data/levels/gta5/weather/thunder_render_mist.xml",
+            "common/data/levels/gta5/weather/underwater_emitter_drop.xml",
+            "common/data/levels/gta5/weather/underwater_emitter_mist.xml",
+            "common/data/levels/gta5/weather/underwater_render_drop.xml",
+            "common/data/levels/gta5/weather/underwater_render_mist.xml",
+            "common/data/levels/gta5/weather/urban_dust_emitter_drop.xml",
+            "common/data/levels/gta5/weather/urban_dust_render_drop.xml",
+            "common/data/levels/gta5/weather/woodland_mist_emitter_ground.xml",
+            "common/data/levels/gta5/weather/woodland_mist_render_ground.xml",
+            "common/data/timecycle/timecycle_mods_1.xml",
+            "common/data/timecycle/timecycle_mods_2.xml",
+            "common/data/timecycle/timecycle_mods_3.xml",
+            "common/data/timecycle/timecycle_mods_4.xml",
+            "common/data/timecycle/underwater_deep.xml",
+            "common/data/timecycle/w_blizzard.xml",
+            "common/data/timecycle/w_clear.xml",
+            "common/data/timecycle/w_clearing.xml",
+            "common/data/timecycle/w_clouds.xml",
+            "common/data/timecycle/w_extrasunny.xml",
+            "common/data/timecycle/w_foggy.xml",
+            "common/data/timecycle/w_halloween.xml",
+            "common/data/timecycle/w_neutral.xml",
+            "common/data/timecycle/w_overcast.xml",
+            "common/data/timecycle/w_rain.xml",
+            "common/data/timecycle/w_rainhalloween.xml",
+            "common/data/timecycle/w_smog.xml",
+            "common/data/timecycle/w_snow.xml",
+            "common/data/timecycle/w_snowhalloween.xml",
+            "common/data/timecycle/w_snowlight.xml",
+            "common/data/timecycle/w_thunder.xml",
+            "common/data/timecycle/w_xmas.xml",
+            "common/data/visualsettings.dat"
+          ]
+        }
+      },
+      "uploadedAt": "2025-01-01T00:00:00Z",
+      "uploadedBy": "demo",
+      "status": "published",
+      "viewerPriority": 1,
+      "downloadCount": 1,
+      "tagNew": false,
+      "tagBest": false,
+      "armorStandaloneInstallHidden": false,
+      "componentScreenshots": {}
+    },
+    {
+      "id": "miami_redux",
+      "name": "MIAMI REDUX",
+      "author": "Miami Mods",
+      "authorLink": "",
+      "description": "",
+      "videoUrl": "",
+      "previewUrl": "https://i.ytimg.com/vi/wZdhF5oPaXM/maxresdefault.jpg",
+      "galleryUrls": [],
+      "r2Urls": null,
+      "patchSizeBytes": 253077094,
+      "targetGtaVersion": "1.0.3258.0",
+      "supportedServers": [
+        "majestic"
+      ],
+      "isVerified": true,
+      "components": {
+        "arena": {
+          "flags": [
+            "transferable",
+            "marker:sp1_10_brand_01_wip_dontdelq.ydr",
+            "marker:sp1_10_details5.ydr",
+            "marker:sp1_10_ground_2.ydr",
+            "marker:v_62_blinds.ydr"
+          ],
+          "is_found": true,
+          "source_rpf": "redux/arena_wall.rpf",
+          "internal_paths": [
+            "redux/arena_wall.rpf",
+            "redux/mirz_arena.rpf"
+          ]
+        },
+        "bloodfx": {
+          "flags": [
+            "importable",
+            "replaceable"
+          ],
+          "is_found": true,
+          "source_rpf": "update.rpf / filesToEnable",
+          "internal_paths": [
+            "common/data/effects/bloodfx.dat"
+          ]
+        },
+        "minimap": {
+          "flags": [
+            "importable",
+            "replaceable"
+          ],
+          "is_found": true,
+          "source_rpf": "redux/mirz_minimap.rpf",
+          "internal_paths": [
+            "redux/mirz_minimap.rpf/minimap.gfx"
+          ]
+        },
+        "tracers": {
+          "flags": [
+            "importable",
+            "replaceable"
+          ],
+          "is_found": true,
+          "source_rpf": "redux/mirz_core.rpf",
+          "internal_paths": [
+            "redux/mirz_core.rpf/core.ypt"
+          ]
+        },
+        "crosshair": {
+          "flags": [
+            "importable",
+            "replaceable"
+          ],
+          "is_found": true,
+          "source_rpf": "redux/mirz_core.rpf",
+          "internal_paths": [
+            "redux/mirz_core.rpf/hud_reticle.gfx"
+          ]
+        },
+        "timecycle": {
+          "flags": [
+            "importable",
+            "replaceable"
+          ],
+          "is_found": true,
+          "source_rpf": "common.rpf / direct",
+          "internal_paths": [
+            "common/data/cloudkeyframes.xml",
+            "common/data/clouds.xml",
+            "common/data/levels/gta5/weather/firefly_render_drop.xml",
+            "common/data/timecycle/timecycle_mods_1.xml",
+            "common/data/timecycle/timecycle_mods_2.xml",
+            "common/data/timecycle/timecycle_mods_3.xml",
+            "common/data/timecycle/timecycle_mods_4.xml",
+            "common/data/timecycle/underwater_deep.xml",
+            "common/data/timecycle/w_blizzard.xml",
+            "common/data/timecycle/w_clear.xml",
+            "common/data/timecycle/w_clearing.xml",
+            "common/data/timecycle/w_clouds.xml",
+            "common/data/timecycle/w_extrasunny.xml",
+            "common/data/timecycle/w_foggy.xml",
+            "common/data/timecycle/w_halloween.xml",
+            "common/data/timecycle/w_neutral.xml",
+            "common/data/timecycle/w_overcast.xml",
+            "common/data/timecycle/w_rain.xml",
+            "common/data/timecycle/w_rainhalloween.xml",
+            "common/data/timecycle/w_smog.xml",
+            "common/data/timecycle/w_snow.xml",
+            "common/data/timecycle/w_snowhalloween.xml",
+            "common/data/timecycle/w_snowlight.xml",
+            "common/data/timecycle/w_thunder.xml",
+            "common/data/timecycle/w_xmas.xml",
+            "common/data/visualsettings.dat"
+          ]
+        }
+      },
+      "uploadedAt": "2025-01-01T00:00:00Z",
+      "uploadedBy": "demo",
+      "status": "published",
+      "viewerPriority": 1,
+      "downloadCount": 1,
+      "tagNew": false,
+      "tagBest": false,
+      "armorStandaloneInstallHidden": false,
+      "componentScreenshots": {}
+    },
+    {
+      "id": "gucci_v1",
+      "name": "Gucci V1",
+      "author": "Gucci Famq",
+      "authorLink": "",
+      "description": "",
+      "videoUrl": "",
+      "previewUrl": "https://img.youtube.com/vi/BhCcUUVFUec/sddefault.jpg",
+      "galleryUrls": [],
+      "r2Urls": null,
+      "patchSizeBytes": 308551610,
+      "targetGtaVersion": "1.0.3258.0",
+      "supportedServers": [
+        "majestic"
+      ],
+      "isVerified": false,
+      "components": {
+        "arena": {
+          "flags": [
+            "transferable",
+            "marker:sp1_10_brand_01_wip_dontdelq.ydr",
+            "marker:sp1_10_ground_2.ydr",
+            "marker:v_62_bannersx.ydr",
+            "marker:v_62_blinds.ydr"
+          ],
+          "is_found": true,
+          "source_rpf": "x64/levels/gta5/generic/gucci_redux/gucciredux.rpf",
+          "internal_paths": [
+            "x64/levels/gta5/generic/gucci_redux/gucciredux.rpf"
+          ]
+        },
+        "armor": {
+          "flags": [
+            "transferable",
+            "clearable",
+            "marker:task_011_u.ydd"
+          ],
+          "is_found": true,
+          "source_rpf": "gucci_armour.rpf",
+          "internal_paths": [
+            "gucci_armour.rpf"
+          ]
+        },
+        "bloodfx": {
+          "flags": [
+            "importable",
+            "replaceable"
+          ],
+          "is_found": true,
+          "source_rpf": "update.rpf / filesToEnable",
+          "internal_paths": [
+            "common/data/effects/bloodfx.dat"
+          ]
+        },
+        "minimap": {
+          "flags": [
+            "importable",
+            "replaceable"
+          ],
+          "is_found": true,
+          "source_rpf": "gucci_minimap.rpf",
+          "internal_paths": [
+            "gucci_minimap.rpf/minimap.gfx"
+          ]
+        },
+        "tracers": {
+          "flags": [
+            "importable",
+            "replaceable"
+          ],
+          "is_found": true,
+          "source_rpf": "x64/patch/data/effects/ptfx.rpf",
+          "internal_paths": [
+            "x64/patch/data/effects/ptfx.rpf/core.ypt"
+          ]
+        },
+        "crosshair": {
+          "flags": [
+            "importable",
+            "replaceable"
+          ],
+          "is_found": true,
+          "source_rpf": "gucci_scope.rpf",
+          "internal_paths": [
+            "gucci_scope.rpf/hud_reticle.gfx"
+          ]
+        },
+        "timecycle": {
+          "flags": [
+            "importable",
+            "replaceable"
+          ],
+          "is_found": true,
+          "source_rpf": "common.rpf / direct",
+          "internal_paths": [
+            "common/data/cloudkeyframes.xml",
+            "common/data/clouds.xml",
+            "common/data/levels/gta5/weather/firefly_render_drop.xml",
+            "common/data/timecycle/timecycle_mods_1.xml",
+            "common/data/timecycle/timecycle_mods_2.xml",
+            "common/data/timecycle/timecycle_mods_3.xml",
+            "common/data/timecycle/timecycle_mods_4.xml",
+            "common/data/timecycle/underwater_deep.xml",
+            "common/data/timecycle/w_blizzard.xml",
+            "common/data/timecycle/w_clear.xml",
+            "common/data/timecycle/w_clearing.xml",
+            "common/data/timecycle/w_clouds.xml",
+            "common/data/timecycle/w_extrasunny.xml",
+            "common/data/timecycle/w_foggy.xml",
+            "common/data/timecycle/w_halloween.xml",
+            "common/data/timecycle/w_neutral.xml",
+            "common/data/timecycle/w_overcast.xml",
+            "common/data/timecycle/w_rain.xml",
+            "common/data/timecycle/w_rainhalloween.xml",
+            "common/data/timecycle/w_smog.xml",
+            "common/data/timecycle/w_snow.xml",
+            "common/data/timecycle/w_snowhalloween.xml",
+            "common/data/timecycle/w_snowlight.xml",
+            "common/data/timecycle/w_thunder.xml",
+            "common/data/timecycle/w_xmas.xml",
+            "common/data/visualsettings.dat"
+          ]
+        }
+      },
+      "uploadedAt": "2025-01-01T00:00:00Z",
+      "uploadedBy": "demo",
+      "status": "published",
+      "viewerPriority": 0,
+      "downloadCount": 0,
+      "tagNew": false,
+      "tagBest": false,
+      "armorStandaloneInstallHidden": false,
+      "componentScreenshots": {}
+    },
+    {
+      "id": "anteiku_remake",
+      "name": "Anteiku Remake",
+      "author": "Omar1kz x Neverexisted",
+      "authorLink": "",
+      "description": "",
+      "videoUrl": "",
+      "previewUrl": "https://i.ytimg.com/vi/s6lnoEY5vW0/maxresdefault.jpg",
+      "galleryUrls": [],
+      "r2Urls": null,
+      "patchSizeBytes": 226851706,
+      "targetGtaVersion": "1.0.3258.0",
+      "supportedServers": [
+        "majestic"
+      ],
+      "isVerified": false,
+      "components": {
+        "arena": {
+          "flags": [
+            "transferable",
+            "marker:sp1_10_brand_01_wip_dontdelq.ydr",
+            "marker:sp1_10_details5.ydr",
+            "marker:v_62_bannersx.ydr",
+            "marker:v_62_blinds.ydr"
+          ],
+          "is_found": true,
+          "source_rpf": "x64/podnebesie/arena.rpf",
+          "internal_paths": [
+            "x64/podnebesie/arena.rpf"
+          ]
+        },
+        "bloodfx": {
+          "flags": [
+            "importable",
+            "replaceable"
+          ],
+          "is_found": true,
+          "source_rpf": "update.rpf / filesToEnable",
+          "internal_paths": [
+            "common/data/effects/bloodfx.dat"
+          ]
+        },
+        "minimap": {
+          "flags": [
+            "importable",
+            "replaceable"
+          ],
+          "is_found": true,
+          "source_rpf": "x64/patch/data/cdimages/scaleform_minimap.rpf",
+          "internal_paths": [
+            "x64/patch/data/cdimages/scaleform_minimap.rpf/minimap.gfx"
+          ]
+        },
+        "tracers": {
+          "flags": [
+            "importable",
+            "replaceable"
+          ],
+          "is_found": true,
+          "source_rpf": "x64/podnebesie/podnebesie.rpf",
+          "internal_paths": [
+            "x64/podnebesie/podnebesie.rpf/core.ypt"
+          ]
+        },
+        "crosshair": {
+          "flags": [
+            "importable",
+            "replaceable"
+          ],
+          "is_found": true,
+          "source_rpf": "x64/data/cdimages/scaleform_generic.rpf",
+          "internal_paths": [
+            "x64/data/cdimages/scaleform_generic.rpf/hud_reticle.gfx",
+            "x64/data/cdimages/scaleform_generic.rpf/hud_reticle.ytd"
+          ]
+        },
+        "timecycle": {
+          "flags": [
+            "importable",
+            "replaceable"
+          ],
+          "is_found": true,
+          "source_rpf": "common.rpf / direct",
+          "internal_paths": [
+            "common/data/cloudkeyframes.xml",
+            "common/data/clouds.xml",
+            "common/data/levels/gta5/weather/firefly_render_drop.xml",
+            "common/data/timecycle/timecycle_mods_1.xml",
+            "common/data/timecycle/timecycle_mods_2.xml",
+            "common/data/timecycle/timecycle_mods_3.xml",
+            "common/data/timecycle/timecycle_mods_4.xml",
+            "common/data/timecycle/underwater_deep.xml",
+            "common/data/timecycle/w_blizzard.xml",
+            "common/data/timecycle/w_clear.xml",
+            "common/data/timecycle/w_clearing.xml",
+            "common/data/timecycle/w_clouds.xml",
+            "common/data/timecycle/w_extrasunny.xml",
+            "common/data/timecycle/w_foggy.xml",
+            "common/data/timecycle/w_halloween.xml",
+            "common/data/timecycle/w_neutral.xml",
+            "common/data/timecycle/w_overcast.xml",
+            "common/data/timecycle/w_rain.xml",
+            "common/data/timecycle/w_rainhalloween.xml",
+            "common/data/timecycle/w_smog.xml",
+            "common/data/timecycle/w_snow.xml",
+            "common/data/timecycle/w_snowhalloween.xml",
+            "common/data/timecycle/w_snowlight.xml",
+            "common/data/timecycle/w_thunder.xml",
+            "common/data/timecycle/w_xmas.xml",
+            "common/data/visualsettings.dat"
+          ]
+        }
+      },
+      "uploadedAt": "2025-01-01T00:00:00Z",
+      "uploadedBy": "demo",
+      "status": "published",
+      "viewerPriority": 0,
+      "downloadCount": 0,
+      "tagNew": false,
+      "tagBest": false,
+      "armorStandaloneInstallHidden": false,
+      "componentScreenshots": {}
+    }
+  ],
+  "gunpacks": [
+    {
+      "id": "0bb3b8e1-07cf-41a1-aa52-4dd2948bd78b",
+      "name": "TREEPSIZE",
+      "author": null,
+      "authorLink": null,
+      "description": null,
+      "weaponsRpfUrl": "",
+      "weaponsRpfSize": 17351700,
+      "weaponsRpfSha256": "",
+      "packZipUrl": null,
+      "packZipSize": null,
+      "packZipSha256": null,
+      "manifestUrl": null,
+      "coverKind": "image",
+      "coverUrl": "https://miamigraphicsstorage.uk/gunpacks/covers/b3aed05f41a04f30a35eabd7ad3f82ad.png",
+      "galleryUrls": [],
+      "status": "published",
+      "isVerified": false,
+      "viewerPriority": 3,
+      "downloadCount": 3,
+      "uploadedAt": "2025-01-01T00:00:00Z",
+      "uploadedBy": null,
+      "updatedAt": "2025-01-01T00:00:00Z",
+      "notes": null
+    },
+    {
+      "id": "c74ec941-00b4-4609-8168-96eab52da492",
+      "name": "Gucci Dark Tiffany",
+      "author": "Gucci Famq",
+      "authorLink": null,
+      "description": null,
+      "weaponsRpfUrl": "",
+      "weaponsRpfSize": 153931590,
+      "weaponsRpfSha256": "",
+      "packZipUrl": null,
+      "packZipSize": null,
+      "packZipSha256": null,
+      "manifestUrl": null,
+      "coverKind": "image",
+      "coverUrl": "https://pub-f3641b214c164277964c1e92c826b19b.r2.dev/gunpacks/covers/c24f7d8be8394ccc9c5e2048ffd9a805.png",
+      "galleryUrls": [],
+      "status": "published",
+      "isVerified": true,
+      "viewerPriority": 2,
+      "downloadCount": 2,
+      "uploadedAt": "2025-01-01T00:00:00Z",
+      "uploadedBy": null,
+      "updatedAt": "2025-01-01T00:00:00Z",
+      "notes": null
+    },
+    {
+      "id": "d342cdda-8bc2-40ee-9ad4-f61328964669",
+      "name": "BANANA",
+      "author": null,
+      "authorLink": null,
+      "description": null,
+      "weaponsRpfUrl": "",
+      "weaponsRpfSize": 15820797,
+      "weaponsRpfSha256": "",
+      "packZipUrl": null,
+      "packZipSize": null,
+      "packZipSha256": null,
+      "manifestUrl": null,
+      "coverKind": "image",
+      "coverUrl": "https://miamigraphicsstorage.uk/gunpacks/covers/46df8f5f67224bbcb27ce2a7f9f477dc.png",
+      "galleryUrls": [],
+      "status": "published",
+      "isVerified": false,
+      "viewerPriority": 2,
+      "downloadCount": 2,
+      "uploadedAt": "2025-01-01T00:00:00Z",
+      "uploadedBy": null,
+      "updatedAt": "2025-01-01T00:00:00Z",
+      "notes": null
+    },
+    {
+      "id": "8bc59f7e-b201-4191-9518-670c67f25424",
+      "name": "ZOMBIE",
+      "author": null,
+      "authorLink": null,
+      "description": null,
+      "weaponsRpfUrl": "",
+      "weaponsRpfSize": 111832806,
+      "weaponsRpfSha256": "",
+      "packZipUrl": null,
+      "packZipSize": null,
+      "packZipSha256": null,
+      "manifestUrl": null,
+      "coverKind": "image",
+      "coverUrl": "https://miamigraphicsstorage.uk/gunpacks/covers/9f2e060a62d8492882fcde66e1241f10.png",
+      "galleryUrls": [],
+      "status": "published",
+      "isVerified": false,
+      "viewerPriority": 2,
+      "downloadCount": 2,
+      "uploadedAt": "2025-01-01T00:00:00Z",
+      "uploadedBy": null,
+      "updatedAt": "2025-01-01T00:00:00Z",
+      "notes": null
+    },
+    {
+      "id": "7144dd9f-96a8-4fe2-b20b-d9cf721de289",
+      "name": "161",
+      "author": null,
+      "authorLink": null,
+      "description": null,
+      "weaponsRpfUrl": "",
+      "weaponsRpfSize": 4973569,
+      "weaponsRpfSha256": "",
+      "packZipUrl": null,
+      "packZipSize": null,
+      "packZipSha256": null,
+      "manifestUrl": null,
+      "coverKind": "image",
+      "coverUrl": "https://miamigraphicsstorage.uk/gunpacks/covers/75716163275c4a3bbe51a042c6b4ee51.png",
+      "galleryUrls": [],
+      "status": "published",
+      "isVerified": false,
+      "viewerPriority": 2,
+      "downloadCount": 2,
+      "uploadedAt": "2025-01-01T00:00:00Z",
+      "uploadedBy": null,
+      "updatedAt": "2025-01-01T00:00:00Z",
+      "notes": null
+    },
+    {
+      "id": "d6b5026d-0c81-4ad1-a207-d7144f51c151",
+      "name": "CAMO",
+      "author": null,
+      "authorLink": null,
+      "description": null,
+      "weaponsRpfUrl": "",
+      "weaponsRpfSize": 35204276,
+      "weaponsRpfSha256": "",
+      "packZipUrl": null,
+      "packZipSize": null,
+      "packZipSha256": null,
+      "manifestUrl": null,
+      "coverKind": "image",
+      "coverUrl": "https://miamigraphicsstorage.uk/gunpacks/covers/b6cfd516a5674d00afebf2b2124e3769.png",
+      "galleryUrls": [],
+      "status": "published",
+      "isVerified": false,
+      "viewerPriority": 2,
+      "downloadCount": 2,
+      "uploadedAt": "2025-01-01T00:00:00Z",
+      "uploadedBy": null,
+      "updatedAt": "2025-01-01T00:00:00Z",
+      "notes": null
+    },
+    {
+      "id": "bbf2fa24-8d95-45a2-b2d9-3d035f054ce7",
+      "name": "MILAN WHITE",
+      "author": null,
+      "authorLink": null,
+      "description": null,
+      "weaponsRpfUrl": "",
+      "weaponsRpfSize": 52454076,
+      "weaponsRpfSha256": "",
+      "packZipUrl": null,
+      "packZipSize": null,
+      "packZipSha256": null,
+      "manifestUrl": null,
+      "coverKind": "image",
+      "coverUrl": "https://miamigraphicsstorage.uk/gunpacks/covers/7652c216fb3d4964b4d7c6461509f75d.png",
+      "galleryUrls": [],
+      "status": "published",
+      "isVerified": false,
+      "viewerPriority": 2,
+      "downloadCount": 2,
+      "uploadedAt": "2025-01-01T00:00:00Z",
+      "uploadedBy": null,
+      "updatedAt": "2025-01-01T00:00:00Z",
+      "notes": null
+    },
+    {
+      "id": "98e63dd4-62d0-4704-ac78-96a3a3c47ca8",
+      "name": "SCREAMZ",
+      "author": null,
+      "authorLink": null,
+      "description": null,
+      "weaponsRpfUrl": "",
+      "weaponsRpfSize": 96239396,
+      "weaponsRpfSha256": "",
+      "packZipUrl": null,
+      "packZipSize": null,
+      "packZipSha256": null,
+      "manifestUrl": null,
+      "coverKind": "image",
+      "coverUrl": "https://miamigraphicsstorage.uk/gunpacks/covers/48ff3b638181438daf412eef90a95fb0.png",
+      "galleryUrls": [],
+      "status": "published",
+      "isVerified": false,
+      "viewerPriority": 2,
+      "downloadCount": 2,
+      "uploadedAt": "2025-01-01T00:00:00Z",
+      "uploadedBy": null,
+      "updatedAt": "2025-01-01T00:00:00Z",
+      "notes": null
+    },
+    {
+      "id": "e1bb506a-5e2b-4646-b82d-cd5f2ab011c3",
+      "name": "UZI REWORK BLACK",
+      "author": null,
+      "authorLink": null,
+      "description": null,
+      "weaponsRpfUrl": "",
+      "weaponsRpfSize": 11279791,
+      "weaponsRpfSha256": "",
+      "packZipUrl": null,
+      "packZipSize": null,
+      "packZipSha256": null,
+      "manifestUrl": null,
+      "coverKind": "image",
+      "coverUrl": "https://miamigraphicsstorage.uk/gunpacks/covers/a95b526c7c974c498dc991f074841241.png",
+      "galleryUrls": [],
+      "status": "published",
+      "isVerified": false,
+      "viewerPriority": 1,
+      "downloadCount": 1,
+      "uploadedAt": "2025-01-01T00:00:00Z",
+      "uploadedBy": null,
+      "updatedAt": "2025-01-01T00:00:00Z",
+      "notes": null
+    },
+    {
+      "id": "ae5766a7-5c2a-484b-9bc4-3b07d5377d8a",
+      "name": "MOPS",
+      "author": null,
+      "authorLink": null,
+      "description": null,
+      "weaponsRpfUrl": "",
+      "weaponsRpfSize": 188183898,
+      "weaponsRpfSha256": "",
+      "packZipUrl": null,
+      "packZipSize": null,
+      "packZipSha256": null,
+      "manifestUrl": null,
+      "coverKind": "image",
+      "coverUrl": "https://miamigraphicsstorage.uk/gunpacks/covers/e72f5ddf4c484164acfb2338e91459b6.png",
+      "galleryUrls": [],
+      "status": "published",
+      "isVerified": false,
+      "viewerPriority": 1,
+      "downloadCount": 1,
+      "uploadedAt": "2025-01-01T00:00:00Z",
+      "uploadedBy": null,
+      "updatedAt": "2025-01-01T00:00:00Z",
+      "notes": null
+    },
+    {
+      "id": "bc4de8e6-e271-4851-be25-41da243dc841",
+      "name": "UZI REWORK WHITE",
+      "author": null,
+      "authorLink": null,
+      "description": null,
+      "weaponsRpfUrl": "",
+      "weaponsRpfSize": 12530095,
+      "weaponsRpfSha256": "",
+      "packZipUrl": null,
+      "packZipSize": null,
+      "packZipSha256": null,
+      "manifestUrl": null,
+      "coverKind": "image",
+      "coverUrl": "https://miamigraphicsstorage.uk/gunpacks/covers/7f9d362368fe43a18a0353a652f21dc6.png",
+      "galleryUrls": [],
+      "status": "published",
+      "isVerified": false,
+      "viewerPriority": 1,
+      "downloadCount": 1,
+      "uploadedAt": "2025-01-01T00:00:00Z",
+      "uploadedBy": null,
+      "updatedAt": "2025-01-01T00:00:00Z",
+      "notes": null
+    },
+    {
+      "id": "f9ea4c41-5b8c-46c3-a798-31d49e627cf1",
+      "name": "WILKA",
+      "author": null,
+      "authorLink": null,
+      "description": null,
+      "weaponsRpfUrl": "",
+      "weaponsRpfSize": 115099581,
+      "weaponsRpfSha256": "",
+      "packZipUrl": null,
+      "packZipSize": null,
+      "packZipSha256": null,
+      "manifestUrl": null,
+      "coverKind": "image",
+      "coverUrl": "https://miamigraphicsstorage.uk/gunpacks/covers/ea39abcdc98f414ead8bbd865ec0a4ca.png",
+      "galleryUrls": [],
+      "status": "published",
+      "isVerified": false,
+      "viewerPriority": 1,
+      "downloadCount": 1,
+      "uploadedAt": "2025-01-01T00:00:00Z",
+      "uploadedBy": null,
+      "updatedAt": "2025-01-01T00:00:00Z",
+      "notes": null
+    },
+    {
+      "id": "7cc7adba-8b6c-4768-8201-5bf7e514ce6e",
+      "name": "DREAMS",
+      "author": null,
+      "authorLink": null,
+      "description": null,
+      "weaponsRpfUrl": "",
+      "weaponsRpfSize": 13609465,
+      "weaponsRpfSha256": "",
+      "packZipUrl": null,
+      "packZipSize": null,
+      "packZipSha256": null,
+      "manifestUrl": null,
+      "coverKind": "image",
+      "coverUrl": "https://miamigraphicsstorage.uk/gunpacks/covers/545c6bae60c742c68cd6c4ca8e40db19.png",
+      "galleryUrls": [],
+      "status": "published",
+      "isVerified": false,
+      "viewerPriority": 1,
+      "downloadCount": 1,
+      "uploadedAt": "2025-01-01T00:00:00Z",
+      "uploadedBy": null,
+      "updatedAt": "2025-01-01T00:00:00Z",
+      "notes": null
+    },
+    {
+      "id": "9422e402-bede-4692-aeb1-97c3ebf520af",
+      "name": "REALISTIC",
+      "author": null,
+      "authorLink": null,
+      "description": null,
+      "weaponsRpfUrl": "",
+      "weaponsRpfSize": 40379127,
+      "weaponsRpfSha256": "",
+      "packZipUrl": null,
+      "packZipSize": null,
+      "packZipSha256": null,
+      "manifestUrl": null,
+      "coverKind": "image",
+      "coverUrl": "https://miamigraphicsstorage.uk/gunpacks/covers/638e897e640c40c3adba0c7c294c8dfc.png",
+      "galleryUrls": [],
+      "status": "published",
+      "isVerified": false,
+      "viewerPriority": 1,
+      "downloadCount": 1,
+      "uploadedAt": "2025-01-01T00:00:00Z",
+      "uploadedBy": null,
+      "updatedAt": "2025-01-01T00:00:00Z",
+      "notes": null
+    },
+    {
+      "id": "e35b8218-9534-4c43-96ce-186b6a1fc118",
+      "name": "RED PAINT",
+      "author": null,
+      "authorLink": null,
+      "description": null,
+      "weaponsRpfUrl": "",
+      "weaponsRpfSize": 41692180,
+      "weaponsRpfSha256": "",
+      "packZipUrl": null,
+      "packZipSize": null,
+      "packZipSha256": null,
+      "manifestUrl": null,
+      "coverKind": "image",
+      "coverUrl": "https://miamigraphicsstorage.uk/gunpacks/covers/a78512a8b0034b2694678cacf088c3ec.png",
+      "galleryUrls": [],
+      "status": "published",
+      "isVerified": false,
+      "viewerPriority": 0,
+      "downloadCount": 0,
+      "uploadedAt": "2025-01-01T00:00:00Z",
+      "uploadedBy": null,
+      "updatedAt": "2025-01-01T00:00:00Z",
+      "notes": null
+    },
+    {
+      "id": "2b5d3cba-981b-4daf-b1fe-17c320f61981",
+      "name": "182",
+      "author": null,
+      "authorLink": null,
+      "description": null,
+      "weaponsRpfUrl": "",
+      "weaponsRpfSize": 9159023,
+      "weaponsRpfSha256": "",
+      "packZipUrl": null,
+      "packZipSize": null,
+      "packZipSha256": null,
+      "manifestUrl": null,
+      "coverKind": "image",
+      "coverUrl": "https://miamigraphicsstorage.uk/gunpacks/covers/7b94d83a3f304ce9ad3c08a4b5940317.png",
+      "galleryUrls": [],
+      "status": "published",
+      "isVerified": false,
+      "viewerPriority": 0,
+      "downloadCount": 0,
+      "uploadedAt": "2025-01-01T00:00:00Z",
+      "uploadedBy": null,
+      "updatedAt": "2025-01-01T00:00:00Z",
+      "notes": null
+    },
+    {
+      "id": "622bc8d0-e6a7-4bdb-b0c7-43b5644fa8f3",
+      "name": "609",
+      "author": null,
+      "authorLink": null,
+      "description": null,
+      "weaponsRpfUrl": "",
+      "weaponsRpfSize": 7536437,
+      "weaponsRpfSha256": "",
+      "packZipUrl": null,
+      "packZipSize": null,
+      "packZipSha256": null,
+      "manifestUrl": null,
+      "coverKind": "image",
+      "coverUrl": "https://miamigraphicsstorage.uk/gunpacks/covers/1a539a3d987743faa2e7482cb1c5f1bd.png",
+      "galleryUrls": [],
+      "status": "published",
+      "isVerified": false,
+      "viewerPriority": 0,
+      "downloadCount": 0,
+      "uploadedAt": "2025-01-01T00:00:00Z",
+      "uploadedBy": null,
+      "updatedAt": "2025-01-01T00:00:00Z",
+      "notes": null
+    },
+    {
+      "id": "bb792036-ca47-4d44-aaf1-f6372c47b4ec",
+      "name": "BANDANA",
+      "author": null,
+      "authorLink": null,
+      "description": null,
+      "weaponsRpfUrl": "",
+      "weaponsRpfSize": 127380536,
+      "weaponsRpfSha256": "",
+      "packZipUrl": null,
+      "packZipSize": null,
+      "packZipSha256": null,
+      "manifestUrl": null,
+      "coverKind": "image",
+      "coverUrl": "https://miamigraphicsstorage.uk/gunpacks/covers/fe772307b7e54a16841326d028fe701e.png",
+      "galleryUrls": [],
+      "status": "published",
+      "isVerified": false,
+      "viewerPriority": 0,
+      "downloadCount": 0,
+      "uploadedAt": "2025-01-01T00:00:00Z",
+      "uploadedBy": null,
+      "updatedAt": "2025-01-01T00:00:00Z",
+      "notes": null
+    },
+    {
+      "id": "523f2a16-8283-46ba-8adf-ad0bc9f4a014",
+      "name": "BLESSED",
+      "author": null,
+      "authorLink": null,
+      "description": null,
+      "weaponsRpfUrl": "",
+      "weaponsRpfSize": 36285496,
+      "weaponsRpfSha256": "",
+      "packZipUrl": null,
+      "packZipSize": null,
+      "packZipSha256": null,
+      "manifestUrl": null,
+      "coverKind": "image",
+      "coverUrl": "https://miamigraphicsstorage.uk/gunpacks/covers/b27c9c8fbc0d4441a372df53da8c7133.png",
+      "galleryUrls": [],
+      "status": "published",
+      "isVerified": false,
+      "viewerPriority": 0,
+      "downloadCount": 0,
+      "uploadedAt": "2025-01-01T00:00:00Z",
+      "uploadedBy": null,
+      "updatedAt": "2025-01-01T00:00:00Z",
+      "notes": null
+    },
+    {
+      "id": "7c677b9f-6d78-4813-ac87-00bcdfa1433d",
+      "name": "BLOOD",
+      "author": null,
+      "authorLink": null,
+      "description": null,
+      "weaponsRpfUrl": "",
+      "weaponsRpfSize": 162735258,
+      "weaponsRpfSha256": "",
+      "packZipUrl": null,
+      "packZipSize": null,
+      "packZipSha256": null,
+      "manifestUrl": null,
+      "coverKind": "image",
+      "coverUrl": "https://miamigraphicsstorage.uk/gunpacks/covers/4659a7847b684c07b0bf0e135146fdad.png",
+      "galleryUrls": [],
+      "status": "published",
+      "isVerified": false,
+      "viewerPriority": 0,
+      "downloadCount": 0,
+      "uploadedAt": "2025-01-01T00:00:00Z",
+      "uploadedBy": null,
+      "updatedAt": "2025-01-01T00:00:00Z",
+      "notes": null
+    },
+    {
+      "id": "93734e91-7196-449c-bba1-e795c1471f62",
+      "name": "CHEMI",
+      "author": null,
+      "authorLink": null,
+      "description": null,
+      "weaponsRpfUrl": "",
+      "weaponsRpfSize": 40619198,
+      "weaponsRpfSha256": "",
+      "packZipUrl": null,
+      "packZipSize": null,
+      "packZipSha256": null,
+      "manifestUrl": null,
+      "coverKind": "image",
+      "coverUrl": "https://miamigraphicsstorage.uk/gunpacks/covers/de64793ac53f44fb9c37ade856764b12.png",
+      "galleryUrls": [],
+      "status": "published",
+      "isVerified": false,
+      "viewerPriority": 0,
+      "downloadCount": 0,
+      "uploadedAt": "2025-01-01T00:00:00Z",
+      "uploadedBy": null,
+      "updatedAt": "2025-01-01T00:00:00Z",
+      "notes": null
+    },
+    {
+      "id": "fb22c572-ae1c-499d-9575-94de0c26fd04",
+      "name": "DEPRESSED",
+      "author": null,
+      "authorLink": null,
+      "description": null,
+      "weaponsRpfUrl": "",
+      "weaponsRpfSize": 359386907,
+      "weaponsRpfSha256": "",
+      "packZipUrl": null,
+      "packZipSize": null,
+      "packZipSha256": null,
+      "manifestUrl": null,
+      "coverKind": "image",
+      "coverUrl": "https://miamigraphicsstorage.uk/gunpacks/covers/8fe2b9f0bb0d46b2a24b9a313e4e301b.png",
+      "galleryUrls": [],
+      "status": "published",
+      "isVerified": false,
+      "viewerPriority": 0,
+      "downloadCount": 0,
+      "uploadedAt": "2025-01-01T00:00:00Z",
+      "uploadedBy": null,
+      "updatedAt": "2025-01-01T00:00:00Z",
+      "notes": null
+    },
+    {
+      "id": "0a404f62-1a9f-4d69-92ce-15ef2b776ae4",
+      "name": "HOMIXIDE",
+      "author": null,
+      "authorLink": null,
+      "description": null,
+      "weaponsRpfUrl": "",
+      "weaponsRpfSize": 57749125,
+      "weaponsRpfSha256": "",
+      "packZipUrl": null,
+      "packZipSize": null,
+      "packZipSha256": null,
+      "manifestUrl": null,
+      "coverKind": "image",
+      "coverUrl": "https://miamigraphicsstorage.uk/gunpacks/covers/0c6b6b2921864d96a12ae29bcaf30ae6.png",
+      "galleryUrls": [],
+      "status": "published",
+      "isVerified": false,
+      "viewerPriority": 0,
+      "downloadCount": 0,
+      "uploadedAt": "2025-01-01T00:00:00Z",
+      "uploadedBy": null,
+      "updatedAt": "2025-01-01T00:00:00Z",
+      "notes": null
+    },
+    {
+      "id": "cf213f7e-ba91-4551-9585-db608f448ec7",
+      "name": "KILLA NEON PAINT V2",
+      "author": null,
+      "authorLink": null,
+      "description": null,
+      "weaponsRpfUrl": "",
+      "weaponsRpfSize": 52101425,
+      "weaponsRpfSha256": "",
+      "packZipUrl": null,
+      "packZipSize": null,
+      "packZipSha256": null,
+      "manifestUrl": null,
+      "coverKind": "image",
+      "coverUrl": "https://miamigraphicsstorage.uk/gunpacks/covers/e97a968927e84bfbbcee94f15a8dee7c.png",
+      "galleryUrls": [],
+      "status": "published",
+      "isVerified": false,
+      "viewerPriority": 0,
+      "downloadCount": 0,
+      "uploadedAt": "2025-01-01T00:00:00Z",
+      "uploadedBy": null,
+      "updatedAt": "2025-01-01T00:00:00Z",
+      "notes": null
+    },
+    {
+      "id": "ea0e019a-21e4-4f9a-8f38-345752e56017",
+      "name": "MINIMA",
+      "author": null,
+      "authorLink": null,
+      "description": null,
+      "weaponsRpfUrl": "",
+      "weaponsRpfSize": 38672440,
+      "weaponsRpfSha256": "",
+      "packZipUrl": null,
+      "packZipSize": null,
+      "packZipSha256": null,
+      "manifestUrl": null,
+      "coverKind": "image",
+      "coverUrl": "https://miamigraphicsstorage.uk/gunpacks/covers/00f25886dbc9425199051d738b034133.png",
+      "galleryUrls": [],
+      "status": "published",
+      "isVerified": false,
+      "viewerPriority": 0,
+      "downloadCount": 0,
+      "uploadedAt": "2025-01-01T00:00:00Z",
+      "uploadedBy": null,
+      "updatedAt": "2025-01-01T00:00:00Z",
+      "notes": null
+    }
+  ],
+  "gtaPresets": [
+    {
+      "id": "2f52fd95-4919-454f-899f-be9a1f88a450",
+      "name": "Tape Tournament 165hz",
+      "description": "For MCL",
+      "author": "Tape",
+      "xmlUrl": "https://miamigraphicsstorage.uk/gta-presets/2f52fd95-4919-454f-899f-be9a1f88a450.xml",
+      "xmlSizeBytes": 2445,
+      "xmlSha256": "eb9d705985905da35e20731f99a57470271a49fd3797670d018a3a958f501ac8",
+      "expectedFpsLow": 180,
+      "expectedFpsHigh": 310,
+      "baselineHwLabel": "i5-12400f + RTX 3060 Ti",
+      "computedGainPercent": 43,
+      "cpuBias": "balanced",
+      "isTournament": false,
+      "status": "published",
+      "viewerPriority": 0,
+      "createdAt": "2025-01-01T00:00:00Z",
+      "updatedAt": "2025-01-01T00:00:00Z",
+      "downloadCount": 0
+    },
+    {
+      "id": "512ac3e5-a808-49b9-a907-1c27de8e3aa5",
+      "name": "Gucci Settings",
+      "description": "Best settings for GTA V",
+      "author": "Fifty Gucci",
+      "xmlUrl": "https://miamigraphicsstorage.uk/gta-presets/512ac3e5-a808-49b9-a907-1c27de8e3aa5.xml",
+      "xmlSizeBytes": 2442,
+      "xmlSha256": "ef50b53d3387ce2d5ecbc70315185edbdf2fb419571abb5385a3c47b86b81aa8",
+      "expectedFpsLow": 250,
+      "expectedFpsHigh": 150,
+      "baselineHwLabel": "",
+      "computedGainPercent": 43,
+      "cpuBias": "balanced",
+      "isTournament": false,
+      "status": "published",
+      "viewerPriority": 0,
+      "createdAt": "2025-01-01T00:00:00Z",
+      "updatedAt": "2025-01-01T00:00:00Z",
+      "downloadCount": 0
+    },
+    {
+      "id": "227f6ded-f56a-48f5-b153-1b8659df606d",
+      "name": "Default MCL Settings",
+      "description": "For Tournaments",
+      "author": "Tape",
+      "xmlUrl": "https://miamigraphicsstorage.uk/gta-presets/227f6ded-f56a-48f5-b153-1b8659df606d.xml",
+      "xmlSizeBytes": 2374,
+      "xmlSha256": "67137b96e922d5cecd6922ac0af30d5c826e77647d4f2b469143bc1c385dd8f5",
+      "expectedFpsLow": 210,
+      "expectedFpsHigh": 150,
+      "baselineHwLabel": "i5-12400f+RTX 3060 Ti",
+      "computedGainPercent": 43,
+      "cpuBias": "balanced",
+      "isTournament": true,
+      "status": "published",
+      "viewerPriority": 0,
+      "createdAt": "2025-01-01T00:00:00Z",
+      "updatedAt": "2025-01-01T00:00:00Z",
+      "downloadCount": 0
+    }
+  ],
+  "gunpackWhitelist": [
+    {
+      "internalName": "w_sg_assaultshotgun",
+      "displayName": "Штурмовой дробовик",
+      "category": "shotgun",
+      "weaponPrefix": "w_sg_",
+      "isSmgOverride": false,
+      "sortOrder": 10,
+      "previewUrl": "https://miamigraphicsstorage.uk/gunsmaj/%D1%81%D0%BF%D0%B5%D1%86%20%D0%B4%D1%80%D0%BE%D0%B1%D0%BE%D0%B2%D0%B8%D0%BA.webp"
+    },
+    {
+      "internalName": "w_sg_heavyshotgun",
+      "displayName": "Тяжёлый дробовик",
+      "category": "shotgun",
+      "weaponPrefix": "w_sg_",
+      "isSmgOverride": false,
+      "sortOrder": 20,
+      "previewUrl": "https://miamigraphicsstorage.uk/gunsmaj/%D1%81%D0%B0%D0%B9%D0%B3%D0%B0.webp"
+    },
+    {
+      "internalName": "w_pi_revolver",
+      "displayName": "Револьвер",
+      "category": "pistol",
+      "weaponPrefix": "w_pi_",
+      "isSmgOverride": false,
+      "sortOrder": 30,
+      "previewUrl": "https://miamigraphicsstorage.uk/gunsmaj/%D1%80%D0%B5%D0%B2%D0%BE%D0%BB%D1%8C%D0%B2%D0%B5%D1%80.webp"
+    },
+    {
+      "internalName": "w_sb_smgmk2",
+      "displayName": "ПП Mk2",
+      "category": "smg",
+      "weaponPrefix": "w_sb_",
+      "isSmgOverride": true,
+      "sortOrder": 40,
+      "previewUrl": "https://miamigraphicsstorage.uk/gunsmaj/%D0%BF%D0%BF%D0%BC%D0%BA2.webp"
+    },
+    {
+      "internalName": "w_sb_minismg",
+      "displayName": "Мини ПП",
+      "category": "smg",
+      "weaponPrefix": "w_sb_",
+      "isSmgOverride": true,
+      "sortOrder": 50,
+      "previewUrl": "https://miamigraphicsstorage.uk/gunsmaj/%D0%BC%D0%B8%D0%BD%D0%B8%D1%81%D0%BC%D0%B3.webp"
+    },
+    {
+      "internalName": "w_sb_microsmg",
+      "displayName": "Микро ПП",
+      "category": "smg",
+      "weaponPrefix": "w_sb_",
+      "isSmgOverride": true,
+      "sortOrder": 60,
+      "previewUrl": "https://miamigraphicsstorage.uk/gunsmaj/%D1%83%D0%B7%D0%B8%D1%88%D0%BA%D0%B0.webp"
+    },
+    {
+      "internalName": "w_ar_specialcarbinemk2",
+      "displayName": "Спец. карабин Mk2",
+      "category": "assault",
+      "weaponPrefix": "w_ar_",
+      "isSmgOverride": false,
+      "sortOrder": 70,
+      "previewUrl": "https://miamigraphicsstorage.uk/gunsmaj/%D1%81%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%BC%D0%BA2.webp"
+    },
+    {
+      "internalName": "w_ar_specialcarbine",
+      "displayName": "Спец. карабин",
+      "category": "assault",
+      "weaponPrefix": "w_ar_",
+      "isSmgOverride": false,
+      "sortOrder": 80,
+      "previewUrl": "https://miamigraphicsstorage.uk/gunsmaj/%D1%81%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB.webp"
+    },
+    {
+      "internalName": "w_ar_carbineriflemk2",
+      "displayName": "Карабинная винтовка Mk2",
+      "category": "assault",
+      "weaponPrefix": "w_ar_",
+      "isSmgOverride": false,
+      "sortOrder": 90,
+      "previewUrl": "https://miamigraphicsstorage.uk/gunsmaj/%D0%BA%D0%B0%D1%80%D0%B0%D0%B1%D0%B8%D0%BD%D0%BD%D0%BE%D0%B2%D0%B0%D1%8F%D0%B2%D0%B8%D0%BD%D1%82%D0%BE%D0%B2%D0%BA%D0%B0%D0%BC%D0%BA2.webp"
+    },
+    {
+      "internalName": "w_ar_carbinerifle",
+      "displayName": "Карабинная винтовка",
+      "category": "assault",
+      "weaponPrefix": "w_ar_",
+      "isSmgOverride": false,
+      "sortOrder": 100,
+      "previewUrl": "https://miamigraphicsstorage.uk/gunsmaj/%D0%BA%D0%B0%D1%80%D0%B0%D0%B1%D0%B8%D0%BD%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%B0%D1%8F.webp"
+    },
+    {
+      "internalName": "w_ar_heavyrifleh",
+      "displayName": "Тяжёлая винтовка",
+      "category": "assault",
+      "weaponPrefix": "w_ar_",
+      "isSmgOverride": false,
+      "sortOrder": 105,
+      "previewUrl": "https://miamigraphicsstorage.uk/gunsmaj/%D1%82%D1%8F%D0%B6%D0%B5%D0%BB%D1%8B%D0%B9.webp"
+    },
+    {
+      "internalName": "w_sr_heavysniper",
+      "displayName": "Тяжёлая снайперская винтовка",
+      "category": "sniper",
+      "weaponPrefix": "w_sr_",
+      "isSmgOverride": false,
+      "sortOrder": 110,
+      "previewUrl": "https://miamigraphicsstorage.uk/gunsmaj/%D1%85%D0%B5%D0%B2%D0%B8%D0%BA.webp"
+    },
+    {
+      "internalName": "w_sr_heavysnipermk2",
+      "displayName": "Тяжёлая снайперская винтовка Mk2",
+      "category": "sniper",
+      "weaponPrefix": "w_sr_",
+      "isSmgOverride": false,
+      "sortOrder": 120,
+      "previewUrl": "https://miamigraphicsstorage.uk/gunsmaj/%D1%85%D0%B5%D0%B2%D0%B8%D0%BA.webp"
+    },
+    {
+      "internalName": "w_mg_combatmgmk2",
+      "displayName": "Ручной пулемёт Mk2",
+      "category": "mg",
+      "weaponPrefix": "w_mg_",
+      "isSmgOverride": false,
+      "sortOrder": 130,
+      "previewUrl": "https://miamigraphicsstorage.uk/gunsmaj/%D0%BF%D1%83%D0%BB%D0%B5%D0%BC%D0%B5%D1%82%D0%BC%D0%BA2.webp"
+    },
+    {
+      "internalName": "w_sr_marksmanriflemk2",
+      "displayName": "Винтовка Marksman Mk2",
+      "category": "sniper",
+      "weaponPrefix": "w_sr_",
+      "isSmgOverride": false,
+      "sortOrder": 140,
+      "previewUrl": "https://miamigraphicsstorage.uk/gunsmaj/%D0%BC%D0%B0%D1%80%D1%81%D0%BC%D0%B0%D0%BD%D0%BA%D0%B0.webp"
+    },
+    {
+      "internalName": "w_sr_precisionrifle",
+      "displayName": "Прецизионная винтовка",
+      "category": "sniper",
+      "weaponPrefix": "w_sr_",
+      "isSmgOverride": false,
+      "sortOrder": 150,
+      "previewUrl": "https://miamigraphicsstorage.uk/gunsmaj/630.webp"
+    }
+  ],
+  "gunpackGuns": [
+    {
+      "id": "10160d11-9eec-4c33-a679-1e798821b2a5",
+      "gunpackId": "7144dd9f-96a8-4fe2-b20b-d9cf721de289",
+      "baseName": "carbinerifle",
+      "weaponPrefix": "w_ar_",
+      "category": "assault",
+      "displayName": "Карабинная винтовка",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/7144dd9f-96a8-4fe2-b20b-d9cf721de289/guns/carbinerifle.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/7144dd9f-96a8-4fe2-b20b-d9cf721de289/guns/carbinerifle.webp",
+      "files": [
+        "w_ar_carbinerifle_hi.ydr",
+        "w_ar_carbinerifle_mag1.ydr",
+        "w_ar_carbinerifle.ydr",
+        "w_ar_carbinerifle.ytd"
+      ],
+      "sizeBytes": 455144,
+      "isHidden": false,
+      "sortOrder": 100
+    },
+    {
+      "id": "fc782f5d-6d6d-48b3-8646-647cf86c2a54",
+      "gunpackId": "7144dd9f-96a8-4fe2-b20b-d9cf721de289",
+      "baseName": "heavyrifleh",
+      "weaponPrefix": "w_ar_",
+      "category": "assault",
+      "displayName": "Тяжёлая винтовка",
+      "glbUrl": "",
+      "previewUrl": "https://cdn.majestic-files.net/public/master/static/img/inventory/items/595.webp",
+      "files": [
+        "w_ar_heavyrifleh_hi.ydr",
+        "w_ar_heavyrifleh_sight_hi.ydr",
+        "w_ar_heavyrifleh_sight.ydr",
+        "w_ar_heavyrifleh.ydr",
+        "w_ar_heavyrifleh.ytd"
+      ],
+      "sizeBytes": 688884,
+      "isHidden": false,
+      "sortOrder": 105
+    },
+    {
+      "id": "3d28bb14-2099-470b-a6fd-7fd4e8775a60",
+      "gunpackId": "7144dd9f-96a8-4fe2-b20b-d9cf721de289",
+      "baseName": "specialcarbine",
+      "weaponPrefix": "w_ar_",
+      "category": "assault",
+      "displayName": "Спец. карабин",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/7144dd9f-96a8-4fe2-b20b-d9cf721de289/guns/specialcarbine.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/7144dd9f-96a8-4fe2-b20b-d9cf721de289/guns/specialcarbine.webp",
+      "files": [
+        "w_ar_specialcarbine_hi.ydr",
+        "w_ar_specialcarbine_mag1.ydr",
+        "w_ar_specialcarbine.ydr",
+        "w_ar_specialcarbine.ytd"
+      ],
+      "sizeBytes": 638526,
+      "isHidden": false,
+      "sortOrder": 80
+    },
+    {
+      "id": "1135d8da-27e8-4166-8150-9f3007c8b419",
+      "gunpackId": "7144dd9f-96a8-4fe2-b20b-d9cf721de289",
+      "baseName": "specialcarbinemk2",
+      "weaponPrefix": "w_ar_",
+      "category": "assault",
+      "displayName": "Спец. карабин Mk2",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/7144dd9f-96a8-4fe2-b20b-d9cf721de289/guns/specialcarbinemk2.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/7144dd9f-96a8-4fe2-b20b-d9cf721de289/guns/specialcarbinemk2.webp",
+      "files": [
+        "w_ar_specialcarbinemk2_hi.ydr",
+        "w_ar_specialcarbinemk2_mag1.ydr",
+        "w_ar_specialcarbinemk2_mag2.ydr",
+        "w_ar_specialcarbinemk2.ydr",
+        "w_ar_specialcarbinemk2.ytd"
+      ],
+      "sizeBytes": 563762,
+      "isHidden": false,
+      "sortOrder": 70
+    },
+    {
+      "id": "eb0f874d-e45b-4afd-aa67-60b3e619f53d",
+      "gunpackId": "7144dd9f-96a8-4fe2-b20b-d9cf721de289",
+      "baseName": "combatmgmk2",
+      "weaponPrefix": "w_mg_",
+      "category": "mg",
+      "displayName": "Ручной пулемёт Mk2",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/7144dd9f-96a8-4fe2-b20b-d9cf721de289/guns/combatmgmk2.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/7144dd9f-96a8-4fe2-b20b-d9cf721de289/guns/combatmgmk2.webp",
+      "files": [
+        "w_mg_combatmgmk2_hi.ydr",
+        "w_mg_combatmgmk2_mag1.ydr",
+        "w_mg_combatmgmk2_mag2.ydr",
+        "w_mg_combatmgmk2.ydr",
+        "w_mg_combatmgmk2.ytd"
+      ],
+      "sizeBytes": 634850,
+      "isHidden": false,
+      "sortOrder": 130
+    },
+    {
+      "id": "00794d60-f869-44d8-9d04-3674fa80c5f0",
+      "gunpackId": "93c0d9a9-7aa7-4e04-8d3c-206e50b2772b",
+      "baseName": "specialcarbine",
+      "weaponPrefix": "w_ar_",
+      "category": "assault",
+      "displayName": "Спец. карабин",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/93c0d9a9-7aa7-4e04-8d3c-206e50b2772b/guns/specialcarbine.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/93c0d9a9-7aa7-4e04-8d3c-206e50b2772b/guns/specialcarbine.webp",
+      "files": [
+        "w_ar_specialcarbine_hi.ydr",
+        "w_ar_specialcarbine_mag1.ydr",
+        "w_ar_specialcarbine_mag2.ydr",
+        "w_ar_specialcarbine.ydr"
+      ],
+      "sizeBytes": 5736323,
+      "isHidden": false,
+      "sortOrder": 80
+    },
+    {
+      "id": "d5aa6d8a-3c9b-422c-8fd7-97b343259a57",
+      "gunpackId": "93c0d9a9-7aa7-4e04-8d3c-206e50b2772b",
+      "baseName": "specialcarbinemk2",
+      "weaponPrefix": "w_ar_",
+      "category": "assault",
+      "displayName": "Спец. карабин Mk2",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/93c0d9a9-7aa7-4e04-8d3c-206e50b2772b/guns/specialcarbinemk2.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/93c0d9a9-7aa7-4e04-8d3c-206e50b2772b/guns/specialcarbinemk2.webp",
+      "files": [
+        "w_ar_specialcarbinemk2_hi.ydr",
+        "w_ar_specialcarbinemk2_mag1.ydr",
+        "w_ar_specialcarbinemk2_mag2.ydr",
+        "w_ar_specialcarbinemk2.ydr"
+      ],
+      "sizeBytes": 5633396,
+      "isHidden": false,
+      "sortOrder": 70
+    },
+    {
+      "id": "8c059ac3-0c6c-460a-9075-e3b48df333d5",
+      "gunpackId": "93c0d9a9-7aa7-4e04-8d3c-206e50b2772b",
+      "baseName": "assaultshotgun",
+      "weaponPrefix": "w_sg_",
+      "category": "shotgun",
+      "displayName": "Штурмовой дробовик",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/93c0d9a9-7aa7-4e04-8d3c-206e50b2772b/guns/assaultshotgun.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/93c0d9a9-7aa7-4e04-8d3c-206e50b2772b/guns/assaultshotgun.webp",
+      "files": [
+        "w_sg_assaultshotgun_hi.ydr",
+        "w_sg_assaultshotgun_mag1.ydr",
+        "w_sg_assaultshotgun_mag2.ydr",
+        "w_sg_assaultshotgun.ydr"
+      ],
+      "sizeBytes": 5626520,
+      "isHidden": false,
+      "sortOrder": 10
+    },
+    {
+      "id": "781f2735-e3c0-4dfd-8d0e-bd97c1f6b783",
+      "gunpackId": "93c0d9a9-7aa7-4e04-8d3c-206e50b2772b",
+      "baseName": "heavyshotgun",
+      "weaponPrefix": "w_sg_",
+      "category": "shotgun",
+      "displayName": "Тяжёлый дробовик",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/93c0d9a9-7aa7-4e04-8d3c-206e50b2772b/guns/heavyshotgun.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/93c0d9a9-7aa7-4e04-8d3c-206e50b2772b/guns/heavyshotgun.webp",
+      "files": [
+        "w_sg_heavyshotgun_hi.ydr",
+        "w_sg_heavyshotgun_mag1.ydr",
+        "w_sg_heavyshotgun_mag2.ydr",
+        "w_sg_heavyshotgun.ydr"
+      ],
+      "sizeBytes": 5624648,
+      "isHidden": false,
+      "sortOrder": 20
+    },
+    {
+      "id": "27b3ecc3-03bd-4f65-ac3a-c90fba598605",
+      "gunpackId": "93c0d9a9-7aa7-4e04-8d3c-206e50b2772b",
+      "baseName": "minismg",
+      "weaponPrefix": "w_sb_",
+      "category": "smg",
+      "displayName": "Мини ПП",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/93c0d9a9-7aa7-4e04-8d3c-206e50b2772b/guns/minismg.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/93c0d9a9-7aa7-4e04-8d3c-206e50b2772b/guns/minismg.webp",
+      "files": [
+        "w_sb_minismg.ydr",
+        "w_sb_minismg_hi.ydr",
+        "w_sb_minismg_mag1.ydr",
+        "w_sb_minismg_mag2.ydr"
+      ],
+      "sizeBytes": 5976805,
+      "isHidden": false,
+      "sortOrder": 50
+    },
+    {
+      "id": "5b52abaa-4c21-4566-88df-591e08ea130d",
+      "gunpackId": "622bc8d0-e6a7-4bdb-b0c7-43b5644fa8f3",
+      "baseName": "heavyrifleh",
+      "weaponPrefix": "w_ar_",
+      "category": "assault",
+      "displayName": "Тяжёлая винтовка",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/622bc8d0-e6a7-4bdb-b0c7-43b5644fa8f3/guns/heavyrifleh.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/622bc8d0-e6a7-4bdb-b0c7-43b5644fa8f3/guns/heavyrifleh.webp",
+      "files": [
+        "w_ar_heavyrifleh_hi.ydr",
+        "w_ar_heavyrifleh_sight_hi.ydr",
+        "w_ar_heavyrifleh_sight.ydr",
+        "w_ar_heavyrifleh.ydr"
+      ],
+      "sizeBytes": 1553238,
+      "isHidden": false,
+      "sortOrder": 105
+    },
+    {
+      "id": "3d587f9e-a283-48bd-9a17-56c5ec042bde",
+      "gunpackId": "622bc8d0-e6a7-4bdb-b0c7-43b5644fa8f3",
+      "baseName": "specialcarbinemk2",
+      "weaponPrefix": "w_ar_",
+      "category": "assault",
+      "displayName": "Спец. карабин Mk2",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/622bc8d0-e6a7-4bdb-b0c7-43b5644fa8f3/guns/specialcarbinemk2.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/622bc8d0-e6a7-4bdb-b0c7-43b5644fa8f3/guns/specialcarbinemk2.webp",
+      "files": [
+        "w_ar_specialcarbinemk2_hi.ydr",
+        "w_ar_specialcarbinemk2_mag1.ydr",
+        "w_ar_specialcarbinemk2_mag2.ydr",
+        "w_ar_specialcarbinemk2.ydr"
+      ],
+      "sizeBytes": 1379936,
+      "isHidden": false,
+      "sortOrder": 70
+    },
+    {
+      "id": "14e89c5c-2e93-4208-b818-f5a308b4f2d0",
+      "gunpackId": "2b5d3cba-981b-4daf-b1fe-17c320f61981",
+      "baseName": "heavyshotgun",
+      "weaponPrefix": "w_sg_",
+      "category": "shotgun",
+      "displayName": "Тяжёлый дробовик",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/2b5d3cba-981b-4daf-b1fe-17c320f61981/guns/heavyshotgun.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/2b5d3cba-981b-4daf-b1fe-17c320f61981/guns/heavyshotgun.webp",
+      "files": [
+        "w_sg_heavyshotgun_hi.ydr",
+        "w_sg_heavyshotgun_mag1.ydr",
+        "w_sg_heavyshotgun_mag2.ydr",
+        "w_sg_heavyshotgun.ydr"
+      ],
+      "sizeBytes": 1745829,
+      "isHidden": false,
+      "sortOrder": 20
+    },
+    {
+      "id": "3df7a45b-69f3-4882-a369-a33f8d11666d",
+      "gunpackId": "93c0d9a9-7aa7-4e04-8d3c-206e50b2772b",
+      "baseName": "carbinerifle",
+      "weaponPrefix": "w_ar_",
+      "category": "assault",
+      "displayName": "Карабинная винтовка",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/93c0d9a9-7aa7-4e04-8d3c-206e50b2772b/guns/carbinerifle.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/93c0d9a9-7aa7-4e04-8d3c-206e50b2772b/guns/carbinerifle.webp",
+      "files": [
+        "w_ar_carbinerifle_hi.ydr",
+        "w_ar_carbinerifle_mag1.ydr",
+        "w_ar_carbinerifle_mag2.ydr",
+        "w_ar_carbinerifle.ydr"
+      ],
+      "sizeBytes": 5650033,
+      "isHidden": false,
+      "sortOrder": 100
+    },
+    {
+      "id": "1578b8e2-20e6-4892-9db4-18fb47a9bb51",
+      "gunpackId": "93c0d9a9-7aa7-4e04-8d3c-206e50b2772b",
+      "baseName": "heavyrifleh",
+      "weaponPrefix": "w_ar_",
+      "category": "assault",
+      "displayName": "Тяжёлая винтовка",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/93c0d9a9-7aa7-4e04-8d3c-206e50b2772b/guns/heavyrifleh.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/93c0d9a9-7aa7-4e04-8d3c-206e50b2772b/guns/heavyrifleh.webp",
+      "files": [
+        "w_ar_heavyrifleh_hi.ydr",
+        "w_ar_heavyrifleh.ydr"
+      ],
+      "sizeBytes": 5410325,
+      "isHidden": false,
+      "sortOrder": 105
+    },
+    {
+      "id": "c4a826b2-51fc-437b-a065-7f2795b68846",
+      "gunpackId": "622bc8d0-e6a7-4bdb-b0c7-43b5644fa8f3",
+      "baseName": "combatmgmk2",
+      "weaponPrefix": "w_mg_",
+      "category": "mg",
+      "displayName": "Ручной пулемёт Mk2",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/622bc8d0-e6a7-4bdb-b0c7-43b5644fa8f3/guns/combatmgmk2.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/622bc8d0-e6a7-4bdb-b0c7-43b5644fa8f3/guns/combatmgmk2.webp",
+      "files": [
+        "w_mg_combatmgmk2_hi.ydr",
+        "w_mg_combatmgmk2_mag1.ydr",
+        "w_mg_combatmgmk2_mag2.ydr",
+        "w_mg_combatmgmk2.ydr"
+      ],
+      "sizeBytes": 1422006,
+      "isHidden": false,
+      "sortOrder": 130
+    },
+    {
+      "id": "6f921066-3e8e-4107-b7e3-06469d5d65c3",
+      "gunpackId": "622bc8d0-e6a7-4bdb-b0c7-43b5644fa8f3",
+      "baseName": "heavyshotgun",
+      "weaponPrefix": "w_sg_",
+      "category": "shotgun",
+      "displayName": "Тяжёлый дробовик",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/622bc8d0-e6a7-4bdb-b0c7-43b5644fa8f3/guns/heavyshotgun.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/622bc8d0-e6a7-4bdb-b0c7-43b5644fa8f3/guns/heavyshotgun.webp",
+      "files": [
+        "w_sg_heavyshotgun_hi.ydr",
+        "w_sg_heavyshotgun_mag1.ydr",
+        "w_sg_heavyshotgun_mag2.ydr",
+        "w_sg_heavyshotgun.ydr"
+      ],
+      "sizeBytes": 1350035,
+      "isHidden": false,
+      "sortOrder": 20
+    },
+    {
+      "id": "d3b4f3c2-16df-44f3-a811-7b67883cd537",
+      "gunpackId": "b8b6a2dd-c12e-4bb6-bdd7-cb74ffe16025",
+      "baseName": "heavyrifleh",
+      "weaponPrefix": "w_ar_",
+      "category": "assault",
+      "displayName": "Тяжёлая винтовка",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/b8b6a2dd-c12e-4bb6-bdd7-cb74ffe16025/guns/heavyrifleh.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/b8b6a2dd-c12e-4bb6-bdd7-cb74ffe16025/guns/heavyrifleh.webp",
+      "files": [
+        "w_ar_heavyrifleh_hi.ydr",
+        "w_ar_heavyrifleh_sight_hi.ydr",
+        "w_ar_heavyrifleh_sight.ydr",
+        "w_ar_heavyrifleh.ydr"
+      ],
+      "sizeBytes": 365650,
+      "isHidden": false,
+      "sortOrder": 105
+    },
+    {
+      "id": "85cbe069-621e-40a3-ae33-232c2310e4d0",
+      "gunpackId": "b8b6a2dd-c12e-4bb6-bdd7-cb74ffe16025",
+      "baseName": "specialcarbinemk2",
+      "weaponPrefix": "w_ar_",
+      "category": "assault",
+      "displayName": "Спец. карабин Mk2",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/b8b6a2dd-c12e-4bb6-bdd7-cb74ffe16025/guns/specialcarbinemk2.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/b8b6a2dd-c12e-4bb6-bdd7-cb74ffe16025/guns/specialcarbinemk2.webp",
+      "files": [
+        "w_ar_specialcarbinemk2_hi.ydr",
+        "w_ar_specialcarbinemk2_mag1.ydr",
+        "w_ar_specialcarbinemk2_mag2.ydr",
+        "w_ar_specialcarbinemk2.ydr"
+      ],
+      "sizeBytes": 528904,
+      "isHidden": false,
+      "sortOrder": 70
+    },
+    {
+      "id": "13af1907-796e-4841-851a-8a4be52e8d1c",
+      "gunpackId": "b8b6a2dd-c12e-4bb6-bdd7-cb74ffe16025",
+      "baseName": "assaultshotgun",
+      "weaponPrefix": "w_sg_",
+      "category": "shotgun",
+      "displayName": "Штурмовой дробовик",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/b8b6a2dd-c12e-4bb6-bdd7-cb74ffe16025/guns/assaultshotgun.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/b8b6a2dd-c12e-4bb6-bdd7-cb74ffe16025/guns/assaultshotgun.webp",
+      "files": [
+        "w_sg_assaultshotgun_hi.ydr",
+        "w_sg_assaultshotgun_mag1.ydr",
+        "w_sg_assaultshotgun_mag2.ydr",
+        "w_sg_assaultshotgun.ydr"
+      ],
+      "sizeBytes": 291218,
+      "isHidden": false,
+      "sortOrder": 10
+    },
+    {
+      "id": "e3e45e42-7cab-4fba-95c6-8b75b0f97c94",
+      "gunpackId": "b8b6a2dd-c12e-4bb6-bdd7-cb74ffe16025",
+      "baseName": "heavyshotgun",
+      "weaponPrefix": "w_sg_",
+      "category": "shotgun",
+      "displayName": "Тяжёлый дробовик",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/b8b6a2dd-c12e-4bb6-bdd7-cb74ffe16025/guns/heavyshotgun.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/b8b6a2dd-c12e-4bb6-bdd7-cb74ffe16025/guns/heavyshotgun.webp",
+      "files": [
+        "w_sg_heavyshotgun_hi.ydr",
+        "w_sg_heavyshotgun_mag1.ydr",
+        "w_sg_heavyshotgun_mag2.ydr",
+        "w_sg_heavyshotgun.ydr"
+      ],
+      "sizeBytes": 535506,
+      "isHidden": false,
+      "sortOrder": 20
+    },
+    {
+      "id": "864c9a5a-79bc-47cc-bfe0-4290eae0d94a",
+      "gunpackId": "b8b6a2dd-c12e-4bb6-bdd7-cb74ffe16025",
+      "baseName": "heavysnipermk2",
+      "weaponPrefix": "w_sr_",
+      "category": "sniper",
+      "displayName": "Тяжёлая снайперская винтовка Mk2",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/b8b6a2dd-c12e-4bb6-bdd7-cb74ffe16025/guns/heavysnipermk2.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/b8b6a2dd-c12e-4bb6-bdd7-cb74ffe16025/guns/heavysnipermk2.webp",
+      "files": [
+        "w_sr_heavysnipermk2_hi.ydr",
+        "w_sr_heavysnipermk2_mag1.ydr",
+        "w_sr_heavysnipermk2_mag2.ydr",
+        "w_sr_heavysnipermk2.ydr"
+      ],
+      "sizeBytes": 587798,
+      "isHidden": false,
+      "sortOrder": 120
+    },
+    {
+      "id": "be06143e-67cf-4608-aa61-a7df02c5cea3",
+      "gunpackId": "b8b6a2dd-c12e-4bb6-bdd7-cb74ffe16025",
+      "baseName": "marksmanriflemk2",
+      "weaponPrefix": "w_sr_",
+      "category": "sniper",
+      "displayName": "Винтовка Marksman Mk2",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/b8b6a2dd-c12e-4bb6-bdd7-cb74ffe16025/guns/marksmanriflemk2.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/b8b6a2dd-c12e-4bb6-bdd7-cb74ffe16025/guns/marksmanriflemk2.webp",
+      "files": [
+        "w_sr_marksmanriflemk2_hi.ydr",
+        "w_sr_marksmanriflemk2_mag1.ydr",
+        "w_sr_marksmanriflemk2_mag2.ydr",
+        "w_sr_marksmanriflemk2.ydr"
+      ],
+      "sizeBytes": 619022,
+      "isHidden": false,
+      "sortOrder": 140
+    },
+    {
+      "id": "2740cfa1-609b-4ae7-93fa-872727caf65c",
+      "gunpackId": "67e7d016-3bc6-4adb-83cf-67ad4a102e06",
+      "baseName": "carbinerifle",
+      "weaponPrefix": "w_ar_",
+      "category": "assault",
+      "displayName": "Карабинная винтовка",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/67e7d016-3bc6-4adb-83cf-67ad4a102e06/guns/carbinerifle.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/67e7d016-3bc6-4adb-83cf-67ad4a102e06/guns/carbinerifle.webp",
+      "files": [
+        "w_ar_carbinerifle_hi.ydr",
+        "w_ar_carbinerifle_mag1.ydr",
+        "w_ar_carbinerifle_mag2.ydr",
+        "w_ar_carbinerifle.ydr"
+      ],
+      "sizeBytes": 8243104,
+      "isHidden": false,
+      "sortOrder": 100
+    },
+    {
+      "id": "6defd063-e3bc-433f-8854-224d80861405",
+      "gunpackId": "67e7d016-3bc6-4adb-83cf-67ad4a102e06",
+      "baseName": "heavyrifleh",
+      "weaponPrefix": "w_ar_",
+      "category": "assault",
+      "displayName": "Тяжёлая винтовка",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/67e7d016-3bc6-4adb-83cf-67ad4a102e06/guns/heavyrifleh.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/67e7d016-3bc6-4adb-83cf-67ad4a102e06/guns/heavyrifleh.webp",
+      "files": [
+        "w_ar_heavyrifleh_hi.ydr",
+        "w_ar_heavyrifleh_sight_hi.ydr",
+        "w_ar_heavyrifleh_sight.ydr",
+        "w_ar_heavyrifleh.ydr"
+      ],
+      "sizeBytes": 8357530,
+      "isHidden": false,
+      "sortOrder": 105
+    },
+    {
+      "id": "472cd7b6-b885-4873-9146-afa92a3b04c4",
+      "gunpackId": "67e7d016-3bc6-4adb-83cf-67ad4a102e06",
+      "baseName": "specialcarbine",
+      "weaponPrefix": "w_ar_",
+      "category": "assault",
+      "displayName": "Спец. карабин",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/67e7d016-3bc6-4adb-83cf-67ad4a102e06/guns/specialcarbine.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/67e7d016-3bc6-4adb-83cf-67ad4a102e06/guns/specialcarbine.webp",
+      "files": [
+        "w_ar_specialcarbine_hi.ydr",
+        "w_ar_specialcarbine_mag1.ydr",
+        "w_ar_specialcarbine_mag2.ydr",
+        "w_ar_specialcarbine.ydr"
+      ],
+      "sizeBytes": 8018978,
+      "isHidden": false,
+      "sortOrder": 80
+    },
+    {
+      "id": "934288e0-f662-4f97-be6a-6399a576bc68",
+      "gunpackId": "b8b6a2dd-c12e-4bb6-bdd7-cb74ffe16025",
+      "baseName": "combatmgmk2",
+      "weaponPrefix": "w_mg_",
+      "category": "mg",
+      "displayName": "Ручной пулемёт Mk2",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/b8b6a2dd-c12e-4bb6-bdd7-cb74ffe16025/guns/combatmgmk2.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/b8b6a2dd-c12e-4bb6-bdd7-cb74ffe16025/guns/combatmgmk2.webp",
+      "files": [
+        "w_mg_combatmgmk2_hi.ydr",
+        "w_mg_combatmgmk2_mag1.ydr",
+        "w_mg_combatmgmk2_mag2.ydr",
+        "w_mg_combatmgmk2.ydr"
+      ],
+      "sizeBytes": 1962450,
+      "isHidden": false,
+      "sortOrder": 130
+    },
+    {
+      "id": "ce50d1b2-32b5-4635-b7c5-1a340a5e3cc2",
+      "gunpackId": "67e7d016-3bc6-4adb-83cf-67ad4a102e06",
+      "baseName": "specialcarbinemk2",
+      "weaponPrefix": "w_ar_",
+      "category": "assault",
+      "displayName": "Спец. карабин Mk2",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/67e7d016-3bc6-4adb-83cf-67ad4a102e06/guns/specialcarbinemk2.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/67e7d016-3bc6-4adb-83cf-67ad4a102e06/guns/specialcarbinemk2.webp",
+      "files": [
+        "w_ar_specialcarbinemk2_hi.ydr",
+        "w_ar_specialcarbinemk2_mag1.ydr",
+        "w_ar_specialcarbinemk2_mag2.ydr",
+        "w_ar_specialcarbinemk2.ydr"
+      ],
+      "sizeBytes": 8016100,
+      "isHidden": false,
+      "sortOrder": 70
+    },
+    {
+      "id": "503eff32-fec4-4430-9926-a6c4b5af5fa8",
+      "gunpackId": "67e7d016-3bc6-4adb-83cf-67ad4a102e06",
+      "baseName": "combatmgmk2",
+      "weaponPrefix": "w_mg_",
+      "category": "mg",
+      "displayName": "Ручной пулемёт Mk2",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/67e7d016-3bc6-4adb-83cf-67ad4a102e06/guns/combatmgmk2.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/67e7d016-3bc6-4adb-83cf-67ad4a102e06/guns/combatmgmk2.webp",
+      "files": [
+        "w_mg_combatmgmk2_hi.ydr",
+        "w_mg_combatmgmk2_mag1.ydr",
+        "w_mg_combatmgmk2_mag2.ydr",
+        "w_mg_combatmgmk2.ydr"
+      ],
+      "sizeBytes": 666422,
+      "isHidden": false,
+      "sortOrder": 130
+    },
+    {
+      "id": "719a3928-0785-4a6e-9aa6-7b62aeb7d812",
+      "gunpackId": "67e7d016-3bc6-4adb-83cf-67ad4a102e06",
+      "baseName": "revolver",
+      "weaponPrefix": "w_pi_",
+      "category": "pistol",
+      "displayName": "Револьвер",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/67e7d016-3bc6-4adb-83cf-67ad4a102e06/guns/revolver.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/67e7d016-3bc6-4adb-83cf-67ad4a102e06/guns/revolver.webp",
+      "files": [
+        "w_pi_revolver_hi.ydr",
+        "w_pi_revolver_mag1.ydr",
+        "w_pi_revolver.ydr"
+      ],
+      "sizeBytes": 2182728,
+      "isHidden": false,
+      "sortOrder": 30
+    },
+    {
+      "id": "bf57b44b-d211-45b5-8191-232c5727c232",
+      "gunpackId": "67e7d016-3bc6-4adb-83cf-67ad4a102e06",
+      "baseName": "assaultshotgun",
+      "weaponPrefix": "w_sg_",
+      "category": "shotgun",
+      "displayName": "Штурмовой дробовик",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/67e7d016-3bc6-4adb-83cf-67ad4a102e06/guns/assaultshotgun.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/67e7d016-3bc6-4adb-83cf-67ad4a102e06/guns/assaultshotgun.webp",
+      "files": [
+        "w_sg_assaultshotgun_hi.ydr",
+        "w_sg_assaultshotgun_mag1.ydr",
+        "w_sg_assaultshotgun_mag2.ydr",
+        "w_sg_assaultshotgun.ydr"
+      ],
+      "sizeBytes": 2669222,
+      "isHidden": false,
+      "sortOrder": 10
+    },
+    {
+      "id": "c69d0f80-c655-4dc6-b5d5-81d3747ad842",
+      "gunpackId": "67e7d016-3bc6-4adb-83cf-67ad4a102e06",
+      "baseName": "heavyshotgun",
+      "weaponPrefix": "w_sg_",
+      "category": "shotgun",
+      "displayName": "Тяжёлый дробовик",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/67e7d016-3bc6-4adb-83cf-67ad4a102e06/guns/heavyshotgun.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/67e7d016-3bc6-4adb-83cf-67ad4a102e06/guns/heavyshotgun.webp",
+      "files": [
+        "w_sg_heavyshotgun_hi.ydr",
+        "w_sg_heavyshotgun_mag1.ydr",
+        "w_sg_heavyshotgun_mag2.ydr",
+        "w_sg_heavyshotgun.ydr"
+      ],
+      "sizeBytes": 2256748,
+      "isHidden": false,
+      "sortOrder": 20
+    },
+    {
+      "id": "7a428cb1-8861-4cf1-8ddb-e73b0541092c",
+      "gunpackId": "67e7d016-3bc6-4adb-83cf-67ad4a102e06",
+      "baseName": "heavysniper",
+      "weaponPrefix": "w_sr_",
+      "category": "sniper",
+      "displayName": "Тяжёлая снайперская винтовка",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/67e7d016-3bc6-4adb-83cf-67ad4a102e06/guns/heavysniper.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/67e7d016-3bc6-4adb-83cf-67ad4a102e06/guns/heavysniper.webp",
+      "files": [
+        "w_sr_heavysniper_hi.ydr",
+        "w_sr_heavysniper_mag1.ydr",
+        "w_sr_heavysniper_mag2.ydr",
+        "w_sr_heavysniper.ydr"
+      ],
+      "sizeBytes": 83764,
+      "isHidden": false,
+      "sortOrder": 110
+    },
+    {
+      "id": "889da614-22ef-487a-b3e6-92bf946ba13d",
+      "gunpackId": "67e7d016-3bc6-4adb-83cf-67ad4a102e06",
+      "baseName": "heavysnipermk2",
+      "weaponPrefix": "w_sr_",
+      "category": "sniper",
+      "displayName": "Тяжёлая снайперская винтовка Mk2",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/67e7d016-3bc6-4adb-83cf-67ad4a102e06/guns/heavysnipermk2.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/67e7d016-3bc6-4adb-83cf-67ad4a102e06/guns/heavysnipermk2.webp",
+      "files": [
+        "w_sr_heavysnipermk2_hi.ydr",
+        "w_sr_heavysnipermk2_mag1.ydr",
+        "w_sr_heavysnipermk2_mag2.ydr",
+        "w_sr_heavysnipermk2.ydr"
+      ],
+      "sizeBytes": 426304,
+      "isHidden": false,
+      "sortOrder": 120
+    },
+    {
+      "id": "04357c8a-9553-42c7-9b4f-b4c6f1f536ca",
+      "gunpackId": "67e7d016-3bc6-4adb-83cf-67ad4a102e06",
+      "baseName": "marksmanriflemk2",
+      "weaponPrefix": "w_sr_",
+      "category": "sniper",
+      "displayName": "Винтовка Marksman Mk2",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/67e7d016-3bc6-4adb-83cf-67ad4a102e06/guns/marksmanriflemk2.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/67e7d016-3bc6-4adb-83cf-67ad4a102e06/guns/marksmanriflemk2.webp",
+      "files": [
+        "w_sr_marksmanriflemk2_hi.ydr",
+        "w_sr_marksmanriflemk2_mag1.ydr",
+        "w_sr_marksmanriflemk2_mag2.ydr",
+        "w_sr_marksmanriflemk2.ydr"
+      ],
+      "sizeBytes": 520876,
+      "isHidden": false,
+      "sortOrder": 140
+    },
+    {
+      "id": "86e8b47f-7776-4f83-aa5b-2bcab6298878",
+      "gunpackId": "c157abdb-43ec-4de5-89e8-8dbac36c9cec",
+      "baseName": "heavyrifleh",
+      "weaponPrefix": "w_ar_",
+      "category": "assault",
+      "displayName": "Тяжёлая винтовка",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/c157abdb-43ec-4de5-89e8-8dbac36c9cec/guns/heavyrifleh.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/c157abdb-43ec-4de5-89e8-8dbac36c9cec/guns/heavyrifleh.webp",
+      "files": [
+        "w_ar_heavyrifleh_hi.ydr",
+        "w_ar_heavyrifleh_sight_hi.ydr",
+        "w_ar_heavyrifleh_sight.ydr",
+        "w_ar_heavyrifleh.ydr"
+      ],
+      "sizeBytes": 26893838,
+      "isHidden": false,
+      "sortOrder": 105
+    },
+    {
+      "id": "04b8dafb-aae1-4751-9ea3-54052483c280",
+      "gunpackId": "c157abdb-43ec-4de5-89e8-8dbac36c9cec",
+      "baseName": "specialcarbinemk2",
+      "weaponPrefix": "w_ar_",
+      "category": "assault",
+      "displayName": "Спец. карабин Mk2",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/c157abdb-43ec-4de5-89e8-8dbac36c9cec/guns/specialcarbinemk2.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/c157abdb-43ec-4de5-89e8-8dbac36c9cec/guns/specialcarbinemk2.webp",
+      "files": [
+        "w_ar_specialcarbinemk2_hi.ydr",
+        "w_ar_specialcarbinemk2_mag1.ydr",
+        "w_ar_specialcarbinemk2_mag2.ydr",
+        "w_ar_specialcarbinemk2.ydr"
+      ],
+      "sizeBytes": 35683228,
+      "isHidden": false,
+      "sortOrder": 70
+    },
+    {
+      "id": "030da710-3df0-4d37-a662-35a404755957",
+      "gunpackId": "c157abdb-43ec-4de5-89e8-8dbac36c9cec",
+      "baseName": "combatmgmk2",
+      "weaponPrefix": "w_mg_",
+      "category": "mg",
+      "displayName": "Ручной пулемёт Mk2",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/c157abdb-43ec-4de5-89e8-8dbac36c9cec/guns/combatmgmk2.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/c157abdb-43ec-4de5-89e8-8dbac36c9cec/guns/combatmgmk2.webp",
+      "files": [
+        "w_mg_combatmgmk2_hi.ydr",
+        "w_mg_combatmgmk2_mag1.ydr",
+        "w_mg_combatmgmk2_mag2.ydr",
+        "w_mg_combatmgmk2.ydr"
+      ],
+      "sizeBytes": 33449088,
+      "isHidden": false,
+      "sortOrder": 130
+    },
+    {
+      "id": "6cd3b2f4-1b5f-4f06-bd77-e02896bdf2ab",
+      "gunpackId": "c157abdb-43ec-4de5-89e8-8dbac36c9cec",
+      "baseName": "heavyshotgun",
+      "weaponPrefix": "w_sg_",
+      "category": "shotgun",
+      "displayName": "Тяжёлый дробовик",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/c157abdb-43ec-4de5-89e8-8dbac36c9cec/guns/heavyshotgun.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/c157abdb-43ec-4de5-89e8-8dbac36c9cec/guns/heavyshotgun.webp",
+      "files": [
+        "w_sg_heavyshotgun_hi.ydr",
+        "w_sg_heavyshotgun_mag1.ydr",
+        "w_sg_heavyshotgun_mag2.ydr",
+        "w_sg_heavyshotgun.ydr"
+      ],
+      "sizeBytes": 30335646,
+      "isHidden": false,
+      "sortOrder": 20
+    },
+    {
+      "id": "6403426a-a436-43cd-8bd2-a34476ba8674",
+      "gunpackId": "c157abdb-43ec-4de5-89e8-8dbac36c9cec",
+      "baseName": "heavysniper",
+      "weaponPrefix": "w_sr_",
+      "category": "sniper",
+      "displayName": "Тяжёлая снайперская винтовка",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/c157abdb-43ec-4de5-89e8-8dbac36c9cec/guns/heavysniper.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/c157abdb-43ec-4de5-89e8-8dbac36c9cec/guns/heavysniper.webp",
+      "files": [
+        "w_sr_heavysniper_hi.ydr",
+        "w_sr_heavysniper.ydr"
+      ],
+      "sizeBytes": 490008,
+      "isHidden": false,
+      "sortOrder": 110
+    },
+    {
+      "id": "7b0e9af3-6bc5-4137-b201-bd399f6017f4",
+      "gunpackId": "c157abdb-43ec-4de5-89e8-8dbac36c9cec",
+      "baseName": "heavysnipermk2",
+      "weaponPrefix": "w_sr_",
+      "category": "sniper",
+      "displayName": "Тяжёлая снайперская винтовка Mk2",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/c157abdb-43ec-4de5-89e8-8dbac36c9cec/guns/heavysnipermk2.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/c157abdb-43ec-4de5-89e8-8dbac36c9cec/guns/heavysnipermk2.webp",
+      "files": [
+        "w_sr_heavysnipermk2_hi.ydr",
+        "w_sr_heavysnipermk2_mag1.ydr",
+        "w_sr_heavysnipermk2_mag2.ydr",
+        "w_sr_heavysnipermk2.ydr"
+      ],
+      "sizeBytes": 5227106,
+      "isHidden": false,
+      "sortOrder": 120
+    },
+    {
+      "id": "39290771-aef7-42c1-915c-b63c99c5ae3f",
+      "gunpackId": "c157abdb-43ec-4de5-89e8-8dbac36c9cec",
+      "baseName": "marksmanriflemk2",
+      "weaponPrefix": "w_sr_",
+      "category": "sniper",
+      "displayName": "Винтовка Marksman Mk2",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/c157abdb-43ec-4de5-89e8-8dbac36c9cec/guns/marksmanriflemk2.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/c157abdb-43ec-4de5-89e8-8dbac36c9cec/guns/marksmanriflemk2.webp",
+      "files": [
+        "w_sr_marksmanriflemk2_hi.ydr",
+        "w_sr_marksmanriflemk2_mag1.ydr",
+        "w_sr_marksmanriflemk2_mag2.ydr",
+        "w_sr_marksmanriflemk2.ydr"
+      ],
+      "sizeBytes": 6277912,
+      "isHidden": false,
+      "sortOrder": 140
+    },
+    {
+      "id": "6555e6ad-ed4c-4b83-b9ab-e7b431efd1c3",
+      "gunpackId": "67e7d016-3bc6-4adb-83cf-67ad4a102e06",
+      "baseName": "minismg",
+      "weaponPrefix": "w_sb_",
+      "category": "smg",
+      "displayName": "Мини ПП",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/67e7d016-3bc6-4adb-83cf-67ad4a102e06/guns/minismg.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/67e7d016-3bc6-4adb-83cf-67ad4a102e06/guns/minismg.webp",
+      "files": [
+        "w_sb_minismg.ydr",
+        "w_sb_minismg_hi.ydr",
+        "w_sb_minismg_mag1.ydr",
+        "w_sb_minismg_mag2.ydr"
+      ],
+      "sizeBytes": 1214954,
+      "isHidden": false,
+      "sortOrder": 50
+    },
+    {
+      "id": "7d0ac0bb-38db-406b-b106-d098369c5dfb",
+      "gunpackId": "05a9fb80-c1d6-4a28-9e7a-798cfc32ed9b",
+      "baseName": "heavyrifleh",
+      "weaponPrefix": "w_ar_",
+      "category": "assault",
+      "displayName": "Тяжёлая винтовка",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/05a9fb80-c1d6-4a28-9e7a-798cfc32ed9b/guns/heavyrifleh.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/05a9fb80-c1d6-4a28-9e7a-798cfc32ed9b/guns/heavyrifleh.webp",
+      "files": [
+        "w_ar_heavyrifleh_hi.ydr",
+        "w_ar_heavyrifleh_sight_hi.ydr",
+        "w_ar_heavyrifleh_sight.ydr",
+        "w_ar_heavyrifleh_sight.ytd",
+        "w_ar_heavyrifleh.ydr"
+      ],
+      "sizeBytes": 2236730,
+      "isHidden": false,
+      "sortOrder": 105
+    },
+    {
+      "id": "f1959710-2f07-44c1-b09a-88776409d485",
+      "gunpackId": "05a9fb80-c1d6-4a28-9e7a-798cfc32ed9b",
+      "baseName": "specialcarbinemk2",
+      "weaponPrefix": "w_ar_",
+      "category": "assault",
+      "displayName": "Спец. карабин Mk2",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/05a9fb80-c1d6-4a28-9e7a-798cfc32ed9b/guns/specialcarbinemk2.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/05a9fb80-c1d6-4a28-9e7a-798cfc32ed9b/guns/specialcarbinemk2.webp",
+      "files": [
+        "w_ar_specialcarbinemk2_hi.ydr",
+        "w_ar_specialcarbinemk2_mag1.ydr",
+        "w_ar_specialcarbinemk2_mag2.ydr",
+        "w_ar_specialcarbinemk2.ydr"
+      ],
+      "sizeBytes": 3147016,
+      "isHidden": false,
+      "sortOrder": 70
+    },
+    {
+      "id": "3641a814-d92f-4014-9fed-d4cfedf304ca",
+      "gunpackId": "05a9fb80-c1d6-4a28-9e7a-798cfc32ed9b",
+      "baseName": "assaultshotgun",
+      "weaponPrefix": "w_sg_",
+      "category": "shotgun",
+      "displayName": "Штурмовой дробовик",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/05a9fb80-c1d6-4a28-9e7a-798cfc32ed9b/guns/assaultshotgun.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/05a9fb80-c1d6-4a28-9e7a-798cfc32ed9b/guns/assaultshotgun.webp",
+      "files": [
+        "w_sg_assaultshotgun_hi.ydr",
+        "w_sg_assaultshotgun_mag1.ydr",
+        "w_sg_assaultshotgun_mag2.ydr",
+        "w_sg_assaultshotgun.ydr"
+      ],
+      "sizeBytes": 2898132,
+      "isHidden": false,
+      "sortOrder": 10
+    },
+    {
+      "id": "8c2abafd-62c6-436e-93a3-948191b95402",
+      "gunpackId": "05a9fb80-c1d6-4a28-9e7a-798cfc32ed9b",
+      "baseName": "heavyshotgun",
+      "weaponPrefix": "w_sg_",
+      "category": "shotgun",
+      "displayName": "Тяжёлый дробовик",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/05a9fb80-c1d6-4a28-9e7a-798cfc32ed9b/guns/heavyshotgun.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/05a9fb80-c1d6-4a28-9e7a-798cfc32ed9b/guns/heavyshotgun.webp",
+      "files": [
+        "w_sg_heavyshotgun_hi.ydr",
+        "w_sg_heavyshotgun_mag1.ydr",
+        "w_sg_heavyshotgun_mag2.ydr",
+        "w_sg_heavyshotgun.ydr"
+      ],
+      "sizeBytes": 3117258,
+      "isHidden": false,
+      "sortOrder": 20
+    },
+    {
+      "id": "8ddbbf8b-82ea-4709-8646-c3f5aab50641",
+      "gunpackId": "d342cdda-8bc2-40ee-9ad4-f61328964669",
+      "baseName": "heavyrifleh",
+      "weaponPrefix": "w_ar_",
+      "category": "assault",
+      "displayName": "Тяжёлая винтовка",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/d342cdda-8bc2-40ee-9ad4-f61328964669/guns/heavyrifleh.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/d342cdda-8bc2-40ee-9ad4-f61328964669/guns/heavyrifleh.webp",
+      "files": [
+        "w_ar_heavyrifleh_hi.ydr",
+        "w_ar_heavyrifleh_sight_hi.ydr",
+        "w_ar_heavyrifleh_sight.ydr",
+        "w_ar_heavyrifleh.ydr"
+      ],
+      "sizeBytes": 2369569,
+      "isHidden": false,
+      "sortOrder": 105
+    },
+    {
+      "id": "24344972-9661-4aa5-ab91-caf7930109df",
+      "gunpackId": "d342cdda-8bc2-40ee-9ad4-f61328964669",
+      "baseName": "specialcarbinemk2",
+      "weaponPrefix": "w_ar_",
+      "category": "assault",
+      "displayName": "Спец. карабин Mk2",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/d342cdda-8bc2-40ee-9ad4-f61328964669/guns/specialcarbinemk2.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/d342cdda-8bc2-40ee-9ad4-f61328964669/guns/specialcarbinemk2.webp",
+      "files": [
+        "w_ar_specialcarbinemk2_hi.ydr",
+        "w_ar_specialcarbinemk2_mag1.ydr",
+        "w_ar_specialcarbinemk2_mag2.ydr",
+        "w_ar_specialcarbinemk2.ydr"
+      ],
+      "sizeBytes": 2368993,
+      "isHidden": false,
+      "sortOrder": 70
+    },
+    {
+      "id": "b5a8fc5f-842a-4ca7-9598-f1c0ed083035",
+      "gunpackId": "d342cdda-8bc2-40ee-9ad4-f61328964669",
+      "baseName": "combatmgmk2",
+      "weaponPrefix": "w_mg_",
+      "category": "mg",
+      "displayName": "Ручной пулемёт Mk2",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/d342cdda-8bc2-40ee-9ad4-f61328964669/guns/combatmgmk2.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/d342cdda-8bc2-40ee-9ad4-f61328964669/guns/combatmgmk2.webp",
+      "files": [
+        "w_mg_combatmgmk2_hi.ydr",
+        "w_mg_combatmgmk2_mag1.ydr",
+        "w_mg_combatmgmk2_mag2.ydr",
+        "w_mg_combatmgmk2.ydr"
+      ],
+      "sizeBytes": 1486715,
+      "isHidden": false,
+      "sortOrder": 130
+    },
+    {
+      "id": "e11fdd88-2f8d-4048-b136-119c45b501b1",
+      "gunpackId": "d342cdda-8bc2-40ee-9ad4-f61328964669",
+      "baseName": "assaultshotgun",
+      "weaponPrefix": "w_sg_",
+      "category": "shotgun",
+      "displayName": "Штурмовой дробовик",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/d342cdda-8bc2-40ee-9ad4-f61328964669/guns/assaultshotgun.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/d342cdda-8bc2-40ee-9ad4-f61328964669/guns/assaultshotgun.webp",
+      "files": [
+        "w_sg_assaultshotgun_hi.ydr",
+        "w_sg_assaultshotgun_mag1.ydr",
+        "w_sg_assaultshotgun_mag2.ydr",
+        "w_sg_assaultshotgun.ydr"
+      ],
+      "sizeBytes": 2369504,
+      "isHidden": false,
+      "sortOrder": 10
+    },
+    {
+      "id": "7b138333-e7d4-4176-a707-39ced2adc945",
+      "gunpackId": "d342cdda-8bc2-40ee-9ad4-f61328964669",
+      "baseName": "heavyshotgun",
+      "weaponPrefix": "w_sg_",
+      "category": "shotgun",
+      "displayName": "Тяжёлый дробовик",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/d342cdda-8bc2-40ee-9ad4-f61328964669/guns/heavyshotgun.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/d342cdda-8bc2-40ee-9ad4-f61328964669/guns/heavyshotgun.webp",
+      "files": [
+        "w_sg_heavyshotgun_hi.ydr",
+        "w_sg_heavyshotgun_mag1.ydr",
+        "w_sg_heavyshotgun_mag2.ydr",
+        "w_sg_heavyshotgun.ydr"
+      ],
+      "sizeBytes": 2368698,
+      "isHidden": false,
+      "sortOrder": 20
+    },
+    {
+      "id": "ccb8294f-53a7-46b6-96af-32e77c73f995",
+      "gunpackId": "d342cdda-8bc2-40ee-9ad4-f61328964669",
+      "baseName": "heavysniper",
+      "weaponPrefix": "w_sr_",
+      "category": "sniper",
+      "displayName": "Тяжёлая снайперская винтовка",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/d342cdda-8bc2-40ee-9ad4-f61328964669/guns/heavysniper.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/d342cdda-8bc2-40ee-9ad4-f61328964669/guns/heavysniper.webp",
+      "files": [
+        "w_sr_heavysniper_hi.ydr",
+        "w_sr_heavysniper_mag1.ydr",
+        "w_sr_heavysniper_mag2.ydr",
+        "w_sr_heavysniper.ydr"
+      ],
+      "sizeBytes": 1047791,
+      "isHidden": false,
+      "sortOrder": 110
+    },
+    {
+      "id": "4134b8f4-45b1-46e1-a852-9ab18134d3cb",
+      "gunpackId": "d342cdda-8bc2-40ee-9ad4-f61328964669",
+      "baseName": "heavysnipermk2",
+      "weaponPrefix": "w_sr_",
+      "category": "sniper",
+      "displayName": "Тяжёлая снайперская винтовка Mk2",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/d342cdda-8bc2-40ee-9ad4-f61328964669/guns/heavysnipermk2.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/d342cdda-8bc2-40ee-9ad4-f61328964669/guns/heavysnipermk2.webp",
+      "files": [
+        "w_sr_heavysnipermk2_hi.ydr",
+        "w_sr_heavysnipermk2_mag1.ydr",
+        "w_sr_heavysnipermk2_mag2.ydr",
+        "w_sr_heavysnipermk2.ydr"
+      ],
+      "sizeBytes": 1047801,
+      "isHidden": false,
+      "sortOrder": 120
+    },
+    {
+      "id": "9b86e153-6333-4411-91e7-69cd20ca3e47",
+      "gunpackId": "d342cdda-8bc2-40ee-9ad4-f61328964669",
+      "baseName": "marksmanriflemk2",
+      "weaponPrefix": "w_sr_",
+      "category": "sniper",
+      "displayName": "Винтовка Marksman Mk2",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/d342cdda-8bc2-40ee-9ad4-f61328964669/guns/marksmanriflemk2.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/d342cdda-8bc2-40ee-9ad4-f61328964669/guns/marksmanriflemk2.webp",
+      "files": [
+        "w_sr_marksmanriflemk2_hi.ydr",
+        "w_sr_marksmanriflemk2_mag1.ydr",
+        "w_sr_marksmanriflemk2_mag2.ydr",
+        "w_sr_marksmanriflemk2.ydr"
+      ],
+      "sizeBytes": 1061894,
+      "isHidden": false,
+      "sortOrder": 140
+    },
+    {
+      "id": "8adb3b14-8c75-4093-a765-e2e60a2edb13",
+      "gunpackId": "bb792036-ca47-4d44-aaf1-f6372c47b4ec",
+      "baseName": "heavyrifleh",
+      "weaponPrefix": "w_ar_",
+      "category": "assault",
+      "displayName": "Тяжёлая винтовка",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/bb792036-ca47-4d44-aaf1-f6372c47b4ec/guns/heavyrifleh.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/bb792036-ca47-4d44-aaf1-f6372c47b4ec/guns/heavyrifleh.webp",
+      "files": [
+        "w_ar_heavyrifleh_hi.ydr",
+        "w_ar_heavyrifleh_sight_hi.ydr",
+        "w_ar_heavyrifleh_sight.ydr",
+        "w_ar_heavyrifleh.ydr"
+      ],
+      "sizeBytes": 37154762,
+      "isHidden": false,
+      "sortOrder": 105
+    },
+    {
+      "id": "1824e20f-ffae-481b-8b1b-ef87b9f07faf",
+      "gunpackId": "c74ec941-00b4-4609-8168-96eab52da492",
+      "baseName": "carbinerifle",
+      "weaponPrefix": "w_ar_",
+      "category": "assault",
+      "displayName": "Карабинная винтовка",
+      "glbUrl": "https://pub-f3641b214c164277964c1e92c826b19b.r2.dev/gunpacks/c74ec941-00b4-4609-8168-96eab52da492/guns/carbinerifle.glb",
+      "previewUrl": "https://pub-f3641b214c164277964c1e92c826b19b.r2.dev/gunpacks/c74ec941-00b4-4609-8168-96eab52da492/guns/carbinerifle.webp",
+      "files": [
+        "w_ar_carbinerifle_hi.ydr",
+        "w_ar_carbinerifle_mag1.ydr",
+        "w_ar_carbinerifle_mag2.ydr",
+        "w_ar_carbinerifle.ydr"
+      ],
+      "sizeBytes": 5044296,
+      "isHidden": false,
+      "sortOrder": 100
+    },
+    {
+      "id": "9d15a5c4-3dc0-491f-b51d-b2217b8d149b",
+      "gunpackId": "bb792036-ca47-4d44-aaf1-f6372c47b4ec",
+      "baseName": "specialcarbinemk2",
+      "weaponPrefix": "w_ar_",
+      "category": "assault",
+      "displayName": "Спец. карабин Mk2",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/bb792036-ca47-4d44-aaf1-f6372c47b4ec/guns/specialcarbinemk2.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/bb792036-ca47-4d44-aaf1-f6372c47b4ec/guns/specialcarbinemk2.webp",
+      "files": [
+        "w_ar_specialcarbinemk2_hi.ydr",
+        "w_ar_specialcarbinemk2_mag1.ydr",
+        "w_ar_specialcarbinemk2_mag2.ydr",
+        "w_ar_specialcarbinemk2.ydr"
+      ],
+      "sizeBytes": 15590379,
+      "isHidden": false,
+      "sortOrder": 70
+    },
+    {
+      "id": "177677b8-668b-49f5-b1c6-4c2b310d00f8",
+      "gunpackId": "bb792036-ca47-4d44-aaf1-f6372c47b4ec",
+      "baseName": "combatmgmk2",
+      "weaponPrefix": "w_mg_",
+      "category": "mg",
+      "displayName": "Ручной пулемёт Mk2",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/bb792036-ca47-4d44-aaf1-f6372c47b4ec/guns/combatmgmk2.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/bb792036-ca47-4d44-aaf1-f6372c47b4ec/guns/combatmgmk2.webp",
+      "files": [
+        "w_mg_combatmgmk2_hi.ydr",
+        "w_mg_combatmgmk2_mag1.ydr",
+        "w_mg_combatmgmk2_mag2.ydr",
+        "w_mg_combatmgmk2.ydr"
+      ],
+      "sizeBytes": 27170103,
+      "isHidden": false,
+      "sortOrder": 130
+    },
+    {
+      "id": "a6e169bb-bf0e-441b-844d-da3699378b09",
+      "gunpackId": "bb792036-ca47-4d44-aaf1-f6372c47b4ec",
+      "baseName": "assaultshotgun",
+      "weaponPrefix": "w_sg_",
+      "category": "shotgun",
+      "displayName": "Штурмовой дробовик",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/bb792036-ca47-4d44-aaf1-f6372c47b4ec/guns/assaultshotgun.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/bb792036-ca47-4d44-aaf1-f6372c47b4ec/guns/assaultshotgun.webp",
+      "files": [
+        "w_sg_assaultshotgun_hi.ydr",
+        "w_sg_assaultshotgun_mag1.ydr",
+        "w_sg_assaultshotgun_mag2.ydr",
+        "w_sg_assaultshotgun.ydr"
+      ],
+      "sizeBytes": 16954530,
+      "isHidden": false,
+      "sortOrder": 10
+    },
+    {
+      "id": "a2520d62-150f-44e5-bf3d-1d0ca378b4e9",
+      "gunpackId": "bb792036-ca47-4d44-aaf1-f6372c47b4ec",
+      "baseName": "heavyshotgun",
+      "weaponPrefix": "w_sg_",
+      "category": "shotgun",
+      "displayName": "Тяжёлый дробовик",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/bb792036-ca47-4d44-aaf1-f6372c47b4ec/guns/heavyshotgun.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/bb792036-ca47-4d44-aaf1-f6372c47b4ec/guns/heavyshotgun.webp",
+      "files": [
+        "w_sg_heavyshotgun_hi.ydr",
+        "w_sg_heavyshotgun_mag1.ydr",
+        "w_sg_heavyshotgun_mag2.ydr",
+        "w_sg_heavyshotgun.ydr"
+      ],
+      "sizeBytes": 28179509,
+      "isHidden": false,
+      "sortOrder": 20
+    },
+    {
+      "id": "1853bc1b-1501-4590-bfb4-e1de97fb489e",
+      "gunpackId": "bb792036-ca47-4d44-aaf1-f6372c47b4ec",
+      "baseName": "heavysniper",
+      "weaponPrefix": "w_sr_",
+      "category": "sniper",
+      "displayName": "Тяжёлая снайперская винтовка",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/bb792036-ca47-4d44-aaf1-f6372c47b4ec/guns/heavysniper.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/bb792036-ca47-4d44-aaf1-f6372c47b4ec/guns/heavysniper.webp",
+      "files": [
+        "w_sr_heavysniper_hi.ydr",
+        "w_sr_heavysniper_mag1.ydr",
+        "w_sr_heavysniper_mag2.ydr",
+        "w_sr_heavysniper.ydr"
+      ],
+      "sizeBytes": 83134,
+      "isHidden": false,
+      "sortOrder": 110
+    },
+    {
+      "id": "cc178fe7-0c52-4a8d-9174-4ef4a77e3196",
+      "gunpackId": "bb792036-ca47-4d44-aaf1-f6372c47b4ec",
+      "baseName": "heavysnipermk2",
+      "weaponPrefix": "w_sr_",
+      "category": "sniper",
+      "displayName": "Тяжёлая снайперская винтовка Mk2",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/bb792036-ca47-4d44-aaf1-f6372c47b4ec/guns/heavysnipermk2.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/bb792036-ca47-4d44-aaf1-f6372c47b4ec/guns/heavysnipermk2.webp",
+      "files": [
+        "w_sr_heavysnipermk2_hi.ydr",
+        "w_sr_heavysnipermk2_mag1.ydr",
+        "w_sr_heavysnipermk2_mag2.ydr",
+        "w_sr_heavysnipermk2.ydr"
+      ],
+      "sizeBytes": 425289,
+      "isHidden": false,
+      "sortOrder": 120
+    },
+    {
+      "id": "451c04d8-5f97-4803-a658-bdf195e00708",
+      "gunpackId": "bb792036-ca47-4d44-aaf1-f6372c47b4ec",
+      "baseName": "marksmanriflemk2",
+      "weaponPrefix": "w_sr_",
+      "category": "sniper",
+      "displayName": "Винтовка Marksman Mk2",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/bb792036-ca47-4d44-aaf1-f6372c47b4ec/guns/marksmanriflemk2.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/bb792036-ca47-4d44-aaf1-f6372c47b4ec/guns/marksmanriflemk2.webp",
+      "files": [
+        "w_sr_marksmanriflemk2_hi.ydr",
+        "w_sr_marksmanriflemk2_mag1.ydr",
+        "w_sr_marksmanriflemk2_mag2.ydr",
+        "w_sr_marksmanriflemk2.ydr"
+      ],
+      "sizeBytes": 516881,
+      "isHidden": false,
+      "sortOrder": 140
+    },
+    {
+      "id": "4c0e51ce-a560-467c-a59d-ebc089e29423",
+      "gunpackId": "523f2a16-8283-46ba-8adf-ad0bc9f4a014",
+      "baseName": "heavyrifleh",
+      "weaponPrefix": "w_ar_",
+      "category": "assault",
+      "displayName": "Тяжёлая винтовка",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/523f2a16-8283-46ba-8adf-ad0bc9f4a014/guns/heavyrifleh.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/523f2a16-8283-46ba-8adf-ad0bc9f4a014/guns/heavyrifleh.webp",
+      "files": [
+        "w_ar_heavyrifleh_hi.ydr",
+        "w_ar_heavyrifleh_sight_hi.ydr",
+        "w_ar_heavyrifleh_sight.ydr",
+        "w_ar_heavyrifleh.ydr"
+      ],
+      "sizeBytes": 7035482,
+      "isHidden": false,
+      "sortOrder": 105
+    },
+    {
+      "id": "6817afda-3a07-4293-9f93-a8183f97a3fb",
+      "gunpackId": "523f2a16-8283-46ba-8adf-ad0bc9f4a014",
+      "baseName": "specialcarbinemk2",
+      "weaponPrefix": "w_ar_",
+      "category": "assault",
+      "displayName": "Спец. карабин Mk2",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/523f2a16-8283-46ba-8adf-ad0bc9f4a014/guns/specialcarbinemk2.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/523f2a16-8283-46ba-8adf-ad0bc9f4a014/guns/specialcarbinemk2.webp",
+      "files": [
+        "w_ar_specialcarbinemk2_hi.ydr",
+        "w_ar_specialcarbinemk2_mag1.ydr",
+        "w_ar_specialcarbinemk2_mag2.ydr",
+        "w_ar_specialcarbinemk2.ydr"
+      ],
+      "sizeBytes": 6810010,
+      "isHidden": false,
+      "sortOrder": 70
+    },
+    {
+      "id": "999c19a4-e2a1-49df-9857-d61d9764232a",
+      "gunpackId": "523f2a16-8283-46ba-8adf-ad0bc9f4a014",
+      "baseName": "combatmgmk2",
+      "weaponPrefix": "w_mg_",
+      "category": "mg",
+      "displayName": "Ручной пулемёт Mk2",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/523f2a16-8283-46ba-8adf-ad0bc9f4a014/guns/combatmgmk2.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/523f2a16-8283-46ba-8adf-ad0bc9f4a014/guns/combatmgmk2.webp",
+      "files": [
+        "w_mg_combatmgmk2_hi.ydr",
+        "w_mg_combatmgmk2_mag1.ydr",
+        "w_mg_combatmgmk2_mag2.ydr",
+        "w_mg_combatmgmk2.ydr"
+      ],
+      "sizeBytes": 8152884,
+      "isHidden": false,
+      "sortOrder": 130
+    },
+    {
+      "id": "c610a2ec-9050-46cf-957d-7000cd374704",
+      "gunpackId": "523f2a16-8283-46ba-8adf-ad0bc9f4a014",
+      "baseName": "heavyshotgun",
+      "weaponPrefix": "w_sg_",
+      "category": "shotgun",
+      "displayName": "Тяжёлый дробовик",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/523f2a16-8283-46ba-8adf-ad0bc9f4a014/guns/heavyshotgun.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/523f2a16-8283-46ba-8adf-ad0bc9f4a014/guns/heavyshotgun.webp",
+      "files": [
+        "w_sg_heavyshotgun_hi.ydr",
+        "w_sg_heavyshotgun_mag1.ydr",
+        "w_sg_heavyshotgun_mag2.ydr",
+        "w_sg_heavyshotgun.ydr"
+      ],
+      "sizeBytes": 6721054,
+      "isHidden": false,
+      "sortOrder": 20
+    },
+    {
+      "id": "1451233c-c2ae-4ca3-aea7-5a4883aa0cb1",
+      "gunpackId": "523f2a16-8283-46ba-8adf-ad0bc9f4a014",
+      "baseName": "heavysniper",
+      "weaponPrefix": "w_sr_",
+      "category": "sniper",
+      "displayName": "Тяжёлая снайперская винтовка",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/523f2a16-8283-46ba-8adf-ad0bc9f4a014/guns/heavysniper.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/523f2a16-8283-46ba-8adf-ad0bc9f4a014/guns/heavysniper.webp",
+      "files": [
+        "w_sr_heavysniper_hi.ydr",
+        "w_sr_heavysniper_mag1.ydr",
+        "w_sr_heavysniper_mag2.ydr",
+        "w_sr_heavysniper.ydr"
+      ],
+      "sizeBytes": 88006,
+      "isHidden": false,
+      "sortOrder": 110
+    },
+    {
+      "id": "becbe419-2a3c-40d2-9ea0-29ff16cb3aa3",
+      "gunpackId": "523f2a16-8283-46ba-8adf-ad0bc9f4a014",
+      "baseName": "heavysnipermk2",
+      "weaponPrefix": "w_sr_",
+      "category": "sniper",
+      "displayName": "Тяжёлая снайперская винтовка Mk2",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/523f2a16-8283-46ba-8adf-ad0bc9f4a014/guns/heavysnipermk2.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/523f2a16-8283-46ba-8adf-ad0bc9f4a014/guns/heavysnipermk2.webp",
+      "files": [
+        "w_sr_heavysnipermk2_hi.ydr",
+        "w_sr_heavysnipermk2_mag1.ydr",
+        "w_sr_heavysnipermk2_mag2.ydr",
+        "w_sr_heavysnipermk2.ydr"
+      ],
+      "sizeBytes": 545548,
+      "isHidden": false,
+      "sortOrder": 120
+    },
+    {
+      "id": "2582640d-8938-44af-95d5-0826937d50d7",
+      "gunpackId": "523f2a16-8283-46ba-8adf-ad0bc9f4a014",
+      "baseName": "marksmanriflemk2",
+      "weaponPrefix": "w_sr_",
+      "category": "sniper",
+      "displayName": "Винтовка Marksman Mk2",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/523f2a16-8283-46ba-8adf-ad0bc9f4a014/guns/marksmanriflemk2.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/523f2a16-8283-46ba-8adf-ad0bc9f4a014/guns/marksmanriflemk2.webp",
+      "files": [
+        "w_sr_marksmanriflemk2_hi.ydr",
+        "w_sr_marksmanriflemk2_mag1.ydr",
+        "w_sr_marksmanriflemk2_mag2.ydr",
+        "w_sr_marksmanriflemk2.ydr"
+      ],
+      "sizeBytes": 6824290,
+      "isHidden": false,
+      "sortOrder": 140
+    },
+    {
+      "id": "9ad2c0dc-4e24-43ad-b5dc-b875169c280f",
+      "gunpackId": "7c677b9f-6d78-4813-ac87-00bcdfa1433d",
+      "baseName": "heavyrifleh",
+      "weaponPrefix": "w_ar_",
+      "category": "assault",
+      "displayName": "Тяжёлая винтовка",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/7c677b9f-6d78-4813-ac87-00bcdfa1433d/guns/heavyrifleh.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/7c677b9f-6d78-4813-ac87-00bcdfa1433d/guns/heavyrifleh.webp",
+      "files": [
+        "w_ar_heavyrifleh_hi.ydr",
+        "w_ar_heavyrifleh_sight_hi.ydr",
+        "w_ar_heavyrifleh_sight.ydr",
+        "w_ar_heavyrifleh.ydr"
+      ],
+      "sizeBytes": 27476320,
+      "isHidden": false,
+      "sortOrder": 105
+    },
+    {
+      "id": "7ae10682-024f-478a-91a4-ed0d5e355942",
+      "gunpackId": "7c677b9f-6d78-4813-ac87-00bcdfa1433d",
+      "baseName": "specialcarbinemk2",
+      "weaponPrefix": "w_ar_",
+      "category": "assault",
+      "displayName": "Спец. карабин Mk2",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/7c677b9f-6d78-4813-ac87-00bcdfa1433d/guns/specialcarbinemk2.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/7c677b9f-6d78-4813-ac87-00bcdfa1433d/guns/specialcarbinemk2.webp",
+      "files": [
+        "w_ar_specialcarbinemk2_hi.ydr",
+        "w_ar_specialcarbinemk2_mag1.ydr",
+        "w_ar_specialcarbinemk2_mag2.ydr",
+        "w_ar_specialcarbinemk2.ydr"
+      ],
+      "sizeBytes": 21942604,
+      "isHidden": false,
+      "sortOrder": 70
+    },
+    {
+      "id": "edf26c0d-e35d-4d34-b03f-f7447dfd8768",
+      "gunpackId": "7c677b9f-6d78-4813-ac87-00bcdfa1433d",
+      "baseName": "combatmgmk2",
+      "weaponPrefix": "w_mg_",
+      "category": "mg",
+      "displayName": "Ручной пулемёт Mk2",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/7c677b9f-6d78-4813-ac87-00bcdfa1433d/guns/combatmgmk2.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/7c677b9f-6d78-4813-ac87-00bcdfa1433d/guns/combatmgmk2.webp",
+      "files": [
+        "w_mg_combatmgmk2_hi.ydr",
+        "w_mg_combatmgmk2_mag1.ydr",
+        "w_mg_combatmgmk2_mag2.ydr",
+        "w_mg_combatmgmk2.ydr"
+      ],
+      "sizeBytes": 27954306,
+      "isHidden": false,
+      "sortOrder": 130
+    },
+    {
+      "id": "fc6a2883-a583-4a53-a4eb-24796e6fa8ff",
+      "gunpackId": "7c677b9f-6d78-4813-ac87-00bcdfa1433d",
+      "baseName": "heavyshotgun",
+      "weaponPrefix": "w_sg_",
+      "category": "shotgun",
+      "displayName": "Тяжёлый дробовик",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/7c677b9f-6d78-4813-ac87-00bcdfa1433d/guns/heavyshotgun.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/7c677b9f-6d78-4813-ac87-00bcdfa1433d/guns/heavyshotgun.webp",
+      "files": [
+        "w_sg_heavyshotgun_hi.ydr",
+        "w_sg_heavyshotgun_mag1.ydr",
+        "w_sg_heavyshotgun_mag2.ydr",
+        "w_sg_heavyshotgun.ydr"
+      ],
+      "sizeBytes": 28293730,
+      "isHidden": false,
+      "sortOrder": 20
+    },
+    {
+      "id": "6ea838c5-85ac-4258-ae19-63c05c89ba1a",
+      "gunpackId": "7c677b9f-6d78-4813-ac87-00bcdfa1433d",
+      "baseName": "heavysniper",
+      "weaponPrefix": "w_sr_",
+      "category": "sniper",
+      "displayName": "Тяжёлая снайперская винтовка",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/7c677b9f-6d78-4813-ac87-00bcdfa1433d/guns/heavysniper.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/7c677b9f-6d78-4813-ac87-00bcdfa1433d/guns/heavysniper.webp",
+      "files": [
+        "w_sr_heavysniper_hi.ydr",
+        "w_sr_heavysniper.ydr"
+      ],
+      "sizeBytes": 84352,
+      "isHidden": false,
+      "sortOrder": 110
+    },
+    {
+      "id": "50e86d5d-6cc7-4f0e-b565-e903c4d4cbb0",
+      "gunpackId": "7c677b9f-6d78-4813-ac87-00bcdfa1433d",
+      "baseName": "heavysnipermk2",
+      "weaponPrefix": "w_sr_",
+      "category": "sniper",
+      "displayName": "Тяжёлая снайперская винтовка Mk2",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/7c677b9f-6d78-4813-ac87-00bcdfa1433d/guns/heavysnipermk2.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/7c677b9f-6d78-4813-ac87-00bcdfa1433d/guns/heavysnipermk2.webp",
+      "files": [
+        "w_sr_heavysnipermk2_hi.ydr",
+        "w_sr_heavysnipermk2.ydr"
+      ],
+      "sizeBytes": 462986,
+      "isHidden": false,
+      "sortOrder": 120
+    },
+    {
+      "id": "f2439579-40cd-4d43-a6b6-664dc39af238",
+      "gunpackId": "7c677b9f-6d78-4813-ac87-00bcdfa1433d",
+      "baseName": "marksmanriflemk2",
+      "weaponPrefix": "w_sr_",
+      "category": "sniper",
+      "displayName": "Винтовка Marksman Mk2",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/7c677b9f-6d78-4813-ac87-00bcdfa1433d/guns/marksmanriflemk2.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/7c677b9f-6d78-4813-ac87-00bcdfa1433d/guns/marksmanriflemk2.webp",
+      "files": [
+        "w_sr_marksmanriflemk2_hi.ydr",
+        "w_sr_marksmanriflemk2.ydr"
+      ],
+      "sizeBytes": 495246,
+      "isHidden": false,
+      "sortOrder": 140
+    },
+    {
+      "id": "d3529aa8-7658-4946-a705-d465f493a50a",
+      "gunpackId": "d6b5026d-0c81-4ad1-a207-d7144f51c151",
+      "baseName": "carbineriflemk2",
+      "weaponPrefix": "w_ar_",
+      "category": "assault",
+      "displayName": "Карабинная винтовка Mk2",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/d6b5026d-0c81-4ad1-a207-d7144f51c151/guns/carbineriflemk2.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/d6b5026d-0c81-4ad1-a207-d7144f51c151/guns/carbineriflemk2.webp",
+      "files": [
+        "w_ar_carbineriflemk2_hi.ydr",
+        "w_ar_carbineriflemk2_mag1.ydr",
+        "w_ar_carbineriflemk2_mag2.ydr",
+        "w_ar_carbineriflemk2.ydr"
+      ],
+      "sizeBytes": 4318182,
+      "isHidden": false,
+      "sortOrder": 90
+    },
+    {
+      "id": "3e184fd5-3630-4ae1-b143-f1210499b943",
+      "gunpackId": "d6b5026d-0c81-4ad1-a207-d7144f51c151",
+      "baseName": "heavyrifleh",
+      "weaponPrefix": "w_ar_",
+      "category": "assault",
+      "displayName": "Тяжёлая винтовка",
+      "glbUrl": "https://miamigraphicsstorage.uk/gunpacks/d6b5026d-0c81-4ad1-a207-d7144f51c151/guns/heavyrifleh.glb",
+      "previewUrl": "https://miamigraphicsstorage.uk/gunpacks/d6b5026d-0c81-4ad1-a207-d7144f51c151/guns/heavyrifleh.webp",
+      "files": [
+        "w_ar_heavyrifleh_hi.ydr",
+        "w_ar_heavyrifleh_sight_hi.ydr",
+        "w_ar_heavyrifleh_sight.ydr",
+        "w_ar_heavyrifleh.ydr"
+      ],
+      "sizeBytes": 4348562,
+      "isHidden": false,
+      "sortOrder": 105
+    }
+  ],
+  "libraryComponents": [
+    {
+      "id": "libsnd_9788a1c9",
+      "type": "sounds",
+      "name": "ЧЕТКИЕ",
+      "author": "",
+      "description": "",
+      "r2Url": "https://miamigraphicsstorage.uk/library/sounds/libsnd_9788a1c9.zip",
+      "sha256": "6ddbb92ab120be11b3b2e54e6a412ef645b95886eca11addef1b6428df62a58b",
+      "sizeBytes": 181569967,
+      "sourceRpfVersion": "",
+      "uploadedBy": "",
+      "uploadedAt": "2026-05-06T14:51:07.923916+00:00",
+      "previewUrl": "",
+      "galleryUrls": [],
+      "previewVideoUrl": ""
+    },
+    {
+      "id": "libmm_a3c0db52",
+      "type": "minimap",
+      "name": "CAT",
+      "author": "",
+      "description": "",
+      "r2Url": "https://miamigraphicsstorage.uk/library/minimap/libmm_a3c0db52.zip",
+      "sha256": "6021fd49541c7c73fbc2323848af7dd21c16282e0186fe47ecbcdd867a4f10d8",
+      "sizeBytes": 5863650,
+      "sourceRpfVersion": "",
+      "uploadedBy": "",
+      "uploadedAt": "2026-05-04T11:19:50.113598+00:00",
+      "previewUrl": "https://miamigraphicsstorage.uk/library/minimap/libmm_a3c0db52__preview.png",
+      "galleryUrls": [],
+      "previewVideoUrl": ""
+    },
+    {
+      "id": "libmm_56fe55f9",
+      "type": "minimap",
+      "name": "Allegri NO TEXT",
+      "author": "",
+      "description": "",
+      "r2Url": "https://miamigraphicsstorage.uk/library/minimap/libmm_56fe55f9.zip",
+      "sha256": "f60e968757d3a8014a5b99b76ba1c82f0d38137edb5927fc71cba8e7fdbddc30",
+      "sizeBytes": 113196,
+      "sourceRpfVersion": "",
+      "uploadedBy": "",
+      "uploadedAt": "2026-05-04T14:58:56.443961+00:00",
+      "previewUrl": "https://miamigraphicsstorage.uk/library/minimap/libmm_56fe55f9__preview.png",
+      "galleryUrls": [],
+      "previewVideoUrl": ""
+    },
+    {
+      "id": "libmm_a232e3e9",
+      "type": "minimap",
+      "name": "SWAG",
+      "author": "",
+      "description": "",
+      "r2Url": "https://miamigraphicsstorage.uk/library/minimap/libmm_a232e3e9.zip",
+      "sha256": "de14718006492c4b5e805c5574a8ce996ecb0771b2a70ce35cd8ece0fe46a017",
+      "sizeBytes": 73271,
+      "sourceRpfVersion": "",
+      "uploadedBy": "",
+      "uploadedAt": "2026-05-04T11:17:43.04583+00:00",
+      "previewUrl": "https://miamigraphicsstorage.uk/library/minimap/libmm_a232e3e9__preview.png",
+      "galleryUrls": [],
+      "previewVideoUrl": ""
+    },
+    {
+      "id": "libmm_f99584d6",
+      "type": "minimap",
+      "name": "Girl Lips",
+      "author": "",
+      "description": "",
+      "r2Url": "https://miamigraphicsstorage.uk/library/minimap/libmm_f99584d6.zip",
+      "sha256": "c22f17843c1d9b1692d099367d3430d6b61218f458b3b22da238d9a9d7bfe21f",
+      "sizeBytes": 2605823,
+      "sourceRpfVersion": "",
+      "uploadedBy": "",
+      "uploadedAt": "2026-05-04T14:59:22.22078+00:00",
+      "previewUrl": "https://miamigraphicsstorage.uk/library/minimap/libmm_f99584d6__preview.png",
+      "galleryUrls": [],
+      "previewVideoUrl": ""
+    },
+    {
+      "id": "libmm_035c84ac",
+      "type": "minimap",
+      "name": "Gucci NO TEXT",
+      "author": "",
+      "description": "",
+      "r2Url": "https://miamigraphicsstorage.uk/library/minimap/libmm_035c84ac.zip",
+      "sha256": "384477908fc4bec24480a6c5501b5eab64a33967f6f6dbe83fc978f9639a7d8a",
+      "sizeBytes": 72765,
+      "sourceRpfVersion": "",
+      "uploadedBy": "",
+      "uploadedAt": "2026-05-04T15:07:48.160762+00:00",
+      "previewUrl": "https://miamigraphicsstorage.uk/library/minimap/libmm_035c84ac__preview.png",
+      "galleryUrls": [],
+      "previewVideoUrl": ""
+    },
+    {
+      "id": "libmm_97b915ed",
+      "type": "minimap",
+      "name": "HAMSTER",
+      "author": "",
+      "description": "",
+      "r2Url": "https://miamigraphicsstorage.uk/library/minimap/libmm_97b915ed.zip",
+      "sha256": "5de9e966acfe3108dbec298f3e0eeb534871413986242c2a4e0344da3e024425",
+      "sizeBytes": 234132,
+      "sourceRpfVersion": "",
+      "uploadedBy": "",
+      "uploadedAt": "2026-05-04T15:07:56.429326+00:00",
+      "previewUrl": "https://miamigraphicsstorage.uk/library/minimap/libmm_97b915ed__preview.png",
+      "galleryUrls": [],
+      "previewVideoUrl": ""
+    },
+    {
+      "id": "libmm_917d5ae7",
+      "type": "minimap",
+      "name": "HOFFMANITA",
+      "author": "",
+      "description": "",
+      "r2Url": "https://miamigraphicsstorage.uk/library/minimap/libmm_917d5ae7.zip",
+      "sha256": "22081e374e69e94dee1bb70afecf87fa3cc809bdc7bf6b5b7762ccc2534bfbed",
+      "sizeBytes": 1438015,
+      "sourceRpfVersion": "",
+      "uploadedBy": "",
+      "uploadedAt": "2026-05-04T15:08:21.313528+00:00",
+      "previewUrl": "https://miamigraphicsstorage.uk/library/minimap/libmm_917d5ae7__preview.png",
+      "galleryUrls": [],
+      "previewVideoUrl": ""
+    },
+    {
+      "id": "libmm_460e21fb",
+      "type": "minimap",
+      "name": "OVERFLOW B&R",
+      "author": "",
+      "description": "",
+      "r2Url": "https://miamigraphicsstorage.uk/library/minimap/libmm_460e21fb.zip",
+      "sha256": "d7e7d12aeea618950f33108ebd897c1349a564a7d8e1c040ff733da9a1440d20",
+      "sizeBytes": 1460649,
+      "sourceRpfVersion": "",
+      "uploadedBy": "",
+      "uploadedAt": "2026-05-04T15:08:31.854613+00:00",
+      "previewUrl": "https://miamigraphicsstorage.uk/library/minimap/libmm_460e21fb__preview.png",
+      "galleryUrls": [],
+      "previewVideoUrl": ""
+    },
+    {
+      "id": "libmm_d108921a",
+      "type": "minimap",
+      "name": "PARIS",
+      "author": "",
+      "description": "",
+      "r2Url": "https://miamigraphicsstorage.uk/library/minimap/libmm_d108921a.zip",
+      "sha256": "7575ab18b6dae06e52dbab1e6500d9ccaca06e57de3c2e707055841195480570",
+      "sizeBytes": 180888,
+      "sourceRpfVersion": "",
+      "uploadedBy": "",
+      "uploadedAt": "2026-05-04T15:09:05.546606+00:00",
+      "previewUrl": "https://miamigraphicsstorage.uk/library/minimap/libmm_d108921a__preview.png",
+      "galleryUrls": [],
+      "previewVideoUrl": ""
+    },
+    {
+      "id": "libmm_a1319dfc",
+      "type": "minimap",
+      "name": "UZI",
+      "author": "",
+      "description": "",
+      "r2Url": "https://miamigraphicsstorage.uk/library/minimap/libmm_a1319dfc.zip",
+      "sha256": "5ba25d82d23adba5584d2f3cd53d6fbfb1caa5baeb513cec01a2bf18ca3eebeb",
+      "sizeBytes": 1354073,
+      "sourceRpfVersion": "",
+      "uploadedBy": "",
+      "uploadedAt": "2026-05-04T15:09:13.147787+00:00",
+      "previewUrl": "https://miamigraphicsstorage.uk/library/minimap/libmm_a1319dfc__preview.png",
+      "galleryUrls": [],
+      "previewVideoUrl": ""
+    },
+    {
+      "id": "libret_587128a3",
+      "type": "crosshair",
+      "name": "BLUE",
+      "author": "",
+      "description": "",
+      "r2Url": "https://miamigraphicsstorage.uk/library/crosshair/libret_587128a3.zip",
+      "sha256": "2f58f0a7258bb7dff08c4fd004c6cf8407aa7248b7a1d9f657242d9250dab8a1",
+      "sizeBytes": 57950,
+      "sourceRpfVersion": "",
+      "uploadedBy": "",
+      "uploadedAt": "2026-05-05T20:15:59.94002+00:00",
+      "previewUrl": "https://miamigraphicsstorage.uk/library/crosshair/libret_587128a3__preview.png",
+      "galleryUrls": [],
+      "previewVideoUrl": ""
+    },
+    {
+      "id": "libret_d874706e",
+      "type": "crosshair",
+      "name": "812",
+      "author": "",
+      "description": "",
+      "r2Url": "https://miamigraphicsstorage.uk/library/crosshair/libret_d874706e.zip",
+      "sha256": "1f92b899be9fc1a3bedc200be6de32e2a51fd0b985f77c56d74a3fa7d881d503",
+      "sizeBytes": 54580,
+      "sourceRpfVersion": "",
+      "uploadedBy": "",
+      "uploadedAt": "2026-05-05T20:16:07.957398+00:00",
+      "previewUrl": "https://miamigraphicsstorage.uk/library/crosshair/libret_d874706e__preview.png",
+      "galleryUrls": [],
+      "previewVideoUrl": ""
+    },
+    {
+      "id": "libmm_e3100f2c",
+      "type": "minimap",
+      "name": "AK47",
+      "author": "",
+      "description": "",
+      "r2Url": "https://miamigraphicsstorage.uk/library/minimap/libmm_e3100f2c.zip",
+      "sha256": "fa73bf372d9dcf865e8220fcd295a8a3945c1b06653001f23fab6d2b611d666a",
+      "sizeBytes": 4247039,
+      "sourceRpfVersion": "",
+      "uploadedBy": "",
+      "uploadedAt": "2026-05-06T13:53:13.29886+00:00",
+      "previewUrl": "https://miamigraphicsstorage.uk/library/minimap/libmm_e3100f2c__preview.png",
+      "galleryUrls": [],
+      "previewVideoUrl": ""
+    },
+    {
+      "id": "libmm_968f2215",
+      "type": "minimap",
+      "name": "GIRL",
+      "author": "",
+      "description": "",
+      "r2Url": "https://miamigraphicsstorage.uk/library/minimap/libmm_968f2215.zip",
+      "sha256": "eb1d5ca8d418e88b293e43f8c4b31ec9d10f06acdfe670be01fe1db9471e2357",
+      "sizeBytes": 410949,
+      "sourceRpfVersion": "",
+      "uploadedBy": "",
+      "uploadedAt": "2026-05-06T13:53:23.013945+00:00",
+      "previewUrl": "https://miamigraphicsstorage.uk/library/minimap/libmm_968f2215__preview.png",
+      "galleryUrls": [],
+      "previewVideoUrl": ""
+    },
+    {
+      "id": "libmm_06fce6e8",
+      "type": "minimap",
+      "name": "INSTRINA",
+      "author": "",
+      "description": "",
+      "r2Url": "https://miamigraphicsstorage.uk/library/minimap/libmm_06fce6e8.zip",
+      "sha256": "70162a4224e43f3ab4c4530318e04d4bc87850be89ca731a12c799208fc49bb5",
+      "sizeBytes": 1438055,
+      "sourceRpfVersion": "",
+      "uploadedBy": "",
+      "uploadedAt": "2026-05-06T13:53:32.002277+00:00",
+      "previewUrl": "https://miamigraphicsstorage.uk/library/minimap/libmm_06fce6e8__preview.png",
+      "galleryUrls": [],
+      "previewVideoUrl": ""
+    },
+    {
+      "id": "libmm_64995f4d",
+      "type": "minimap",
+      "name": "SAFETY",
+      "author": "",
+      "description": "",
+      "r2Url": "https://miamigraphicsstorage.uk/library/minimap/libmm_64995f4d.zip",
+      "sha256": "c9e60167bd7fa2234340cb2ee620cb6b246d5894934d45cc4dae78e65fd20e1d",
+      "sizeBytes": 98138,
+      "sourceRpfVersion": "",
+      "uploadedBy": "",
+      "uploadedAt": "2026-05-06T13:53:39.944206+00:00",
+      "previewUrl": "https://miamigraphicsstorage.uk/library/minimap/libmm_64995f4d__preview.png",
+      "galleryUrls": [],
+      "previewVideoUrl": ""
+    },
+    {
+      "id": "libsnd_c53506e4",
+      "type": "sounds",
+      "name": "PUZAN V2",
+      "author": "",
+      "description": "",
+      "r2Url": "https://miamigraphicsstorage.uk/library/sounds/libsnd_c53506e4.zip",
+      "sha256": "d6e73888de159ac1f9cb7919702e0178e9589042b22dd234fe0733986a03ce89",
+      "sizeBytes": 114875139,
+      "sourceRpfVersion": "",
+      "uploadedBy": "",
+      "uploadedAt": "2026-05-06T14:52:29.572489+00:00",
+      "previewUrl": "https://miamigraphicsstorage.uk/library/sounds/libsnd_c53506e4__preview.jpg",
+      "galleryUrls": [],
+      "previewVideoUrl": "https://miamigraphicsstorage.uk/library/sounds/libsnd_c53506e4__preview_8be0d4.mp4"
+    },
+    {
+      "id": "libsnd_e6909200",
+      "type": "sounds",
+      "name": "TEMPLEDREAM",
+      "author": "",
+      "description": "",
+      "r2Url": "https://miamigraphicsstorage.uk/library/sounds/libsnd_e6909200.zip",
+      "sha256": "fb25bf1c32c1bfec96497327ae3de09ff20c9f906c7de0f49b9d936b001f7f7f",
+      "sizeBytes": 151916530,
+      "sourceRpfVersion": "",
+      "uploadedBy": "",
+      "uploadedAt": "2026-05-06T14:54:26.277628+00:00",
+      "previewUrl": "https://miamigraphicsstorage.uk/library/sounds/libsnd_e6909200__preview.jpg",
+      "galleryUrls": [],
+      "previewVideoUrl": "https://miamigraphicsstorage.uk/library/sounds/libsnd_e6909200__preview_28d783.mp4"
+    },
+    {
+      "id": "libsnd_89e9ede5",
+      "type": "sounds",
+      "name": "SOFT ECHO NETWORK GRAPHICS",
+      "author": "",
+      "description": "",
+      "r2Url": "https://miamigraphicsstorage.uk/library/sounds/libsnd_89e9ede5.zip",
+      "sha256": "930a59e28a8a99e29b2e3f119063a8675966c053012c8f0949ca09285b6681ab",
+      "sizeBytes": 115108073,
+      "sourceRpfVersion": "",
+      "uploadedBy": "",
+      "uploadedAt": "2026-05-06T14:56:35.840852+00:00",
+      "previewUrl": "https://miamigraphicsstorage.uk/library/sounds/libsnd_89e9ede5__preview.jpg",
+      "galleryUrls": [],
+      "previewVideoUrl": "https://miamigraphicsstorage.uk/library/sounds/libsnd_89e9ede5__preview_a037ce.mp4"
+    },
+    {
+      "id": "libsnd_a1f973ef",
+      "type": "sounds",
+      "name": "HEAD BELL",
+      "author": "",
+      "description": "",
+      "r2Url": "https://miamigraphicsstorage.uk/library/sounds/libsnd_a1f973ef.zip",
+      "sha256": "a8d15e288b8ba129a248c95519a4ecb3686574090e1219737eda58c9fed925e5",
+      "sizeBytes": 224834715,
+      "sourceRpfVersion": "",
+      "uploadedBy": "",
+      "uploadedAt": "2026-05-06T14:08:12.47332+00:00",
+      "previewUrl": "https://miamigraphicsstorage.uk/library/sounds/libsnd_a1f973ef__preview.jpg",
+      "galleryUrls": [],
+      "previewVideoUrl": "https://miamigraphicsstorage.uk/library/sounds/libsnd_a1f973ef__preview_2358c3.mp4"
+    },
+    {
+      "id": "libsnd_970883d4",
+      "type": "sounds",
+      "name": "LAZY",
+      "author": "",
+      "description": "",
+      "r2Url": "https://miamigraphicsstorage.uk/library/sounds/libsnd_970883d4.zip",
+      "sha256": "af5dd02bd1bcf5a95db7c0f236dcac81915d9e50879b0fd7c4448de942295b2e",
+      "sizeBytes": 111728944,
+      "sourceRpfVersion": "",
+      "uploadedBy": "",
+      "uploadedAt": "2026-05-06T14:35:05.499229+00:00",
+      "previewUrl": "https://miamigraphicsstorage.uk/library/sounds/libsnd_970883d4__preview.jpg",
+      "galleryUrls": [],
+      "previewVideoUrl": "https://miamigraphicsstorage.uk/library/sounds/libsnd_970883d4__preview_db1750.mp4"
+    },
+    {
+      "id": "libret_7d794d1e",
+      "type": "crosshair",
+      "name": "KREST",
+      "author": "",
+      "description": "",
+      "r2Url": "https://miamigraphicsstorage.uk/library/crosshair/libret_7d794d1e.zip",
+      "sha256": "66e85778733c070eb1102348774702ed5cf4366b43ea14ede786f45f1c9b2d82",
+      "sizeBytes": 58105,
+      "sourceRpfVersion": "",
+      "uploadedBy": "",
+      "uploadedAt": "2026-05-05T20:14:06.151574+00:00",
+      "previewUrl": "https://miamigraphicsstorage.uk/library/crosshair/libret_7d794d1e__preview.png",
+      "galleryUrls": [
+        "https://miamigraphicsstorage.uk/library/crosshair/libret_7d794d1e__gallery_0_557241.png"
+      ],
+      "previewVideoUrl": ""
+    },
+    {
+      "id": "libret_198c6d53",
+      "type": "crosshair",
+      "name": "KREST + CIRCLE",
+      "author": "",
+      "description": "",
+      "r2Url": "https://miamigraphicsstorage.uk/library/crosshair/libret_198c6d53.zip",
+      "sha256": "4a11382382c36c9d33112e2b2f925adb3e2e4553fa82589892620284adb220fe",
+      "sizeBytes": 35827,
+      "sourceRpfVersion": "",
+      "uploadedBy": "",
+      "uploadedAt": "2026-05-05T20:15:47.628083+00:00",
+      "previewUrl": "https://miamigraphicsstorage.uk/library/crosshair/libret_198c6d53__preview.png",
+      "galleryUrls": [
+        "https://miamigraphicsstorage.uk/library/crosshair/libret_198c6d53__gallery_0_382e89.png"
+      ],
+      "previewVideoUrl": ""
+    },
+    {
+      "id": "libret_8328b649",
+      "type": "crosshair",
+      "name": "WHITE",
+      "author": "",
+      "description": "",
+      "r2Url": "https://miamigraphicsstorage.uk/library/crosshair/libret_8328b649.zip",
+      "sha256": "63282ea982530d0ac9a69394b0d3385843afb4bb7adb75320436eef3123106ee",
+      "sizeBytes": 34619,
+      "sourceRpfVersion": "",
+      "uploadedBy": "",
+      "uploadedAt": "2026-05-05T20:15:14.347507+00:00",
+      "previewUrl": "https://miamigraphicsstorage.uk/library/crosshair/libret_8328b649__preview.png",
+      "galleryUrls": [
+        "https://miamigraphicsstorage.uk/library/crosshair/libret_8328b649__gallery_0_f64cf5.png"
+      ],
+      "previewVideoUrl": ""
+    }
+  ],
+  "armorLibrary": [
+    {
+      "id": "fiend_v3_6978f3",
+      "name": "Fiend V3",
+      "author": "Fiend Famq",
+      "authorLink": "",
+      "description": "",
+      "glbUrl": "https://miamigraphicsstorage.uk/armor_library/fiend_v3_6978f3/armor.glb",
+      "armorRpfUrl": "https://miamigraphicsstorage.uk/armor_library/fiend_v3_6978f3/armor.rpf",
+      "internalPath": "huntergraphics/armor.rpf",
+      "uploadedBy": "",
+      "uploadedAt": "2026-05-03T09:34:09.288672+00:00",
+      "status": "published",
+      "isVerified": false,
+      "downloadCount": 15,
+      "viewerPriority": 0,
+      "supportedServers": [
+        "majestic"
+      ],
+      "armorRpfUrlMajestic": "https://miamigraphicsstorage.uk/armor_library/fiend_v3_6978f3/armor.rpf",
+      "internalPathMajestic": "huntergraphics/armor.rpf",
+      "armorRpfUrlGta5rp": ""
+    },
+    {
+      "id": "web_76cc72",
+      "name": "Web",
+      "author": "Sync mods",
+      "authorLink": "",
+      "description": "",
+      "glbUrl": "https://miamigraphicsstorage.uk/armor_library/web_76cc72/armor.glb",
+      "armorRpfUrl": "https://miamigraphicsstorage.uk/armor_library/web_76cc72/armor.rpf",
+      "internalPath": "huntergraphics/armor.rpf",
+      "uploadedBy": "",
+      "uploadedAt": "2026-05-03T09:09:56.17865+00:00",
+      "status": "published",
+      "isVerified": false,
+      "downloadCount": 0,
+      "viewerPriority": 0,
+      "supportedServers": [
+        "majestic"
+      ],
+      "armorRpfUrlMajestic": "https://miamigraphicsstorage.uk/armor_library/web_76cc72/armor.rpf",
+      "internalPathMajestic": "huntergraphics/armor.rpf",
+      "armorRpfUrlGta5rp": ""
+    }
+  ]
+}

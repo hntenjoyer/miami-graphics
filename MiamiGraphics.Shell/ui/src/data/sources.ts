@@ -1,0 +1,15 @@
+
+export const POPULAR_SOURCES: string[] = [
+  'GUCCI FAMQ',
+  'SKY FAMQ',
+  'SLIVKI MODS',
+  'MIAMI MODS',
+  'HUNTER GRAPHICS',
+  'SAKUTA MODS',
+  'CURSED FAMQ',
+  'BLADE FAMQ',
+  'NONOMI MODS',
+  'NEON MODS',
+  'OBSIDIAN PACK',
+  'GUSTAV REDUX',
+];

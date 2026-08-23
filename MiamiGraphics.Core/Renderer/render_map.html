@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Miami Graphics Map Renderer</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #0a0e14; }
+  canvas { display: block; }
+</style>
+<script type="importmap">
+{
+  "imports": {
+    "three": "./node_modules/three/build/three.module.js",
+    "three/addons/": "./node_modules/three/examples/jsm/"
+  }
+}
+</script>
+</head>
+<body>
+<script type="module">
+import * as THREE from 'three';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+
+window.renderMapGlb = async function (glbBase64, width, height) {
+  const bin = Uint8Array.from(atob(glbBase64), c => c.charCodeAt(0));
+
+  const canvas = document.createElement('canvas');
+  canvas.width = width; canvas.height = height;
+  document.body.appendChild(canvas);
+
+  const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, preserveDrawingBuffer: true });
+  renderer.setSize(width, height, false);
+
+  const scene = new THREE.Scene();
+  scene.background = new THREE.Color(0x0a0e14);
+
+  const gltf = await new Promise((resolve, reject) => {
+    new GLTFLoader().parse(bin.buffer, '', resolve, reject);
+  });
+  scene.add(gltf.scene);
+
+  const box = new THREE.Box3().setFromObject(gltf.scene);
+  const center = box.getCenter(new THREE.Vector3());
+  const size = box.getSize(new THREE.Vector3());
+
+  const camera = new THREE.PerspectiveCamera(45, width / height, 10, 80000);
+  const mapLen = Math.max(size.x, size.z);
+  let dist = mapLen;
+  const polar = THREE.MathUtils.degToRad(48);
+  const target = center.clone();
+  const margin = 0.94;
+
+  const corners = [];
+  for (const x of [box.min.x, box.max.x])
+    for (const y of [box.min.y, box.max.y])
+      for (const z of [box.min.z, box.max.z])
+        corners.push(new THREE.Vector3(x, y, z));
+
+  for (let i = 0; i < 6; i++) {
+    camera.position.set(
+      target.x,
+      target.y + dist * Math.cos(polar),
+      target.z + dist * Math.sin(polar));
+    camera.lookAt(target);
+    camera.updateMatrixWorld();
+
+    let minX = 1e9, maxX = -1e9, minY = 1e9, maxY = -1e9;
+    for (const c of corners) {
+      const p = c.clone().project(camera);
+      minX = Math.min(minX, p.x); maxX = Math.max(maxX, p.x);
+      minY = Math.min(minY, p.y); maxY = Math.max(maxY, p.y);
+    }
+    const cx = (minX + maxX) / 2, cy = (minY + maxY) / 2;
+    const halfH = Math.tan(THREE.MathUtils.degToRad(camera.fov / 2)) * dist;
+    const halfW = halfH * camera.aspect;
+    const right = new THREE.Vector3().setFromMatrixColumn(camera.matrixWorld, 0);
+    const up = new THREE.Vector3().setFromMatrixColumn(camera.matrixWorld, 1);
+    target.add(right.multiplyScalar(cx * halfW)).add(up.multiplyScalar(cy * halfH));
+    dist *= Math.max((maxX - minX) / 2, (maxY - minY) / 2) / margin;
+  }
+  camera.position.set(
+    target.x,
+    target.y + dist * Math.cos(polar),
+    target.z + dist * Math.sin(polar));
+  camera.lookAt(target);
+
+  renderer.render(scene, camera);
+  const dataUrl = canvas.toDataURL('image/webp', 0.9);
+
+  renderer.dispose();
+  canvas.remove();
+  return dataUrl;
+};
+
+window.__rendererReady = true;
+</script>
+</body>
+</html>

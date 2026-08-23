@@ -1,0 +1,61 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Library</OutputType>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<UseSystemDrawing>true</UseSystemDrawing>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Magick.NET-Q16-AnyCPU" Version="14.14.0" />
+		<PackageReference Include="System.Drawing.Common" Version="10.0.7" />
+		<PackageReference Include="System.Management" Version="10.0.7" />
+		<PackageReference Include="SharpGLTF.Toolkit" Version="1.0.6" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\RageLib\RageLib.csproj" />
+		<ProjectReference Include="..\RageLib.GTA5\RageLib.GTA5.csproj" />
+		<ProjectReference Include="..\CodeWalker.Core\CodeWalker.Core.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<InternalsVisibleTo Include="MiamiGraphics.Core.Tests" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="Mutators\" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="templates\**\*">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="..\Libraries\YptWriter2015\**\*">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<Link>YptWriter2015\%(RecursiveDir)%(Filename)%(Extension)</Link>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Include="Resources\gta_versions.json" />
+		<EmbeddedResource Include="Resources\i18n\*.json" />
+		<EmbeddedResource Remove="Resources\i18n\de.json" />
+		<EmbeddedResource Include="Resources\pso\*.txt" />
+		<EmbeddedResource Include="Gunsmith\templates\animweapons\*.meta" />
+		<EmbeddedResource Include="Resources\minimapfonts\*.bin" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Remove="Renderer\**" />
+		<Content Remove="Renderer\**" />
+		<None Remove="Renderer\**" />
+		<EmbeddedResource Remove="Renderer\**" />
+	</ItemGroup>
+
+</Project>

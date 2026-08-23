@@ -1,0 +1,11 @@
+{
+  "name": "hunter-graphics-shell",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "npm --prefix ui run dev",
+    "build": "npm --prefix ui run build",
+    "preview": "npm --prefix ui run preview",
+    "install:ui": "npm --prefix ui install"
+  }
+}
